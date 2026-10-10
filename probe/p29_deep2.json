@@ -1,0 +1,458 @@
+{
+ "csindex_perf:930652": {
+  "n": 5286,
+  "keys": [
+   "tradeDate",
+   "indexCode",
+   "indexNameCnAll",
+   "indexNameCn",
+   "indexNameEnAll",
+   "indexNameEn",
+   "open",
+   "high",
+   "low",
+   "close",
+   "change",
+   "changePct",
+   "tradingVol",
+   "tradingValue"
+  ],
+  "first": {
+   "tradeDate": "20050101",
+   "indexCode": "930652",
+   "indexNameCnAll": "中证电子指数",
+   "indexNameCn": "CS电子",
+   "indexNameEnAll": "CSI Electronics Index",
+   "indexNameEn": "CSI Electronics",
+   "open": 993.81,
+   "high": 996.98,
+   "low": 986.57,
+   "close": 992.84,
+   "change": null,
+   "changePct": -0.72,
+   "tradingVol": 53209163.0,
+   "tradingValue": 3.11,
+   "consNumber": null,
+   "peg": null
+  },
+  "last": {
+   "tradeDate": "20261009",
+   "indexCode": "930652",
+   "indexNameCnAll": "中证电子指数",
+   "indexNameCn": "CS电子",
+   "indexNameEnAll": "CSI Electronics Index",
+   "indexNameEn": "CSI Electronics",
+   "open": 10963.84,
+   "high": 11035.83,
+   "low": 10484.38,
+   "close": 10972.38,
+   "change": -119.99,
+   "changePct": -1.08,
+   "tradingVol": 4551720938.0,
+   "tradingValue": 2374.5,
+   "consNumber": 100.0,
+   "peg": 38.99
+  }
+ },
+ "csindex_perf:931087": {
+  "n": 3468,
+  "keys": [
+   "tradeDate",
+   "indexCode",
+   "indexNameCnAll",
+   "indexNameCn",
+   "indexNameEnAll",
+   "indexNameEn",
+   "open",
+   "high",
+   "low",
+   "close",
+   "change",
+   "changePct",
+   "tradingVol",
+   "tradingValue"
+  ],
+  "first": {
+   "tradeDate": "20050101",
+   "indexCode": "931087",
+   "indexNameCnAll": "中证科技龙头指数",
+   "indexNameCn": "科技龙头",
+   "indexNameEnAll": "CSI Technology Top Index",
+   "indexNameEn": "CSI Technology Top",
+   "open": null,
+   "high": null,
+   "low": null,
+   "close": 1000.0,
+   "change": null,
+   "changePct": 0.0,
+   "tradingVol": 257793505.0,
+   "tradingValue": 30.3,
+   "consNumber": null,
+   "peg": null
+  },
+  "last": {
+   "tradeDate": "20261009",
+   "indexCode": "931087",
+   "indexNameCnAll": "中证科技龙头指数",
+   "indexNameCn": "科技龙头",
+   "indexNameEnAll": "CSI Technology Top Index",
+   "indexNameEn": "CSI Technology Top",
+   "open": 6022.55,
+   "high": 6071.35,
+   "low": 5779.9,
+   "close": 6044.79,
+   "change": -52.66,
+   "changePct": -0.86,
+   "tradingVol": 1792009490.0,
+   "tradingValue": 1660.08,
+   "consNumber": 50.0,
+   "peg": 41.67
+  }
+ },
+ "csindex_perf:716567": {
+  "n": 0,
+  "keys": null,
+  "first": null,
+  "last": null
+ },
+ "csindex_perf:H11136": {
+  "n": 5029,
+  "keys": [
+   "tradeDate",
+   "indexCode",
+   "indexNameCnAll",
+   "indexNameCn",
+   "indexNameEnAll",
+   "indexNameEn",
+   "open",
+   "high",
+   "low",
+   "close",
+   "change",
+   "changePct",
+   "tradingVol",
+   "tradingValue"
+  ],
+  "first": {
+   "tradeDate": "20050101",
+   "indexCode": "H11136",
+   "indexNameCnAll": "中证海外中国互联网指数",
+   "indexNameCn": "中国互联网",
+   "indexNameEnAll": "CSI Overseas China Internet Index",
+   "indexNameEn": "China Internet",
+   "open": null,
+   "high": null,
+   "low": null,
+   "close": 1000.0,
+   "change": null,
+   "changePct": null,
+   "tradingVol": 0.0,
+   "tradingValue": 0.0,
+   "consNumber": 12.0,
+   "peg": null
+  },
+  "last": {
+   "tradeDate": "20261008",
+   "indexCode": "H11136",
+   "indexNameCnAll": "中证海外中国互联网指数",
+   "indexNameCn": "中国互联网",
+   "indexNameEnAll": "CSI Overseas China Internet Index",
+   "indexNameEn": "China Internet",
+   "open": null,
+   "high": null,
+   "low": null,
+   "close": 3549.88,
+   "change": -60.32,
+   "changePct": -1.67,
+   "tradingVol": 1151276434.0,
+   "tradingValue": 378.3,
+   "consNumber": 48.0,
+   "peg": 19.22
+  }
+ },
+ "csindex_perf:000009": {
+  "n": 5286,
+  "keys": [
+   "tradeDate",
+   "indexCode",
+   "indexNameCnAll",
+   "indexNameCn",
+   "indexNameEnAll",
+   "indexNameEn",
+   "open",
+   "high",
+   "low",
+   "close",
+   "change",
+   "changePct",
+   "tradingVol",
+   "tradingValue"
+  ],
+  "first": {
+   "tradeDate": "20050101",
+   "indexCode": "000009",
+   "indexNameCnAll": "上证380指数",
+   "indexNameCn": "上证380",
+   "indexNameEnAll": "SSE 380 Index",
+   "indexNameEn": "SSE 380",
+   "open": 858.1,
+   "high": 858.1,
+   "low": 846.84,
+   "close": 848.14,
+   "change": null,
+   "changePct": -1.39,
+   "tradingVol": 159740040.0,
+   "tradingValue": 9.59,
+   "consNumber": null,
+   "peg": null
+  },
+  "last": {
+   "tradeDate": "20261009",
+   "indexCode": "000009",
+   "indexNameCnAll": "上证380指数",
+   "indexNameCn": "上证380",
+   "indexNameEnAll": "SSE 380 Index",
+   "indexNameEn": "SSE 380",
+   "open": 6473.48,
+   "high": 6538.77,
+   "low": 6355.83,
+   "close": 6515.82,
+   "change": 18.18,
+   "changePct": 0.28,
+   "tradingVol": 10091294500.0,
+   "tradingValue": 1853.4,
+   "consNumber": 380.0,
+   "peg": 21.74
+  }
+ },
+ "csindex_perf:000906": {
+  "n": 5286,
+  "keys": [
+   "tradeDate",
+   "indexCode",
+   "indexNameCnAll",
+   "indexNameCn",
+   "indexNameEnAll",
+   "indexNameEn",
+   "open",
+   "high",
+   "low",
+   "close",
+   "change",
+   "changePct",
+   "tradingVol",
+   "tradingValue"
+  ],
+  "first": {
+   "tradeDate": "20050101",
+   "indexCode": "000906",
+   "indexNameCnAll": "中证800指数",
+   "indexNameCn": "中证800",
+   "indexNameEnAll": "CSI 800 Index",
+   "indexNameEn": "CSI 800",
+   "open": 995.1,
+   "high": 995.1,
+   "low": 981.75,
+   "close": 983.9,
+   "change": null,
+   "changePct": -1.61,
+   "tradingVol": 973663097.0,
+   "tradingValue": 57.61,
+   "consNumber": null,
+   "peg": null
+  },
+  "last": {
+   "tradeDate": "20261009",
+   "indexCode": "000906",
+   "indexNameCnAll": "中证800指数",
+   "indexNameCn": "中证800",
+   "indexNameEnAll": "CSI 800 Index",
+   "indexNameEn": "CSI 800",
+   "open": 4794.56,
+   "high": 4833.92,
+   "low": 4718.74,
+   "close": 4818.24,
+   "change": 6.15,
+   "changePct": 0.13,
+   "tradingVol": 36366050000.0,
+   "tradingValue": 8276.25,
+   "consNumber": 800.0,
+   "peg": 14.61
+  }
+ },
+ "csindex_indexInfo": {
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex-home/indexInfo/index-basic-in"
+ },
+ "csindex_perfSimple": {
+  "len": 74,
+  "head": "{\"code\": \"400\", \"msg\": \"Parameter Errors\", \"data\": null, \"success\": false}"
+ },
+ "csindex_valuation": {
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex-home/indexInfo/index-valuatio"
+ },
+ "etf_sina:sh513050": {
+  "desc": "中概互联ETF(中国互联CSIH11136)",
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "etf_sina:sh159920": {
+  "desc": "恒生ETF",
+  "n": 0,
+  "last": null
+ },
+ "etf_sina:sz159920": {
+  "desc": "恒生ETF(深)",
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "etf_sina:sh510900": {
+  "desc": "H股ETF",
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "etf_sina:sh513660": {
+  "desc": "恒生中国企业ETF",
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "etf_sina:sh515000": {
+  "desc": "科技ETF(科技龙头)",
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "etf_sina:sh515070": {
+  "desc": "AI ETF",
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "etf_sina:sz159939": {
+  "desc": "信息技术ETF(中证电子?)",
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "etf_sina:sh159939": {
+  "desc": "信息技术ETF",
+  "n": 0,
+  "last": null
+ },
+ "etf_sina:sh512760": {
+  "desc": "芯片ETF",
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "etf_sina:sh512480": {
+  "desc": "半导体ETF",
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "etf_sina:sh159801": {
+  "desc": "芯片ETF(深)",
+  "n": 0,
+  "last": null
+ },
+ "etf_sina:sz159801": {
+  "desc": "芯片ETF",
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "tencent:sh000932:day": {
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "tencent:sh000922:day": {
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "tencent:hkHSI:day": {
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "tencent:hkHSCEI:day": {
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "tencent:hkHSTECH:day": {
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "tencent:hkHSSCNE:day": {
+  "n": 0,
+  "last": null
+ },
+ "tencent:us.SPHQ:week": {
+  "n": 1,
+  "last": "2026-10-09"
+ },
+ "tencent:us.SPLV:week": {
+  "n": 1,
+  "last": "2026-10-09"
+ },
+ "tencent:us.SPHD:week": {
+  "n": 1,
+  "last": "2026-10-09"
+ },
+ "tencent:us.SPY:week": {
+  "n": 1,
+  "last": "2026-10-09"
+ },
+ "tencent:us.QUAL:week": {
+  "n": 1,
+  "last": "2026-10-09"
+ },
+ "tencent:us.INDA:week": {
+  "n": 1,
+  "last": "2026-10-09"
+ },
+ "tencent:us.EPW:week": {
+  "n": 0,
+  "last": null
+ },
+ "tencent:us.FXI:week": {
+  "n": 1,
+  "last": "2026-10-09"
+ },
+ "tencent:us.KWEB:week": {
+  "n": 1,
+  "last": "2026-10-09"
+ },
+ "tencent:us.MCHI:week": {
+  "n": 1,
+  "last": "2026-10-09"
+ },
+ "sina_us:SPHQ:": {
+  "n": 4083,
+  "last": "2026-10-09"
+ },
+ "sina_us:SPLV:": {
+  "n": 3880,
+  "last": "2026-10-09"
+ },
+ "sina_us:SPHD:": {
+  "n": 2897,
+  "last": "2026-10-09"
+ },
+ "sina_us:QUAL:": {
+  "n": 3328,
+  "last": "2026-10-09"
+ },
+ "sina_us:INDA:": {
+  "n": 3690,
+  "last": "2026-10-09"
+ },
+ "sina_us:KWEB:": {
+  "n": 2240,
+  "last": "2026-10-09"
+ },
+ "sina_us:MCHI:": {
+  "n": 2688,
+  "last": "2026-10-09"
+ },
+ "sina_us:FXI:": {
+  "n": 5535,
+  "last": "2026-10-09"
+ },
+ "sina_us:EPW:": {
+  "n": 0,
+  "last": null
+ }
+}

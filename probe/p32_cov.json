@@ -1,0 +1,399 @@
+{
+ "SH000300": {
+  "name": "沪深300",
+  "codes": [
+   "000300"
+  ],
+  "hit": {
+   "code": "000300",
+   "n": 5528,
+   "first": "20040101",
+   "last": "20261009",
+   "name": "沪深300指数",
+   "last_peg": 13.11,
+   "last_close": 4317.25,
+   "peg_nonnull": 3645
+  }
+ },
+ "SH000016": {
+  "name": "上证50",
+  "codes": [
+   "000016"
+  ],
+  "hit": null
+ },
+ "SH000905": {
+  "name": "中证500",
+  "codes": [
+   "000905"
+  ],
+  "hit": null
+ },
+ "SH000852": {
+  "name": "中证1000",
+  "codes": [
+   "000852"
+  ],
+  "hit": {
+   "code": "000852",
+   "n": 5286,
+   "first": "20040101",
+   "last": "20261009",
+   "name": "中证1000指数",
+   "last_peg": 29.04,
+   "last_close": 7155.91,
+   "peg_nonnull": 3466
+  }
+ },
+ "SH000688": {
+  "name": "科创50",
+  "codes": [
+   "000688"
+  ],
+  "hit": null
+ },
+ "SZ399006": {
+  "name": "创业板指",
+  "codes": [
+   "399006"
+  ],
+  "hit": null
+ },
+ "SH000903": {
+  "name": "中证100",
+  "codes": [
+   "000903"
+  ],
+  "hit": null
+ },
+ "SH000010": {
+  "name": "上证180",
+  "codes": [
+   "000010"
+  ],
+  "hit": null
+ },
+ "SZ399001": {
+  "name": "深证成指",
+  "codes": [
+   "399001"
+  ],
+  "hit": null
+ },
+ "SZ399330": {
+  "name": "深证100",
+  "codes": [
+   "399330"
+  ],
+  "hit": null
+ },
+ "SZ399324": {
+  "name": "深证红利",
+  "codes": [
+   "399324"
+  ],
+  "hit": null
+ },
+ "SH000015": {
+  "name": "上证红利",
+  "codes": [
+   "000015"
+  ],
+  "hit": null
+ },
+ "SH000922": {
+  "name": "中证红利",
+  "codes": [
+   "000922"
+  ],
+  "hit": null
+ },
+ "SH000925": {
+  "name": "基本面50",
+  "codes": [
+   "000925"
+  ],
+  "hit": null
+ },
+ "SH000919": {
+  "name": "300价值",
+  "codes": [
+   "000919"
+  ],
+  "hit": null
+ },
+ "SZ399317": {
+  "name": "国证A指",
+  "codes": [
+   "399317"
+  ],
+  "hit": null
+ },
+ "SZ399550": {
+  "name": "央视50",
+  "codes": [
+   "399550"
+  ],
+  "hit": null
+ },
+ "SH000170": {
+  "name": "50AH优选",
+  "codes": [
+   "000170"
+  ],
+  "hit": null
+ },
+ "SH000991": {
+  "name": "全指医药",
+  "codes": [
+   "000991"
+  ],
+  "hit": {
+   "code": "000991",
+   "n": 5287,
+   "first": "20040101",
+   "last": "20261009",
+   "name": "中证全指医药卫生指数",
+   "last_peg": 23.59,
+   "last_close": 8497.12,
+   "peg_nonnull": 3646
+  }
+ },
+ "SH000932": {
+  "name": "主要消费",
+  "codes": [
+   "000932"
+  ],
+  "hit": {
+   "code": "000932",
+   "n": 5287,
+   "first": "20040101",
+   "last": "20261009",
+   "name": "中证主要消费指数",
+   "last_peg": 19.76,
+   "last_close": 12355.0,
+   "peg_nonnull": 3646
+  }
+ },
+ "SH000993": {
+  "name": "全指信息",
+  "codes": [
+   "000993"
+  ],
+  "hit": {
+   "code": "000993",
+   "n": 5287,
+   "first": "20040101",
+   "last": "20261009",
+   "name": "中证全指信息技术指数",
+   "last_peg": 40.97,
+   "last_close": 9224.68,
+   "peg_nonnull": 3646
+  }
+ },
+ "SH000009": {
+  "name": "上证380",
+  "codes": [
+   "000009"
+  ],
+  "hit": {
+   "code": "000009",
+   "n": 5529,
+   "first": "20040101",
+   "last": "20261009",
+   "name": "上证380指数",
+   "last_peg": 21.74,
+   "last_close": 6515.82,
+   "peg_nonnull": 3646
+  }
+ },
+ "SZ399673": {
+  "name": "创业板50",
+  "codes": [
+   "399673"
+  ],
+  "hit": null
+ },
+ "SH000906": {
+  "name": "中证800",
+  "codes": [
+   "000906"
+  ],
+  "hit": {
+   "code": "000906",
+   "n": 5287,
+   "first": "20040101",
+   "last": "20261009",
+   "name": "中证800指数",
+   "last_peg": 14.61,
+   "last_close": 4818.24,
+   "peg_nonnull": 3646
+  }
+ },
+ "CSI716567": {
+  "name": "MSCI中国",
+  "codes": [
+   "716567"
+  ],
+  "hit": null
+ },
+ "CSI930652": {
+  "name": "中证电子",
+  "codes": [
+   "930652"
+  ],
+  "hit": {
+   "code": "930652",
+   "n": 5286,
+   "first": "20040101",
+   "last": "20261009",
+   "name": "中证电子指数",
+   "last_peg": 38.99,
+   "last_close": 10972.38,
+   "peg_nonnull": 2768
+  }
+ },
+ "CSI931087": {
+  "name": "科技龙头",
+  "codes": [
+   "931087"
+  ],
+  "hit": {
+   "code": "931087",
+   "n": 3468,
+   "first": "20040101",
+   "last": "20261009",
+   "name": "中证科技龙头指数",
+   "last_peg": 41.67,
+   "last_close": 6044.79,
+   "peg_nonnull": 1841
+  }
+ },
+ "HKHSI": {
+  "name": "恒生指数",
+  "codes": [],
+  "hit": null
+ },
+ "HKHSCEI": {
+  "name": "恒生国企指数",
+  "codes": [],
+  "hit": null
+ },
+ "HKHSTECH": {
+  "name": "恒生科技",
+  "codes": [],
+  "hit": null
+ },
+ "CSIH11136": {
+  "name": "中国互联",
+  "codes": [],
+  "hit": null
+ },
+ "HSFML25": {
+  "name": "香港大盘",
+  "codes": [],
+  "hit": null
+ },
+ "SPHCMSHP": {
+  "name": "香港中小",
+  "codes": [],
+  "hit": null
+ },
+ "HKHSSCNE": {
+  "name": "香港新经济",
+  "codes": [],
+  "hit": null
+ },
+ "SP500": {
+  "name": "标普500",
+  "codes": [],
+  "hit": null
+ },
+ "NDX": {
+  "name": "纳斯达克100",
+  "codes": [],
+  "hit": null
+ },
+ "DJI": {
+  "name": "道琼斯工业平均",
+  "codes": [],
+  "hit": null
+ },
+ "SPACEVCP": {
+  "name": "标普价值",
+  "codes": [],
+  "hit": null
+ },
+ "SPCQVCP": {
+  "name": "标普质量",
+  "codes": [],
+  "hit": null
+ },
+ "CSPSADRP": {
+  "name": "标普红利",
+  "codes": [],
+  "hit": null
+ },
+ "GDAXI": {
+  "name": "德国DAX",
+  "codes": [],
+  "hit": null
+ },
+ "FTSE": {
+  "name": "英国富时100",
+  "codes": [],
+  "hit": null
+ },
+ "FCHI": {
+  "name": "法国CAC40",
+  "codes": [],
+  "hit": null
+ },
+ "SX5E": {
+  "name": "欧洲斯托克50",
+  "codes": [],
+  "hit": null
+ },
+ "AEX": {
+  "name": "荷兰AEX",
+  "codes": [],
+  "hit": null
+ },
+ "IBEX": {
+  "name": "西班牙IBEX35",
+  "codes": [],
+  "hit": null
+ },
+ "MIB": {
+  "name": "意大利富时MIB",
+  "codes": [],
+  "hit": null
+ },
+ "N225": {
+  "name": "日经225",
+  "codes": [],
+  "hit": null
+ },
+ "KS11": {
+  "name": "韩国KOSPI",
+  "codes": [],
+  "hit": null
+ },
+ "AS51": {
+  "name": "澳洲标普200",
+  "codes": [],
+  "hit": null
+ },
+ "TWII": {
+  "name": "台湾加权指数",
+  "codes": [],
+  "hit": null
+ },
+ "935600": {
+  "name": "MSCI印度",
+  "codes": [
+   "935600"
+  ],
+  "hit": null
+ }
+}

@@ -1,0 +1,572 @@
+{
+ "SH000300": {
+  "name": "沪深300",
+  "region": "中国A股",
+  "codes": [
+   "000300"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5528,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3645,
+   "peg_first": "20110628",
+   "peg_last": "20261009",
+   "last_peg": 13.11,
+   "last_close": 4317.25,
+   "name": "沪深300指数",
+   "code": "000300"
+  }
+ },
+ "SH000016": {
+  "name": "上证50",
+  "region": "中国A股",
+  "codes": [
+   "000016"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5529,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3646,
+   "peg_first": "20110628",
+   "peg_last": "20261009",
+   "last_peg": 10.95,
+   "last_close": 2807.46,
+   "name": "上证50指数",
+   "code": "000016"
+  }
+ },
+ "SH000905": {
+  "name": "中证500",
+  "region": "中国A股",
+  "codes": [
+   "000905"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5287,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3646,
+   "peg_first": "20110628",
+   "peg_last": "20261009",
+   "last_peg": 24.55,
+   "last_close": 7251.01,
+   "name": "中证小盘500指数",
+   "code": "000905"
+  }
+ },
+ "SH000852": {
+  "name": "中证1000",
+  "region": "中国A股",
+  "codes": [
+   "000852"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5286,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3466,
+   "peg_first": "20120629",
+   "peg_last": "20261009",
+   "last_peg": 29.04,
+   "last_close": 7155.91,
+   "name": "中证1000指数",
+   "code": "000852"
+  }
+ },
+ "SH000688": {
+  "name": "科创50",
+  "region": "中国A股",
+  "codes": [
+   "000688"
+  ],
+  "hit": null,
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex"
+ },
+ "SZ399006": {
+  "name": "创业板指",
+  "region": "中国A股",
+  "codes": [
+   "399006"
+  ],
+  "hit": null,
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex"
+ },
+ "SH000903": {
+  "name": "中证100",
+  "region": "中国A股",
+  "codes": [
+   "000903"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5529,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3646,
+   "peg_first": "20110628",
+   "peg_last": "20261009",
+   "last_peg": 15.55,
+   "last_close": 4149.28,
+   "name": "中证A100指数",
+   "code": "000903"
+  }
+ },
+ "SH000010": {
+  "name": "上证180",
+  "region": "中国A股",
+  "codes": [
+   "000010"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5529,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3646,
+   "peg_first": "20110628",
+   "peg_last": "20261009",
+   "last_peg": 11.45,
+   "last_close": 9382.31,
+   "name": "上证180指数",
+   "code": "000010"
+  }
+ },
+ "SZ399001": {
+  "name": "深证成指",
+  "region": "中国A股",
+  "codes": [
+   "399001"
+  ],
+  "hit": null,
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex"
+ },
+ "SZ399330": {
+  "name": "深证100",
+  "region": "中国A股",
+  "codes": [
+   "399330"
+  ],
+  "hit": null,
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex"
+ },
+ "SZ399324": {
+  "name": "深证红利",
+  "region": "中国A股",
+  "codes": [
+   "399324"
+  ],
+  "hit": null,
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex"
+ },
+ "SH000015": {
+  "name": "上证红利",
+  "region": "中国A股",
+  "codes": [
+   "000015"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5287,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3646,
+   "peg_first": "20110628",
+   "peg_last": "20261009",
+   "last_peg": 8.97,
+   "last_close": 3337.36,
+   "name": "上证红利指数",
+   "code": "000015"
+  }
+ },
+ "SH000922": {
+  "name": "中证红利",
+  "region": "中国A股",
+  "codes": [
+   "000922"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5287,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3646,
+   "peg_first": "20110628",
+   "peg_last": "20261009",
+   "last_peg": 8.67,
+   "last_close": 5601.34,
+   "name": "中证红利指数",
+   "code": "000922"
+  }
+ },
+ "SH000925": {
+  "name": "基本面50",
+  "region": "中国A股",
+  "codes": [
+   "000925"
+  ],
+  "hit": null,
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex"
+ },
+ "SH000919": {
+  "name": "300价值",
+  "region": "中国A股",
+  "codes": [
+   "000919"
+  ],
+  "hit": null,
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex"
+ },
+ "SZ399317": {
+  "name": "国证A指",
+  "region": "中国A股",
+  "codes": [
+   "399317"
+  ],
+  "hit": null,
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex"
+ },
+ "SZ399550": {
+  "name": "央视50",
+  "region": "中国A股",
+  "codes": [
+   "399550"
+  ],
+  "hit": null
+ },
+ "SH000170": {
+  "name": "50AH优选",
+  "region": "中国A股",
+  "codes": [
+   "000170"
+  ],
+  "hit": null
+ },
+ "SH000991": {
+  "name": "全指医药",
+  "region": "中国A股",
+  "codes": [
+   "000991"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5287,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3646,
+   "peg_first": "20110628",
+   "peg_last": "20261009",
+   "last_peg": 23.59,
+   "last_close": 8497.12,
+   "name": "中证全指医药卫生指数",
+   "code": "000991"
+  }
+ },
+ "SH000932": {
+  "name": "主要消费",
+  "region": "中国A股",
+  "codes": [
+   "000932"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5287,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3646,
+   "peg_first": "20110628",
+   "peg_last": "20261009",
+   "last_peg": 19.76,
+   "last_close": 12355.0,
+   "name": "中证主要消费指数",
+   "code": "000932"
+  }
+ },
+ "SH000993": {
+  "name": "全指信息",
+  "region": "中国A股",
+  "codes": [
+   "000993"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5287,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3646,
+   "peg_first": "20110628",
+   "peg_last": "20261009",
+   "last_peg": 40.97,
+   "last_close": 9224.68,
+   "name": "中证全指信息技术指数",
+   "code": "000993"
+  }
+ },
+ "SH000009": {
+  "name": "上证380",
+  "region": "中国A股",
+  "codes": [
+   "000009"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5529,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3646,
+   "peg_first": "20110628",
+   "peg_last": "20261009",
+   "last_peg": 21.74,
+   "last_close": 6515.82,
+   "name": "上证380指数",
+   "code": "000009"
+  }
+ },
+ "SZ399673": {
+  "name": "创业板50",
+  "region": "中国A股",
+  "codes": [
+   "399673"
+  ],
+  "hit": null
+ },
+ "SH000906": {
+  "name": "中证800",
+  "region": "中国A股",
+  "codes": [
+   "000906"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5287,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 3646,
+   "peg_first": "20110628",
+   "peg_last": "20261009",
+   "last_peg": 14.61,
+   "last_close": 4818.24,
+   "name": "中证800指数",
+   "code": "000906"
+  }
+ },
+ "CSI716567": {
+  "name": "MSCI中国",
+  "region": "中国A股",
+  "codes": [
+   "716567"
+  ],
+  "hit": null
+ },
+ "CSI930652": {
+  "name": "中证电子",
+  "region": "中国A股",
+  "codes": [
+   "930652"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5286,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 2768,
+   "peg_first": "20150520",
+   "peg_last": "20261009",
+   "last_peg": 38.99,
+   "last_close": 10972.38,
+   "name": "中证电子指数",
+   "code": "930652"
+  }
+ },
+ "CSI931087": {
+  "name": "科技龙头",
+  "region": "中国A股",
+  "codes": [
+   "931087"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 3468,
+   "first": "20040101",
+   "last": "20261009",
+   "peg_n": 1841,
+   "peg_first": "20190307",
+   "peg_last": "20261009",
+   "last_peg": 41.67,
+   "last_close": 6044.79,
+   "name": "中证科技龙头指数",
+   "code": "931087"
+  }
+ },
+ "HKHSI": {
+  "name": "恒生指数",
+  "region": "中国香港",
+  "codes": [],
+  "hit": null
+ },
+ "HKHSCEI": {
+  "name": "恒生国企指数",
+  "region": "中国香港",
+  "codes": [],
+  "hit": null
+ },
+ "HKHSTECH": {
+  "name": "恒生科技",
+  "region": "中国香港",
+  "codes": [],
+  "hit": null
+ },
+ "CSIH11136": {
+  "name": "中国互联",
+  "region": "中国香港",
+  "codes": [
+   "H11136"
+  ],
+  "hit": {
+   "absent": false,
+   "n": 5029,
+   "first": "20040101",
+   "last": "20261008",
+   "peg_n": 3866,
+   "peg_first": "20110912",
+   "peg_last": "20261008",
+   "last_peg": 19.22,
+   "last_close": 3549.88,
+   "name": "中证海外中国互联网指数",
+   "code": "H11136"
+  }
+ },
+ "HSFML25": {
+  "name": "香港大盘",
+  "region": "中国香港",
+  "codes": [],
+  "hit": null
+ },
+ "SPHCMSHP": {
+  "name": "香港中小",
+  "region": "中国香港",
+  "codes": [],
+  "hit": null
+ },
+ "HKHSSCNE": {
+  "name": "香港新经济",
+  "region": "中国香港",
+  "codes": [],
+  "hit": null
+ },
+ "SP500": {
+  "name": "标普500",
+  "region": "美国",
+  "codes": [],
+  "hit": null
+ },
+ "NDX": {
+  "name": "纳斯达克100",
+  "region": "美国",
+  "codes": [],
+  "hit": null
+ },
+ "DJI": {
+  "name": "道琼斯工业平均",
+  "region": "美国",
+  "codes": [],
+  "hit": null
+ },
+ "SPACEVCP": {
+  "name": "标普价值",
+  "region": "美国",
+  "codes": [],
+  "hit": null
+ },
+ "SPCQVCP": {
+  "name": "标普质量",
+  "region": "美国",
+  "codes": [],
+  "hit": null
+ },
+ "CSPSADRP": {
+  "name": "标普红利",
+  "region": "美国",
+  "codes": [],
+  "hit": null
+ },
+ "GDAXI": {
+  "name": "德国DAX",
+  "region": "欧洲",
+  "codes": [],
+  "hit": null
+ },
+ "FTSE": {
+  "name": "英国富时100",
+  "region": "欧洲",
+  "codes": [],
+  "hit": null
+ },
+ "FCHI": {
+  "name": "法国CAC40",
+  "region": "欧洲",
+  "codes": [],
+  "hit": null
+ },
+ "SX5E": {
+  "name": "欧洲斯托克50",
+  "region": "欧洲",
+  "codes": [],
+  "hit": null
+ },
+ "AEX": {
+  "name": "荷兰AEX",
+  "region": "欧洲",
+  "codes": [],
+  "hit": null
+ },
+ "IBEX": {
+  "name": "西班牙IBEX35",
+  "region": "欧洲",
+  "codes": [],
+  "hit": null
+ },
+ "MIB": {
+  "name": "意大利富时MIB",
+  "region": "欧洲",
+  "codes": [],
+  "hit": null
+ },
+ "N225": {
+  "name": "日经225",
+  "region": "亚太",
+  "codes": [],
+  "hit": null
+ },
+ "KS11": {
+  "name": "韩国KOSPI",
+  "region": "亚太",
+  "codes": [],
+  "hit": null
+ },
+ "AS51": {
+  "name": "澳洲标普200",
+  "region": "亚太",
+  "codes": [],
+  "hit": null
+ },
+ "TWII": {
+  "name": "台湾加权指数",
+  "region": "亚太",
+  "codes": [],
+  "hit": null
+ },
+ "935600": {
+  "name": "MSCI印度",
+  "region": "亚太",
+  "codes": [
+   "935600"
+  ],
+  "hit": null
+ }
+}

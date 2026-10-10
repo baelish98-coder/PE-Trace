@@ -1,0 +1,75 @@
+{
+ "znb_all_quotes": {
+  "status": 200,
+  "len": 3069,
+  "body": "var hq_str_znb_UKX=\"英国富时100,10552.0500,110.45,1.06,9/26/2025,1758859200,2026-10-09,23:35:29,10441.5000,10441.6000,10577.3300,10441.5000,0\";\nvar hq_str_znb_DAX=\"德国DAX30,25087.2695,280.30,1.13,9/26/2025,1758859200,2026-10-10,00:00:19,24976.9707,24806.9707,25164.7402,24955.7109,0\";\nvar hq_str_znb_CAC=\"法国CAC40,7803.3296,73.64,0.95,9/26/2025,1758859200,2026-10-10,00:05:46,7791.5098,7729.6899,7825.3398,7766.9897,0\";\nvar hq_str_znb_SX5E=\"欧洲斯托克50,6177.3800,50.64,0.83,9/26/2025,1758859200,2026-10-09,23:30:00,6129.3800,6126.7400,6204.4700,6129.3800,0\";\nvar hq_str_znb_SWI20=\"瑞士SWI20,13787.3900,150.38,1.10,,,2026-10-09,23:30:13,13785.9600,13637.0100,13811.4600,13723.9700,0\";\nvar hq_str_znb_FTSEMIB=\"意大利富时MIB,49746.3100,448.43,0.91,9/26/2025,1758859200,2026-10-09,23:35:29,49704.3700,49297.8800,49916.6300,49572.9700,0\";\nvar hq_str_znb_AEX=\"荷兰AEX,1130.9600,9.75,0.87,9/26/2025,1758859200,2026-10-09,23:35:30,1124.7900,1121.2100,1135.7600,1124.5800,48458\";\nvar hq_str_znb_IBEX=\"西班牙IBEX35,19033.1000,104.19,0.55,9/26/2025,1758859200,2026-10-09,23:35:20,19146.9000,18928.9100,19181.6000,19033.1000,107858866\";\nvar hq_str_znb_NKY=\"日经225,69030.7000,-11.41,-0.02,2:12 AM,1759126320,2026-10-09,14:30:01,68648.5000,69042.1100,69143.4500,68150.0200,0\";\nvar hq_str_znb_KOSPI=\"首尔综合指数,6625.9300,-177.97,-2.62,2:27 AM,1759127220,2026-10-08,21:23:46,6808.6800,6803.9000,6810.8300,6625.9300,0\";\nvar hq_str_znb_AS51=\"澳大利亚S&P/ASX 200,8801.5000,92.20,1.06,2:25 AM,1759127100,2026-09-30,13:14:44,8709.3000,8709.3000,8806.6000,8696.8000,0\";\nvar hq_str_znb_TWJQ=\"台湾加权指数,49313.4375,-492.93,-0.99,,,2026-10-09,15:21:48,49783.0586,49806.3672,49783.0586,49189.7695,10437288960\";\nvar hq_str_znb_GSPTSE=\"加拿大多伦多S&P/TSX,35664.6211,519.24,1.48,,,2026-10-10,04:00:00,35321.9219,35145.3800,35683.3281,35321.9219,268216950\";\nvar hq_str_znb_SENSEX=\"印度孟买SENSEX,72472.3281,-166.37,-0.23,2:12 AM,1759126320,2026-10-09,18:00:00,71776.6719,72638.7000,72669.2031,71739.4922,0\";\nvar hq_str_znb_MXX=\"墨西哥IPC,66080.7000,1093.79,1.68,,,2026-10-10,03"
+ },
+ "znb_klc_UKX": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr>"
+ },
+ "znb_klc_DAX": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr>"
+ },
+ "znb_klc_SX5E": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr>"
+ },
+ "znb_klc_NKY": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr>"
+ },
+ "znb_klc_KOSPI": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr>"
+ },
+ "znb_klc_TWJQ": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr>"
+ },
+ "znb_klc_AS51": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr>"
+ },
+ "znb_klc_GSPTSE": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr>"
+ },
+ "znb_klc_CAC": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr>"
+ },
+ "sinaglobal_UKX": {
+  "status": 404,
+  "len": 16,
+  "body": "File not found.\n"
+ },
+ "sinaglobal2_UKX": {
+  "status": 404,
+  "len": 16,
+  "body": "File not found.\n"
+ },
+ "sinaglobal_DAX": {
+  "status": 404,
+  "len": 16,
+  "body": "File not found.\n"
+ },
+ "sinaglobal2_DAX": {
+  "status": 404,
+  "len": 16,
+  "body": "File not found.\n"
+ },
+ "em_health": {
+  "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'"
+ }
+}

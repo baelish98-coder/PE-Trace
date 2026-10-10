@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PE-Trace · 全球股指滚动市盈率分位</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">PE</span>
+    <div class="brandtext">
+      <h1>PE-Trace</h1>
+      <p>全球股指 · 滚动市盈率分位</p>
+    </div>
+  </div>
+  <div class="topmeta">
+    <div class="metaitem"><span class="metak">数据截止</span><b id="meta-asof">—</b></div>
+    <div class="metaitem"><span class="metak">覆盖指数</span><b id="meta-count">—</b></div>
+    <div class="metaitem"><span class="metak">生成于</span><b id="meta-built">—</b></div>
+    <button id="btn-method" class="ghost">方法论与数据源</button>
+  </div>
+</header>
+<div id="freshness" class="freshness" hidden></div>
+
+<div class="shell">
+  <aside class="sidebar">
+    <div class="sidehead">
+      <input id="search" type="search" placeholder="搜索指数 / 代码 / 国家…" autocomplete="off"/>
+      <div class="chips" id="regionchips"></div>
+    </div>
+    <div id="indices" class="indices"></div>
+    <div class="sidefoot">
+      <span id="selcount">已勾选 0 项</span>
+      <button id="btn-clearsel" class="ghost tiny">清空</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <nav class="tabs">
+      <button class="tab active" data-view="detail">单指数明细</button>
+      <button class="tab" data-view="compare">多指数对比</button>
+      <button class="tab" data-view="overview">估值全景</button>
+    </nav>
+
+    <section class="view active" id="view-detail">
+      <div id="detail-empty" class="empty">从左侧选择一个指数，查看其滚动 PE 与指数点位的趋势关系。</div>
+      <div id="detail-body" hidden>
+        <div class="ixhead">
+          <div>
+            <h2><span id="d-name"></span> <code id="d-id"></code></h2>
+            <p class="ixmeta"><span id="d-region"></span> · <span id="d-note"></span></p>
+          </div>
+          <div class="badges" id="d-badges"></div>
+        </div>
+        <div class="kpis" id="d-kpis"></div>
+        <div class="toolbar">
+          <div class="tbgroup">
+            <span class="tblabel">滚动窗口</span>
+            <div class="seg" id="d-windows"></div>
+          </div>
+          <div class="tbgroup">
+            <span class="tblabel">纵轴</span>
+            <div class="seg" id="d-mode">
+              <button data-mode="dual" class="active">PE + 点位</button>
+              <button data-mode="norm">归一化（首点=100）</button>
+              <button data-mode="pct">仅滚动分位</button>
+            </div>
+          </div>
+        </div>
+        <div class="chart" id="d-chart"></div>
+        <div class="legend" id="d-legend"></div>
+        <div class="gaps" id="d-gaps"></div>
+      </div>
+    </section>
+
+    <section class="view" id="view-compare">
+      <div class="toolbar">
+        <div class="tbgroup">
+          <span class="tblabel">指标</span>
+          <div class="seg" id="c-metric">
+            <button data-metric="pct" class="active">滚动分位</button>
+            <button data-metric="pe">市盈率 PE</button>
+            <button data-metric="normpe">归一化 PE</button>
+            <button data-metric="normprice">归一化点位</button>
+          </div>
+        </div>
+        <div class="tbgroup"><span class="tblabel">窗口</span><div class="seg" id="c-windows"></div></div>
+        <span class="tbnote" id="c-note"></span>
+      </div>
+      <div class="chart tall" id="c-chart"></div>
+      <div id="c-empty" class="empty">在左侧勾选 2 个以上指数即可叠加对比。</div>
+    </section>
+
+    <section class="view" id="view-overview">
+      <div class="toolbar">
+        <div class="tbgroup"><span class="tblabel">窗口</span><div class="seg" id="o-windows"></div></div>
+        <div class="tbgroup">
+          <span class="tblabel">范围</span>
+          <div class="seg" id="o-scope">
+            <button data-scope="all" class="active">全部</button>
+            <button data-scope="developed">仅发达市场</button>
+            <button data-scope="a">仅中国A股</button>
+          </div>
+        </div>
+      </div>
+      <div class="chart tall" id="o-chart"></div>
+      <div class="tablewrap"><table id="o-table"></table></div>
+    </section>
+  </main>
+</div>
+
+<div class="modal" id="modal-method" hidden>
+  <div class="modalbox">
+    <div class="modalhead">
+      <h3>方法论与数据源</h3>
+      <button class="ghost" id="btn-closemethod">关闭</button>
+    </div>
+    <div class="modalbody" id="method-body"></div>
+  </div>
+</div>
+
+<footer class="foot">
+  <span>数据来自蛋卷基金、乐咕乐股（经 akshare）、multpl.com、新浪财经 / 腾讯证券等公开渠道。</span>
+  <span>本页所有指标均为对公开数据的确定性统计描述，<b>仅供研究参考，不构成投资建议</b>。</span>
+</footer>
+
+<script src="vendor/echarts.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

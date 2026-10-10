@@ -1,0 +1,140 @@
+{
+ "peg_vs_danjuan": {
+  "cs_n": 2430,
+  "common": 513,
+  "ratio_mean": 0.9656,
+  "ratio_min": 0.8828,
+  "ratio_max": 1.0516,
+  "samples": [
+   {
+    "d": "20260914",
+    "cs_peg": 13.45,
+    "dj_pe": 13.4477
+   },
+   {
+    "d": "20260921",
+    "cs_peg": 13.51,
+    "dj_pe": 13.4853
+   },
+   {
+    "d": "20260928",
+    "cs_peg": 13.09,
+    "dj_pe": 13.1274
+   },
+   {
+    "d": "20261008",
+    "cs_peg": 13.09,
+    "dj_pe": 13.1358
+   },
+   {
+    "d": "20261009",
+    "cs_peg": 13.11,
+    "dj_pe": 13.1433
+   }
+  ]
+ },
+ "cov:399673": {
+  "n": 0,
+  "first": null,
+  "last": null,
+  "name": null,
+  "last_peg": null,
+  "last_close": null
+ },
+ "cov:716567": {
+  "n": 0,
+  "first": null,
+  "last": null,
+  "name": null,
+  "last_peg": null,
+  "last_close": null
+ },
+ "cov:930652": {
+  "n": 5286,
+  "first": "20040101",
+  "last": "20261009",
+  "name": "中证电子指数",
+  "last_peg": 38.99,
+  "last_close": 10972.38
+ },
+ "cov:931087": {
+  "n": 3468,
+  "first": "20040101",
+  "last": "20261009",
+  "name": "中证科技龙头指数",
+  "last_peg": 41.67,
+  "last_close": 6044.79
+ },
+ "cov:H11136": {
+  "n": 5029,
+  "first": "20040101",
+  "last": "20261008",
+  "name": "中证海外中国互联网指数",
+  "last_peg": 19.22,
+  "last_close": 3549.88
+ },
+ "cov:000009": {
+  "n": 5529,
+  "first": "20040101",
+  "last": "20261009",
+  "name": "上证380指数",
+  "last_peg": 21.74,
+  "last_close": 6515.82
+ },
+ "cov:000906": {
+  "n": 5287,
+  "first": "20040101",
+  "last": "20261009",
+  "name": "中证800指数",
+  "last_peg": 14.61,
+  "last_close": 4818.24
+ },
+ "cov:000300": {
+  "n": 5528,
+  "first": "20040101",
+  "last": "20261009",
+  "name": "沪深300指数",
+  "last_peg": 13.11,
+  "last_close": 4317.25
+ },
+ "cov:000852": {
+  "n": 5286,
+  "first": "20040101",
+  "last": "20261009",
+  "name": "中证1000指数",
+  "last_peg": 29.04,
+  "last_close": 7155.91
+ },
+ "cov:H30533": {
+  "n": 5027,
+  "first": "20040101",
+  "last": "20261008",
+  "name": "中证海外中国互联网50指数",
+  "last_peg": 19.27,
+  "last_close": 6234.78
+ },
+ "ep:perf-detail": {
+  "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-detail?indexCode=000300",
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex-home/perf"
+ },
+ "ep:index-valuation": {
+  "url": "https://www.csindex.com.cn/csindex-home/indexInfo/index-valuation?indexCode=000300",
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex-home/inde"
+ },
+ "ep:perf-pe": {
+  "url": "https://www.csindex.com.cn/csindex-home/perf/index-pe?indexCode=000300",
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex-home/perf"
+ },
+ "ep:index-pe": {
+  "url": "https://www.csindex.com.cn/csindex-home/index/index-pe?indexCode=000300",
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex-home/inde"
+ },
+ "ep:valuation-list": {
+  "url": "https://www.csindex.com.cn/csindex-home/indexInfo/valuation/list?indexCode=000300",
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex-home/inde"
+ },
+ "ep:indicator": {
+  "url": "https://www.csindex.com.cn/csindex-home/indexInfo/index-indicator?indexCode=000300",
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex-home/inde"
+ }
+}

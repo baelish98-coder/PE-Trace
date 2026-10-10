@@ -1,0 +1,1372 @@
+{
+ "app": "PE-Trace",
+ "version": "1.0.0",
+ "generated_at": "2026-10-10T19:00:21+08:00",
+ "elapsed_sec": 92.9,
+ "as_of": "2026-10-09",
+ "freshness": {
+  "previous_as_of": "2026-10-09",
+  "previous_generated_at": "2026-10-10T18:58:29+08:00",
+  "advanced": false,
+  "note": "as_of 是各序列最新观测日；advanced=false 表示本次运行未取得更新的数据（非交易日、上游未更新，或抓取失败），不等于运行失败。",
+  "cache_max_age_hours": 6.0,
+  "stale_responses": 0,
+  "stale_urls": []
+ },
+ "counts": {
+  "total": 52,
+  "ok": 52,
+  "with_pe": 40,
+  "with_price": 50,
+  "no_pe": 12,
+  "price_only": 12
+ },
+ "partial": false,
+ "partial_note": null,
+ "counts_note": "ok=有页面数据(含仅点位)；with_pe=有PE序列；with_price=有点位；no_pe=无公开PE源；price_only=仅点位无PE",
+ "http": {
+  "hit": 154,
+  "miss": 0,
+  "error": 0,
+  "skipped": 0,
+  "stale": 0
+ },
+ "regions": [
+  "中国A股",
+  "中国香港",
+  "美国",
+  "欧洲",
+  "亚太"
+ ],
+ "sources": {
+  "danjuan": {
+   "name": "蛋卷基金 danjuanfunds.com",
+   "what": "指数 PE/PB 历史（周频，约 2016-10 起）",
+   "url": "https://danjuanfunds.com/djapi/index_eva/pe_history/{code}?day=all"
+  },
+  "csindex": {
+   "name": "中证指数公司 csindex.com.cn（官方）",
+   "what": "指数日线收盘价 + 日频市盈率（PE-TTM）。接口字段名为 peg，已用沪深300历史PE水位与蛋卷重叠日比值验证其为 PE-TTM。收盘价自 2004 起，PE 多自 2011-06-28 起（个别更晚）。",
+   "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf"
+  },
+  "legulegu": {
+   "name": "乐咕乐股 legulegu.com（经 akshare）",
+   "what": "指数滚动市盈率（月频，2005 起，仅主要 A 股宽基）",
+   "url": "https://legulegu.com/stockdata/index-basic-pe"
+  },
+  "em": {
+   "name": "东方财富 push2his",
+   "what": "指数日线收盘价（当前链路末位；该主机对持续轮询有硬封禁）",
+   "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get"
+  },
+  "price": {
+   "name": "新浪财经 / 腾讯证券",
+   "what": "指数日线/周线收盘价（多源回退链，自动跳过过期源）",
+   "url": "https://money.finance.sina.com.cn + https://web.ifzq.gtimg.cn"
+  },
+  "proxy": {
+   "name": "ETF 价格代理",
+   "what": "部分指数无免费指数价格源，改用跟踪同一指数的 ETF 价格（在页面与该指数档案中明确标注为代理）",
+   "url": "https://stock.finance.sina.com.cn/usstock/ + https://money.finance.sina.com.cn/"
+  },
+  "multpl": {
+   "name": "multpl.com",
+   "what": "标普500 滚动市盈率（月频，长历史）",
+   "url": "https://www.multpl.com/s-p-500-pe-ratio/table/by-month"
+  }
+ },
+ "method": {
+  "percentile": "窗口内中位秩百分位 (count(v<x)+0.5*count(v==x))/n*100",
+  "window": "以观测日为终点、按自然日回溯的滚动窗口",
+  "sufficiency": "窗口内观测数须达到满窗应有数的 60%（且≥3）才给出分位",
+  "bands": [
+   {
+    "lo": 0,
+    "hi": 20,
+    "label": "低估"
+   },
+   {
+    "lo": 20,
+    "hi": 40,
+    "label": "偏低"
+   },
+   {
+    "lo": 40,
+    "hi": 60,
+    "label": "中性"
+   },
+   {
+    "lo": 60,
+    "hi": 80,
+    "label": "偏高"
+   },
+   {
+    "lo": 80,
+    "hi": 100.0001,
+    "label": "高估"
+   }
+  ],
+  "windows": [
+   "1年",
+   "3年",
+   "5年",
+   "10年",
+   "全历史"
+  ]
+ },
+ "failures": [],
+ "indices": [
+  {
+   "id": "SH000919",
+   "name": "300价值",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000170",
+   "name": "50AH优选",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "CSI716567",
+   "name": "MSCI中国",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 463,
+     "first": "2017-10-23",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000010",
+   "name": "上证180",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    },
+    {
+     "series_id": "legulegu",
+     "label": "乐咕乐股(月频)",
+     "source": "legulegu:rolling_pe",
+     "n": 262,
+     "first": "2005-01-31",
+     "last": "2026-10-09",
+     "freq": "月"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000009",
+   "name": "上证380",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    },
+    {
+     "series_id": "legulegu",
+     "label": "乐咕乐股(月频)",
+     "source": "legulegu:rolling_pe",
+     "n": 192,
+     "first": "2010-11-30",
+     "last": "2026-10-09",
+     "freq": "月"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000016",
+   "name": "上证50",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    },
+    {
+     "series_id": "legulegu",
+     "label": "乐咕乐股(月频)",
+     "source": "legulegu:rolling_pe",
+     "n": 262,
+     "first": "2005-01-31",
+     "last": "2026-10-09",
+     "freq": "月"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000015",
+   "name": "上证红利",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    },
+    {
+     "series_id": "legulegu",
+     "label": "乐咕乐股(月频)",
+     "source": "legulegu:rolling_pe",
+     "n": 262,
+     "first": "2005-01-31",
+     "last": "2026-10-09",
+     "freq": "月"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000903",
+   "name": "中证100",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    },
+    {
+     "series_id": "legulegu",
+     "label": "乐咕乐股(月频)",
+     "source": "legulegu:rolling_pe",
+     "n": 246,
+     "first": "2006-05-31",
+     "last": "2026-10-09",
+     "freq": "月"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000852",
+   "name": "中证1000",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3466,
+     "first": "2012-06-29",
+     "last": "2026-10-09",
+     "freq": "日"
+    },
+    {
+     "series_id": "legulegu",
+     "label": "乐咕乐股(月频)",
+     "source": "legulegu:rolling_pe",
+     "n": 145,
+     "first": "2014-10-31",
+     "last": "2026-10-09",
+     "freq": "月"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000905",
+   "name": "中证500",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "乐咕乐股 PE：APIError: API Error: legulegu 请求失败，请确认该站点在当前网络下可正常访问：504 Server Error: Gateway T"
+   ]
+  },
+  {
+   "id": "SH000906",
+   "name": "中证800",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "乐咕乐股 PE：APIError: API Error: legulegu 请求失败，请确认该站点在当前网络下可正常访问：504 Server Error: Gateway T"
+   ]
+  },
+  {
+   "id": "CSI930652",
+   "name": "中证电子",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 515,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 2768,
+     "first": "2015-05-20",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000922",
+   "name": "中证红利",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000932",
+   "name": "主要消费",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000993",
+   "name": "全指信息",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000991",
+   "name": "全指医药",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SZ399673",
+   "name": "创业板50",
+   "ok": true,
+   "has_pe": false,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "price_only",
+     "label": "仅指数点位（无PE源）",
+     "source": "price:sina:cn",
+     "n": 2992,
+     "first": "2014-06-18",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "乐咕乐股 PE：乐咕乐股本轮不可用（已熔断），无快照可回退",
+    "该指数暂无公开免费的 PE 历史源，仅展示指数点位走势"
+   ]
+  },
+  {
+   "id": "SZ399006",
+   "name": "创业板指",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SZ399317",
+   "name": "国证A指",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000925",
+   "name": "基本面50",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3646,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SZ399550",
+   "name": "央视50",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SH000300",
+   "name": "沪深300",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3645,
+     "first": "2011-06-28",
+     "last": "2026-10-09",
+     "freq": "日"
+    },
+    {
+     "series_id": "legulegu",
+     "label": "乐咕乐股(月频)",
+     "source": "legulegu:rolling_pe",
+     "n": 259,
+     "first": "2005-04-29",
+     "last": "2026-10-09",
+     "freq": "月"
+    }
+   ],
+   "gaps": [
+    "乐咕乐股 PE：乐咕乐股本轮已熔断（连续失败），改用 2026-10-10 17:53 的快照"
+   ]
+  },
+  {
+   "id": "SZ399330",
+   "name": "深证100",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": [
+    "乐咕乐股 PE：乐咕乐股本轮不可用（已熔断），无快照可回退"
+   ]
+  },
+  {
+   "id": "SZ399001",
+   "name": "深证成指",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SZ399324",
+   "name": "深证红利",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": [
+    "乐咕乐股 PE：乐咕乐股本轮不可用（已熔断），无快照可回退"
+   ]
+  },
+  {
+   "id": "SH000688",
+   "name": "科创50",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 350,
+     "first": "2019-12-31",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 1518,
+     "first": "2020-07-06",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "CSI931087",
+   "name": "科技龙头",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 392,
+     "first": "2019-03-20",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 1841,
+     "first": "2019-03-07",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "CSIH11136",
+   "name": "中国互联",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "csindex",
+     "label": "中证官方(日频)",
+     "source": "csindex:pe_ttm",
+     "n": 3866,
+     "first": "2011-09-12",
+     "last": "2026-10-08",
+     "freq": "日"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "HKHSCEI",
+   "name": "恒生国企指数",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "HKHSI",
+   "name": "恒生指数",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "HKHSTECH",
+   "name": "恒生科技",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 321,
+     "first": "2020-07-27",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SPHCMSHP",
+   "name": "香港中小",
+   "ok": true,
+   "has_pe": true,
+   "has_price": false,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 515,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": [
+    "无指数价格数据（候选源：未配置）"
+   ]
+  },
+  {
+   "id": "HSFML25",
+   "name": "香港大盘",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "HKHSSCNE",
+   "name": "香港新经济",
+   "ok": true,
+   "has_pe": true,
+   "has_price": false,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 407,
+     "first": "2018-11-21",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": [
+    "无指数价格数据（候选源：未配置）"
+   ]
+  },
+  {
+   "id": "SP500",
+   "name": "标普500",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    },
+    {
+     "series_id": "multpl",
+     "label": "multpl(月频)",
+     "source": "multpl:pe",
+     "n": 1870,
+     "first": "1871-01-01",
+     "last": "2026-10-09",
+     "freq": "月"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SPACEVCP",
+   "name": "标普价值",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "CSPSADRP",
+   "name": "标普红利",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 515,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "SPCQVCP",
+   "name": "标普质量",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 516,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "NDX",
+   "name": "纳斯达克100",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 514,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "DJI",
+   "name": "道琼斯工业平均",
+   "ok": true,
+   "has_pe": false,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "price_only",
+     "label": "仅指数点位（无PE源）",
+     "source": "price:sina:us",
+     "n": 5731,
+     "first": "2004-01-02",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "该指数暂无公开免费的 PE 历史源，仅展示指数点位走势"
+   ]
+  },
+  {
+   "id": "GDAXI",
+   "name": "德国DAX",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 515,
+     "first": "2016-10-10",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "MIB",
+   "name": "意大利富时MIB",
+   "ok": true,
+   "has_pe": false,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "price_only",
+     "label": "仅指数点位（无PE源）",
+     "source": "price:sina:gi",
+     "n": 1000,
+     "first": "2022-11-02",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "该指数暂无公开免费的 PE 历史源，仅展示指数点位走势"
+   ]
+  },
+  {
+   "id": "SX5E",
+   "name": "欧洲斯托克50",
+   "ok": true,
+   "has_pe": false,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "price_only",
+     "label": "仅指数点位（无PE源）",
+     "source": "price:sina:gi",
+     "n": 1000,
+     "first": "2022-11-16",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "该指数暂无公开免费的 PE 历史源，仅展示指数点位走势"
+   ]
+  },
+  {
+   "id": "FCHI",
+   "name": "法国CAC40",
+   "ok": true,
+   "has_pe": false,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "price_only",
+     "label": "仅指数点位（无PE源）",
+     "source": "price:sina:gi",
+     "n": 1000,
+     "first": "2022-11-10",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "该指数暂无公开免费的 PE 历史源，仅展示指数点位走势"
+   ]
+  },
+  {
+   "id": "FTSE",
+   "name": "英国富时100",
+   "ok": true,
+   "has_pe": false,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "price_only",
+     "label": "仅指数点位（无PE源）",
+     "source": "price:sina:gi",
+     "n": 1000,
+     "first": "2022-10-26",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "该指数暂无公开免费的 PE 历史源，仅展示指数点位走势"
+   ]
+  },
+  {
+   "id": "AEX",
+   "name": "荷兰AEX",
+   "ok": true,
+   "has_pe": false,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "price_only",
+     "label": "仅指数点位（无PE源）",
+     "source": "price:sina:gi",
+     "n": 1000,
+     "first": "2022-11-10",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "该指数暂无公开免费的 PE 历史源，仅展示指数点位走势"
+   ]
+  },
+  {
+   "id": "IBEX",
+   "name": "西班牙IBEX35",
+   "ok": true,
+   "has_pe": false,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "price_only",
+     "label": "仅指数点位（无PE源）",
+     "source": "price:sina:gi",
+     "n": 1000,
+     "first": "2022-11-18",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "该指数暂无公开免费的 PE 历史源，仅展示指数点位走势"
+   ]
+  },
+  {
+   "id": "935600",
+   "name": "MSCI印度",
+   "ok": true,
+   "has_pe": true,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "danjuan",
+     "label": "蛋卷(周频)",
+     "source": "danjuan:pe_history",
+     "n": 550,
+     "first": "2016-10-09",
+     "last": "2026-10-09",
+     "freq": "周"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "id": "TWII",
+   "name": "台湾加权指数",
+   "ok": true,
+   "has_pe": false,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "price_only",
+     "label": "仅指数点位（无PE源）",
+     "source": "price:sina:gi",
+     "n": 1000,
+     "first": "2022-08-24",
+     "last": "2026-10-08",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "该指数暂无公开免费的 PE 历史源，仅展示指数点位走势"
+   ]
+  },
+  {
+   "id": "N225",
+   "name": "日经225",
+   "ok": true,
+   "has_pe": false,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "price_only",
+     "label": "仅指数点位（无PE源）",
+     "source": "price:sina:gi",
+     "n": 1000,
+     "first": "2022-09-27",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "该指数暂无公开免费的 PE 历史源，仅展示指数点位走势"
+   ]
+  },
+  {
+   "id": "AS51",
+   "name": "澳洲标普200",
+   "ok": true,
+   "has_pe": false,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "price_only",
+     "label": "仅指数点位（无PE源）",
+     "source": "price:sina:gi",
+     "n": 1000,
+     "first": "2022-11-08",
+     "last": "2026-10-09",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "该指数暂无公开免费的 PE 历史源，仅展示指数点位走势"
+   ]
+  },
+  {
+   "id": "KS11",
+   "name": "韩国KOSPI",
+   "ok": true,
+   "has_pe": false,
+   "has_price": true,
+   "series": [
+    {
+     "series_id": "price_only",
+     "label": "仅指数点位（无PE源）",
+     "source": "price:sina:gi",
+     "n": 1000,
+     "first": "2022-09-13",
+     "last": "2026-10-08",
+     "freq": "日"
+    }
+   ],
+   "gaps": [
+    "该指数暂无公开免费的 PE 历史源，仅展示指数点位走势"
+   ]
+  }
+ ]
+}

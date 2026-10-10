@@ -1,0 +1,26 @@
+# 上游原始响应缓存（181 MB，可随时由 petrace.build 重新抓取）
+cache/
+
+# 运行日志与锁文件
+logs/
+
+# EdgeOne 部署元数据
+.edgeone/
+
+# 探针产物与调研抓取件（体积大，不属于运行所需）
+probe/hosting-docs/
+
+# 打包产物
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

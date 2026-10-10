@@ -1,0 +1,200 @@
+{
+ "known_dates": {
+  "20071016": {
+   "desc": "CSI300 PE-TTM peak ~45",
+   "actual_date": "20071016",
+   "peg": null,
+   "close": 5877.2
+  },
+  "20150612": {
+   "desc": "2015 bull peak ~18.5",
+   "actual_date": "20150612",
+   "peg": 20.1,
+   "close": 5335.12
+  },
+  "20181228": {
+   "desc": "2018 bear trough ~10.2",
+   "actual_date": "20181228",
+   "peg": 10.71,
+   "close": 3010.65
+  },
+  "20200323": {
+   "desc": "COVID trough ~11.5",
+   "actual_date": "20200323",
+   "peg": 11.56,
+   "close": 3530.31
+  },
+  "20240205": {
+   "desc": "2024 trough ~10.6",
+   "actual_date": "20240205",
+   "peg": 10.29,
+   "close": 3200.42
+  },
+  "20211026": {
+   "desc": "2021 peak ~13.5",
+   "actual_date": "20211026",
+   "peg": 14.11,
+   "close": 4963.1
+  }
+ },
+ "peg_range": {
+  "n": 3645,
+  "min": 8.55,
+  "max": 20.38,
+  "mean": 12.881
+ },
+ "by_year": {
+  "2016": {
+   "n": 12,
+   "mean": 0.9606,
+   "min": 0.9446,
+   "max": 0.9685
+  },
+  "2017": {
+   "n": 51,
+   "mean": 0.9523,
+   "min": 0.9213,
+   "max": 0.9765
+  },
+  "2018": {
+   "n": 51,
+   "mean": 0.9487,
+   "min": 0.9136,
+   "max": 0.9703
+  },
+  "2019": {
+   "n": 52,
+   "mean": 0.933,
+   "min": 0.8896,
+   "max": 0.9618
+  },
+  "2020": {
+   "n": 51,
+   "mean": 0.9372,
+   "min": 0.911,
+   "max": 0.9816
+  },
+  "2021": {
+   "n": 52,
+   "mean": 0.9357,
+   "min": 0.8828,
+   "max": 0.9585
+  },
+  "2022": {
+   "n": 50,
+   "mean": 0.9674,
+   "min": 0.9456,
+   "max": 0.9865
+  },
+  "2023": {
+   "n": 50,
+   "mean": 1.0026,
+   "min": 0.9748,
+   "max": 1.0303
+  },
+  "2024": {
+   "n": 52,
+   "mean": 0.9969,
+   "min": 0.9656,
+   "max": 1.0369
+  },
+  "2025": {
+   "n": 52,
+   "mean": 0.9969,
+   "min": 0.9542,
+   "max": 1.0516
+  },
+  "2026": {
+   "n": 40,
+   "mean": 0.9934,
+   "min": 0.9474,
+   "max": 1.0076
+  }
+ },
+ "cnindex:cnindex-perf": {
+  "error": "HttpError: GET failed after 4 tries: https://www.cnindex.com.cn/sample-detail/ind"
+ },
+ "cnindex:cnindex-api": {
+  "error": "HttpError: GET failed after 4 tries: https://www.cnindex.com.cn/index/indexBasicI"
+ },
+ "cnindex:cnindex-hist": {
+  "error": "HttpError: GET failed after 4 tries: https://www.cnindex.com.cn/index/indexHistor"
+ },
+ "cnindex:cnindex-trend": {
+  "error": "HttpError: GET failed after 4 tries: https://www.cnindex.com.cn/sample-detail/ind"
+ },
+ "hk:hkHSFML25": {
+  "n": 0,
+  "last": null
+ },
+ "hk:hkSPHCMSHP": {
+  "n": 0,
+  "last": null
+ },
+ "hk:hkHSSCNE": {
+  "n": 0,
+  "last": null
+ },
+ "hk:hkHSSCTECH": {
+  "n": 0,
+  "last": null
+ },
+ "hk:hkHSTECH": {
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "hk:hkHSCEI": {
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "hk:hkHSI": {
+  "n": 10,
+  "last": "2026-10-09"
+ },
+ "hk:hkHSNE": {
+  "n": 0,
+  "last": null
+ },
+ "hk:hkHSSCHK": {
+  "n": 0,
+  "last": null
+ },
+ "hk:hkHSSCBI": {
+  "n": 0,
+  "last": null
+ },
+ "hk:hkHSSCCSI": {
+  "n": 0,
+  "last": null
+ },
+ "us:MCHI": {
+  "n": 2688,
+  "first": "2016-02-02",
+  "last": "2026-10-09"
+ },
+ "us:KWEB": {
+  "n": 2240,
+  "first": "2017-11-09",
+  "last": "2026-10-09"
+ },
+ "us:FXI": {
+  "n": 5535,
+  "first": "2004-10-08",
+  "last": "2026-10-09"
+ },
+ "us:INDA": {
+  "n": 3690,
+  "first": "2012-02-03",
+  "last": "2026-10-09"
+ },
+ "us:EPI": {
+  "n": 4685,
+  "first": "2008-02-26",
+  "last": "2026-10-09"
+ },
+ "us:SMIN": {
+  "n": 3685,
+  "first": "2012-02-09",
+  "last": "2026-10-09"
+ }
+}

@@ -1,0 +1,239 @@
+{
+ "tx_week_sh000300": {
+  "n": 1098,
+  "first": "2005-04-08",
+  "last": "2026-10-09",
+  "lastclose": "4317.250"
+ },
+ "tx_week_sh000905": {
+  "n": 1010,
+  "first": "2007-01-19",
+  "last": "2026-10-09",
+  "lastclose": "7251.010"
+ },
+ "tx_week_sh000016": {
+  "n": 1161,
+  "first": "2004-01-02",
+  "last": "2026-10-09",
+  "lastclose": "2807.460"
+ },
+ "tx_week_sz399006": {
+  "n": 838,
+  "first": "2010-06-04",
+  "last": "2026-10-09",
+  "lastclose": "3043.330"
+ },
+ "tx_week_sh000688": {
+  "n": 347,
+  "first": "2020-01-03",
+  "last": "2026-10-09",
+  "lastclose": "1457.270"
+ },
+ "tx_week_hkHSI": {
+  "n": 1971,
+  "first": "1989-01-06",
+  "last": "2026-10-09",
+  "lastclose": "24211.350"
+ },
+ "tx_week_hkHSCEI": {
+  "n": 1735,
+  "first": "1993-07-16",
+  "last": "2026-10-09",
+  "lastclose": "8147.870"
+ },
+ "tx_week_hkHSTECH": {
+  "n": 324,
+  "first": "2020-07-31",
+  "last": "2026-10-09",
+  "lastclose": "4197.840"
+ },
+ "tx_week_usINX": {
+  "n": 1,
+  "first": "2026-10-09",
+  "last": "2026-10-09",
+  "lastclose": "7811.54"
+ },
+ "tx_week_deDAX": {
+  "n": 0,
+  "keys": []
+ },
+ "tx_week_ukFTSE": {
+  "n": 0,
+  "keys": [
+   "prec",
+   "qt",
+   "version",
+   "week"
+  ]
+ },
+ "tx_week_jpNI225": {
+  "n": 0,
+  "keys": []
+ },
+ "tx_week_sh000001": {
+  "n": 1790,
+  "first": "1990-12-21",
+  "last": "2026-10-09",
+  "lastclose": "3813.790"
+ },
+ "tx_month_sh000300": {
+  "n": 259,
+  "first": "2005-04-29",
+  "last": "2026-10-09",
+  "lastclose": "4317.25"
+ },
+ "tx_month_sh000905": {
+  "n": 238,
+  "first": "2007-01-31",
+  "last": "2026-10-09",
+  "lastclose": "7251.01"
+ },
+ "tx_month_sh000016": {
+  "n": 274,
+  "first": "2004-01-30",
+  "last": "2026-10-09",
+  "lastclose": "2807.46"
+ },
+ "tx_month_sz399006": {
+  "n": 197,
+  "first": "2010-06-30",
+  "last": "2026-10-09",
+  "lastclose": "3043.33"
+ },
+ "tx_month_sh000688": {
+  "n": 83,
+  "first": "2019-12-31",
+  "last": "2026-10-09",
+  "lastclose": "1457.27"
+ },
+ "tx_month_hkHSI": {
+  "n": 454,
+  "first": "1989-01-31",
+  "last": "2026-10-09",
+  "lastclose": "24211.350"
+ },
+ "tx_month_hkHSCEI": {
+  "n": 400,
+  "first": "1993-07-30",
+  "last": "2026-10-09",
+  "lastclose": "8147.870"
+ },
+ "tx_month_hkHSTECH": {
+  "n": 76,
+  "first": "2020-07-31",
+  "last": "2026-10-09",
+  "lastclose": "4197.840"
+ },
+ "tx_month_usINX": {
+  "n": 10,
+  "first": "2013-10-01",
+  "last": "2026-10-09",
+  "lastclose": "7811.54"
+ },
+ "tx_month_deDAX": {
+  "n": 0,
+  "keys": []
+ },
+ "tx_month_ukFTSE": {
+  "n": 0,
+  "keys": [
+   "month",
+   "prec",
+   "qt",
+   "version"
+  ]
+ },
+ "tx_month_jpNI225": {
+  "n": 0,
+  "keys": []
+ },
+ "tx_month_sh000001": {
+  "n": 427,
+  "first": "1990-12-31",
+  "last": "2026-10-09",
+  "lastclose": "3813.79"
+ },
+ "sina_dl1023": {
+  "status": 200,
+  "len": 118526,
+  "body": "[{\"day\":\"2022-07-19\",\"open\":\"4288.444\",\"high\":\"4288.444\",\"low\":\"4238.824\",\"close\":\"4269.340\",\"volume\":\"10380573000\"},{\"d"
+ },
+ "sina_dl2000": {
+  "status": 200,
+  "len": 231613,
+  "body": "[{\"day\":\"2018-07-10\",\"open\":\"3464.906\",\"high\":\"3474.140\",\"low\":\"3437.271\",\"close\":\"3467.516\",\"volume\":\"6954882300\"},{\"da"
+ },
+ "sina_dl3000": {
+  "status": 200,
+  "len": 347255,
+  "body": "[{\"day\":\"2014-06-06\",\"open\":\"2149.214\",\"high\":\"2149.783\",\"low\":\"2123.980\",\"close\":\"2134.716\",\"volume\":\"3573805600\"},{\"da"
+ },
+ "sina_dl6000": {
+  "status": 200,
+  "len": 678522,
+  "body": "[{\"day\":\"2002-01-11\",\"open\":\"0.000\",\"high\":\"0.000\",\"low\":\"0.000\",\"close\":\"1249.814\",\"volume\":\"0\"},{\"day\":\"2002-01-14\",\"o"
+ },
+ "sina_klc_int_dji": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</cente"
+ },
+ "sina_klc_int_sp500": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</cente"
+ },
+ "sina_klc_int_nasdaq": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</cente"
+ },
+ "sina_klc_int_hangseng": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</cente"
+ },
+ "sina_klc_int_nikkei": {
+  "status": 404,
+  "len": 564,
+  "body": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</cente"
+ },
+ "em_push2his.eastmoney.com": {
+  "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ },
+ "em_push2his1.eastmoney.com": {
+  "status": 200,
+  "len": 349626,
+  "body": "ï»¿\r\n\r\n<!DOCTYPE html>\r\n<!--published at 2026/10/10 16:34:01 by www.eastmoney.com www-zp-1"
+ },
+ "em_push2his2.eastmoney.com": {
+  "status": 200,
+  "len": 349626,
+  "body": "ï»¿\r\n\r\n<!DOCTYPE html>\r\n<!--published at 2026/10/10 16:34:01 by www.eastmoney.com www-zp-1"
+ },
+ "em_1.push2his.eastmoney.com": {
+  "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ },
+ "em_7.push2his.eastmoney.com": {
+  "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ },
+ "em_82.push2his.eastmoney.com": {
+  "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ },
+ "em_push2.eastmoney.com": {
+  "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ },
+ "em_push2delay.eastmoney.com": {
+  "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ },
+ "em_quote.eastmoney.com": {
+  "status": 404,
+  "len": 767,
+  "body": "ï»¿<!DOCTYPE html>\n<html>\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; c"
+ },
+ "163_retry": {
+  "status": 502,
+  "len": 568,
+  "body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</c"
+ }
+}

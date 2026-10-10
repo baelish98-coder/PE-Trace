@@ -1,0 +1,473 @@
+{
+ "SH000300": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 13.1433,
+  "status": "ok"
+ },
+ "SH000905": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 31.1901,
+  "status": "ok"
+ },
+ "SH000016": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 10.6878,
+  "status": "ok"
+ },
+ "SH000010": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 11.369,
+  "status": "ok"
+ },
+ "SH000903": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 16.2318,
+  "status": "ok"
+ },
+ "SH000852": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 41.1881,
+  "status": "ok"
+ },
+ "SH000688": {
+  "n": 350,
+  "start": "2019-12-30",
+  "end": "2026-10-08",
+  "last_pe": 119.521,
+  "status": "ok"
+ },
+ "SH000922": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 8.742,
+  "status": "ok"
+ },
+ "SH000015": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 9.0668,
+  "status": "ok"
+ },
+ "SH000919": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 8.8149,
+  "status": "ok"
+ },
+ "SZ399006": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 34.834,
+  "status": "ok"
+ },
+ "SZ399001": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 28.2299,
+  "status": "ok"
+ },
+ "SZ399330": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 23.9908,
+  "status": "ok"
+ },
+ "SZ399324": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 16.5297,
+  "status": "ok"
+ },
+ "SZ399550": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 10.1067,
+  "status": "ok"
+ },
+ "SH000925": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 9.2742,
+  "status": "ok"
+ },
+ "SH000170": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 9.1256,
+  "status": "ok"
+ },
+ "SH000991": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 30.8571,
+  "status": "ok"
+ },
+ "SH000932": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 22.8393,
+  "status": "ok"
+ },
+ "SH000993": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 49.0657,
+  "status": "ok"
+ },
+ "SZ399317": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 19.6175,
+  "status": "ok"
+ },
+ "CSI716567": {
+  "n": 463,
+  "start": "2017-10-22",
+  "end": "2026-10-08",
+  "last_pe": 13.5449,
+  "status": "ok"
+ },
+ "CSI931087": {
+  "n": 392,
+  "start": "2019-03-19",
+  "end": "2026-10-08",
+  "last_pe": 42.5327,
+  "status": "ok"
+ },
+ "CSI930652": {
+  "n": 515,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 46.4115,
+  "status": "ok"
+ },
+ "HKHSI": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 10.7885,
+  "status": "ok"
+ },
+ "HKHSCEI": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 9.3579,
+  "status": "ok"
+ },
+ "HKHSTECH": {
+  "n": 321,
+  "start": "2020-07-26",
+  "end": "2026-10-08",
+  "last_pe": 22.3882,
+  "status": "ok"
+ },
+ "HSFML25": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 9.0553,
+  "status": "ok"
+ },
+ "HKHSSCNE": {
+  "n": 407,
+  "start": "2018-11-20",
+  "end": "2026-10-08",
+  "last_pe": 24.0475,
+  "status": "ok"
+ },
+ "SPHCMSHP": {
+  "n": 515,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 17.2016,
+  "status": "ok"
+ },
+ "CSIH11136": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 19.591,
+  "status": "ok"
+ },
+ "SP500": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 25.3352,
+  "status": "ok"
+ },
+ "NDX": {
+  "n": 514,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 30.872,
+  "status": "ok"
+ },
+ "DJI": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "RUT": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "NASDAQ": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "SPACEVCP": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 7.0591,
+  "status": "ok"
+ },
+ "SPCQVCP": {
+  "n": 516,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 15.6419,
+  "status": "ok"
+ },
+ "CSPSADRP": {
+  "n": 515,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 10.1946,
+  "status": "ok"
+ },
+ "GDAXI": {
+  "n": 515,
+  "start": "2016-10-09",
+  "end": "2026-10-08",
+  "last_pe": 16.5331,
+  "status": "ok"
+ },
+ "UKX": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "FCHI": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "SX5E": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "STOXX50": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "SSMI": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "SMI": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "AEX": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "IBEX": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "FTSEMIB": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "OMX": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "OMXS30": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "OSEBX": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "HEX": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "ISEQ": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "N225": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "NKY": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "TOPIX": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "KOSPI": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "KS11": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "AS51": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "AXJO": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "TWII": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "NZ250": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "GSPTSE": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "SPTSX": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "HSI": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "935600": {
+  "n": 550,
+  "start": "2016-10-08",
+  "end": "2026-10-08",
+  "last_pe": 32.4222,
+  "status": "ok"
+ },
+ "MSCIIN": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "MSCIEM": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "MSCIACWI": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "MSCIWORLD": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "MSCIEF": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "IBOV": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "MXX": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "SENSEX": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "JCI": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "SET": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "PSEI": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ },
+ "VNINDEX": {
+  "status": "empty",
+  "err": null,
+  "control_alive": true
+ }
+}

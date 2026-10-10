@@ -1,0 +1,135 @@
+{
+ "tx_v1": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh000300,day,,,320,qfq",
+  "status": 200,
+  "len": 25584,
+  "sec": 0.13,
+  "body": "{\"code\":0,\"msg\":\"\",\"data\":{\"sh000300\":{\"day\":[[\"2025-06-16\",\"3853.620\",\"3873.800\",\"3876.170\",\"3853.620\",\"137341835.000\"],[\"2025-06-17\",\"3875.180\",\"3870.380\",\"3880.420\",\"3860.410\",\"122342526.000\"],[\"2025-06-18\",\"3871.650\",\"3874.970\",\"3881.350\",\"3854.660\",\"127528621.000\"],[\"2025-06-19\",\"3870.050\",\"384"
+ },
+ "tx_v2": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/kline/kline?param=sh000300,day,,,320",
+  "status": 200,
+  "len": 25584,
+  "sec": 0.14,
+  "body": "{\"code\":0,\"msg\":\"\",\"data\":{\"sh000300\":{\"day\":[[\"2025-06-16\",\"3853.620\",\"3873.800\",\"3876.170\",\"3853.620\",\"137341835.000\"],[\"2025-06-17\",\"3875.180\",\"3870.380\",\"3880.420\",\"3860.410\",\"122342526.000\"],[\"2025-06-18\",\"3871.650\",\"3874.970\",\"3881.350\",\"3854.660\",\"127528621.000\"],[\"2025-06-19\",\"3870.050\",\"384"
+ },
+ "tx_v3": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?_var=kline_dayqfq&param=sh000300,day,,,320,qfq",
+  "status": 200,
+  "len": 25597,
+  "sec": 0.12,
+  "body": "kline_dayqfq={\"code\":0,\"msg\":\"\",\"data\":{\"sh000300\":{\"day\":[[\"2025-06-16\",\"3853.620\",\"3873.800\",\"3876.170\",\"3853.620\",\"137341835.000\"],[\"2025-06-17\",\"3875.180\",\"3870.380\",\"3880.420\",\"3860.410\",\"122342526.000\"],[\"2025-06-18\",\"3871.650\",\"3874.970\",\"3881.350\",\"3854.660\",\"127528621.000\"],[\"2025-06-19\",\"3"
+ },
+ "tx_v4": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh000300,day,2010-01-01,2026-10-09,320,qfq",
+  "status": 200,
+  "len": 25584,
+  "sec": 0.15,
+  "body": "{\"code\":0,\"msg\":\"\",\"data\":{\"sh000300\":{\"day\":[[\"2025-06-16\",\"3853.620\",\"3873.800\",\"3876.170\",\"3853.620\",\"137341835.000\"],[\"2025-06-17\",\"3875.180\",\"3870.380\",\"3880.420\",\"3860.410\",\"122342526.000\"],[\"2025-06-18\",\"3871.650\",\"3874.970\",\"3881.350\",\"3854.660\",\"127528621.000\"],[\"2025-06-19\",\"3870.050\",\"384"
+ },
+ "tx_global_hk": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=hkHSI,day,,,320,qfq",
+  "status": 200,
+  "len": 27751,
+  "sec": 0.11,
+  "body": "{\"code\":0,\"msg\":\"\",\"data\":{\"hkHSI\":{\"day\":[[\"2025-06-25\",\"24327.820\",\"24474.670\",\"24533.390\",\"24287.860\",\"267800839860.000\"],[\"2025-06-26\",\"24345.290\",\"24325.400\",\"24411.480\",\"24235.540\",\"261729330989.000\"],[\"2025-06-27\",\"24451.190\",\"24284.150\",\"24471.530\",\"24194.850\",\"275114500521.000\"],[\"2025-06-3"
+ },
+ "tx_global_us": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=usINX,day,,,320,qfq",
+  "status": 200,
+  "len": 1439,
+  "sec": 0.12,
+  "body": "{\"code\":0,\"msg\":\"\",\"data\":{\"usINX\":{\"day\":[[\"2026-10-09\",\"7786.36\",\"7811.54\",\"7820.57\",\"7779.34\",\"2645750862\"]],\"qt\":{\"usINX\":[\"200\",\"\\u6807\\u666e500\",\".INX\",\"7811.54\",\"7765.36\",\"7786.36\",\"2645750862\",\"0\",\"0\",\"7787.40\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"7833.92\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\""
+ },
+ "163_sh000300": {
+  "url": "http://quotes.money.163.com/service/chddata.html?code=0000300&start=20050101&end=20261009&fields=TCLOSE;HIGH;LOW;TOPEN;LCLOSE;CHG;PCHG;TURNOVER;VOTURNOVER;VATURNOVER;TCAP;MCAP",
+  "status": 502,
+  "len": 568,
+  "sec": 0.04,
+  "body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable M"
+ },
+ "163_sz399006": {
+  "url": "http://quotes.money.163.com/service/chddata.html?code=1399006&start=20050101&end=20261009&fields=TCLOSE;HIGH;LOW;TOPEN;LCLOSE;CHG;PCHG;TURNOVER;VOTURNOVER;VATURNOVER;TCAP;MCAP",
+  "status": 502,
+  "len": 568,
+  "sec": 0.04,
+  "body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable M"
+ },
+ "163_sh000905": {
+  "url": "http://quotes.money.163.com/service/chddata.html?code=0000905&start=20050101&end=20261009&fields=TCLOSE;HIGH;LOW;TOPEN;LCLOSE;CHG;PCHG;TURNOVER;VOTURNOVER;VATURNOVER;TCAP;MCAP",
+  "status": 502,
+  "len": 568,
+  "sec": 0.04,
+  "body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable M"
+ },
+ "sina_us_.INX": {
+  "url": "https://stock.finance.sina.com.cn/usstock/api/jsonp_v2.php/var%20_/.INX/US_MinKService.getDailyK?symbol=.INX&___qn=3",
+  "status": 200,
+  "len": 233,
+  "sec": 0.11,
+  "body": "/*<script>location.href='//sina.com';</script>*/\nvar _({\"__ERROR\":3,\"__ERRORMSG\":\"Service not valid\",\"__ERRORFILE\":\"\\/data1\\/www\\/htdocs\\/stock7.finance.sina.com.cn\\/ls7.20190225\\/LibStart\\/Web\\/AppCy"
+ },
+ "sina_us_.DJI": {
+  "url": "https://stock.finance.sina.com.cn/usstock/api/jsonp_v2.php/var%20_/.DJI/US_MinKService.getDailyK?symbol=.DJI&___qn=3",
+  "status": 200,
+  "len": 233,
+  "sec": 0.1,
+  "body": "/*<script>location.href='//sina.com';</script>*/\nvar _({\"__ERROR\":3,\"__ERRORMSG\":\"Service not valid\",\"__ERRORFILE\":\"\\/data1\\/www\\/htdocs\\/stock7.finance.sina.com.cn\\/ls7.20190225\\/LibStart\\/Web\\/AppCy"
+ },
+ "sina_us_.IXIC": {
+  "url": "https://stock.finance.sina.com.cn/usstock/api/jsonp_v2.php/var%20_/.IXIC/US_MinKService.getDailyK?symbol=.IXIC&___qn=3",
+  "status": 200,
+  "len": 233,
+  "sec": 0.1,
+  "body": "/*<script>location.href='//sina.com';</script>*/\nvar _({\"__ERROR\":3,\"__ERRORMSG\":\"Service not valid\",\"__ERRORFILE\":\"\\/data1\\/www\\/htdocs\\/stock7.finance.sina.com.cn\\/ls7.20190225\\/LibStart\\/Web\\/AppCy"
+ },
+ "sina_us_.NDX": {
+  "url": "https://stock.finance.sina.com.cn/usstock/api/jsonp_v2.php/var%20_/.NDX/US_MinKService.getDailyK?symbol=.NDX&___qn=3",
+  "status": 200,
+  "len": 233,
+  "sec": 0.12,
+  "body": "/*<script>location.href='//sina.com';</script>*/\nvar _({\"__ERROR\":3,\"__ERRORMSG\":\"Service not valid\",\"__ERRORFILE\":\"\\/data1\\/www\\/htdocs\\/stock7.finance.sina.com.cn\\/ls7.20190225\\/LibStart\\/Web\\/AppCy"
+ },
+ "sina_us_SPY": {
+  "url": "https://stock.finance.sina.com.cn/usstock/api/jsonp_v2.php/var%20_/SPY/US_MinKService.getDailyK?symbol=SPY&___qn=3",
+  "status": 200,
+  "len": 236,
+  "sec": 0.1,
+  "body": "/*<script>location.href='//sina.com';</script>*/\nvar _({\"__ERROR\":3,\"__ERRORMSG\":\"Invalid service name\",\"__ERRORFILE\":\"\\/data1\\/www\\/htdocs\\/stock7.finance.sina.com.cn\\/ls7.20190225\\/LibStart\\/Web\\/Ap"
+ },
+ "yh_GSPC": {
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=max&interval=1d",
+  "status": 403,
+  "len": 3369,
+  "sec": 0.82,
+  "body": "<!DOCTYPE html>\n<html lang=\"zh\">\n<head>\n    <meta charset=\"utf-8\">\n    <title>Yahoo</title>\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimal-ui\">\n    <meta http-equiv=\"X-U"
+ },
+ "yh_IXIC": {
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?range=max&interval=1d",
+  "status": 403,
+  "len": 3369,
+  "sec": 0.71,
+  "body": "<!DOCTYPE html>\n<html lang=\"zh\">\n<head>\n    <meta charset=\"utf-8\">\n    <title>Yahoo</title>\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimal-ui\">\n    <meta http-equiv=\"X-U"
+ },
+ "yh_HSI": {
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EHSI?range=max&interval=1d",
+  "status": 403,
+  "len": 3369,
+  "sec": 0.74,
+  "body": "<!DOCTYPE html>\n<html lang=\"zh\">\n<head>\n    <meta charset=\"utf-8\">\n    <title>Yahoo</title>\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimal-ui\">\n    <meta http-equiv=\"X-U"
+ },
+ "yh2_GSPC": {
+  "url": "https://query2.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=max&interval=1d",
+  "status": 403,
+  "len": 3369,
+  "sec": 0.78,
+  "body": "<!DOCTYPE html>\n<html lang=\"zh\">\n<head>\n    <meta charset=\"utf-8\">\n    <title>Yahoo</title>\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimal-ui\">\n    <meta http-equiv=\"X-U"
+ },
+ "sina_gd_HSI": {
+  "url": "https://hq.sinajs.cn/list=int_hangseng,int_dji,int_nasdaq,int_sp500,int_nikkei,znb_UKX",
+  "status": 200,
+  "len": 414,
+  "sec": 0.13,
+  "body": "var hq_str_int_hangseng=\"恒生指数,24211.35,425.56,1.79\";\nvar hq_str_int_dji=\"道琼斯,46247.29,299.97,0.65\";\nvar hq_str_int_nasdaq=\"纳斯达克,22484.07,99.37,0.44\";\nvar hq_str_int_sp500=\"标普指数,6643.70,38.98,0.59\";\nvar hq_str_int_nikkei=\"日经指数,44946.64,-408.35,-0.90\";\nvar hq_str_znb_UKX=\"英国富时100,10552.0500,110.45,1.0"
+ }
+}

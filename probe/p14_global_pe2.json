@@ -1,0 +1,15 @@
+{
+ "starcapital_links": [],
+ "sa_api_ok": [
+  "https://stockanalysis.com/etf/spy/__data.json"
+ ],
+ "sa_spy_pe": [
+  "0.5"
+ ],
+ "longshot_ok": [
+  "https://api.nasdaq.com/api/quote/SPY/summary?assetclass=etf",
+  "https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund/1506575576011.ajax",
+  "https://stockanalysis.com/list/sp-500-stocks/",
+  "https://finviz.com/quote.ashx?t=SPY"
+ ]
+}

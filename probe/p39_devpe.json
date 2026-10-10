@@ -1,0 +1,82 @@
+{
+ "legulegu-global": {
+  "url": "https://legulegu.com/stockdata/global-stock-market-valuation",
+  "status": 504,
+  "len": 235,
+  "ctype": "text/html",
+  "has_pe_word": true,
+  "sample": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\r <html>\r <head><title>504 Gateway Time-out</title></head>\r <body>\r <center><h1>504 Gateway Time-out</h1></center>\r <hr/>Powered by Tengine<hr><center"
+ },
+ "legulegu-pe-band": {
+  "url": "https://legulegu.com/stockdata/index-basic-pe",
+  "status": 504,
+  "len": 235,
+  "ctype": "text/html",
+  "has_pe_word": true,
+  "sample": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\r <html>\r <head><title>504 Gateway Time-out</title></head>\r <body>\r <center><h1>504 Gateway Time-out</h1></center>\r <hr/>Powered by Tengine<hr><center"
+ },
+ "stockanalysis-ewj": {
+  "url": "https://stockanalysis.com/etf/ewj/",
+  "status": 200,
+  "len": 161212,
+  "ctype": "text/html",
+  "has_pe_word": true,
+  "sample": "<!doctype html> <html lang=\"en\"> \t<head> \t\t<meta charset=\"utf-8\" /> \t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /> \t\t<!--12qhfyh--><!--[0--><link rel=\"preconnect\" href=\"https"
+ },
+ "stockanalysis-ewj-data": {
+  "url": "https://stockanalysis.com/etf/ewj/__data.json",
+  "status": 200,
+  "len": 32650,
+  "ctype": "application/json",
+  "has_pe_word": true,
+  "sample": "{\"type\":\"data\",\"nodes\":[{\"type\":\"data\",\"data\":[{\"session\":1,\"user\":1,\"userIsFresh\":2,\"mfaPending\":2,\"mfaSession\":1,\"loc\":3,\"theme\":4,\"hideNewsSources\":5,\"ab\":6,\"tp\":9},null,false,{\"co\":1},\"light\",[],{"
+ },
+ "ishares-ewj": {
+  "url": "https://www.ishares.com/us/products/239639/ishares-msci-japan-etf",
+  "status": 200,
+  "len": 156580,
+  "ctype": "text/html;charset=UTF-8",
+  "has_pe_word": true,
+  "sample": "<!DOCTYPE html> <html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\"> <head> <link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5"
+ },
+ "xueqiu-index-pe": {
+  "url": "https://stock.xueqiu.com/v5/stock/quote.json?symbol=NI225&extend=detail",
+  "status": 400,
+  "len": 162,
+  "ctype": "application/json;charset=UTF-8",
+  "has_pe_word": false,
+  "sample": "{\"error_description\":\"遇到错误，请刷新页面或者重新登录帐号后再试\",\"error_uri\":\"/v5/stock/quote.json\",\"error_data\":null,\"error_code\":\"400016\"}"
+ },
+ "em-datacenter": {
+  "url": "https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPT_VALUEINDEX_DET&columns=ALL&pageSize=5",
+  "status": 200,
+  "len": 111,
+  "ctype": "text/plain;charset=UTF-8",
+  "has_pe_word": false,
+  "sample": "{\"version\":null,\"result\":null,\"success\":false,\"message\":\"报表配置不存在,RPT_VALUEINDEX_DET\",\"code\":9501}"
+ },
+ "em-push2": {
+  "url": "https://push2.eastmoney.com/api/qt/stock/get?secid=100.N225&fields=f43,f58,f162,f167",
+  "status": 200,
+  "len": 128,
+  "ctype": "application/json; charset=UTF-8",
+  "has_pe_word": false,
+  "sample": "{\"rc\":0,\"rt\":4,\"svr\":183124201,\"lt\":1,\"full\":1,\"dlmkts\":\"\",\"dsc\":\"0\",\"data\":{\"f43\":6903092,\"f58\":\"日经225\",\"f162\":0,\"f167\":0}}"
+ },
+ "sina-global-pe": {
+  "url": "https://hq.sinajs.cn/list=znb_NKY",
+  "status": 403,
+  "len": 9,
+  "ctype": "",
+  "has_pe_word": false,
+  "sample": "Forbidden"
+ },
+ "msci-japan-fact": {
+  "url": "https://www.msci.com/documents/10199/9f5b1a1e",
+  "status": 404,
+  "len": 154470,
+  "ctype": "text/html;charset=UTF-8",
+  "has_pe_word": true,
+  "sample": "                                    \t \t\t \t\t\t<!DOCTYPE html>                                                               <html class=\"ltr\" dir=\"ltr\" lang=\"en-US\" itemscope itemtype=\"http://schema.org"
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "h1:000016:20260101": {
+  "n": 184,
+  "msg": "Success"
+ },
+ "h1:000016:20200101": {
+  "n": 1639,
+  "msg": "Success"
+ },
+ "h1:000016:20040101": {
+  "n": 5529,
+  "msg": "Success"
+ },
+ "h1:000905:20260101": {
+  "n": 184,
+  "msg": "Success"
+ },
+ "h1:000905:20200101": {
+  "n": 1639,
+  "msg": "Success"
+ },
+ "h1:000905:20040101": {
+  "n": 5287,
+  "msg": "Success"
+ },
+ "h1:000903:20260101": {
+  "n": 184,
+  "msg": "Success"
+ },
+ "h1:000903:20200101": {
+  "n": 1639,
+  "msg": "Success"
+ },
+ "h1:000903:20040101": {
+  "n": 5529,
+  "msg": "Success"
+ },
+ "h1:000010:20260101": {
+  "n": 184,
+  "msg": "Success"
+ },
+ "h1:000010:20200101": {
+  "n": 1639,
+  "msg": "Success"
+ },
+ "h1:000010:20040101": {
+  "n": 5529,
+  "msg": "Success"
+ },
+ "h1:000015:20260101": {
+  "n": 184,
+  "msg": "Success"
+ },
+ "h1:000015:20200101": {
+  "n": 1639,
+  "msg": "Success"
+ },
+ "h1:000015:20040101": {
+  "n": 5287,
+  "msg": "Success"
+ },
+ "h1:000922:20260101": {
+  "n": 184,
+  "msg": "Success"
+ },
+ "h1:000922:20200101": {
+  "n": 1639,
+  "msg": "Success"
+ },
+ "h1:000922:20040101": {
+  "n": 5287,
+  "msg": "Success"
+ },
+ "h2:perf-idx": {
+  "len": 74,
+  "head": "{\"code\": \"400\", \"msg\": \"Parameter Errors\", \"data\": null, \"success\": false}"
+ },
+ "h2:perf-h": {
+  "len": 74,
+  "head": "{\"code\": \"400\", \"msg\": \"Parameter Errors\", \"data\": null, \"success\": false}"
+ },
+ "h2:perf-sh": {
+  "len": 74,
+  "head": "{\"code\": \"400\", \"msg\": \"Parameter Errors\", \"data\": null, \"success\": false}"
+ },
+ "h2:perf-cs": {
+  "len": 74,
+  "head": "{\"code\": \"400\", \"msg\": \"Parameter Errors\", \"data\": null, \"success\": false}"
+ },
+ "h2:perf-idxCode": {
+  "error": "HttpError: GET failed after 4 tries: https://www.csindex.com.cn/csindex-home/perf"
+ },
+ "h3:000300": {
+  "n": 5528,
+  "peg_n": 3645,
+  "peg_first": "20110628",
+  "peg_last": "20261009",
+  "close_first": "20040101"
+ },
+ "h3:000852": {
+  "n": 5286,
+  "peg_n": 3466,
+  "peg_first": "20120629",
+  "peg_last": "20261009",
+  "close_first": "20040101"
+ },
+ "h3:000991": {
+  "n": 5287,
+  "peg_n": 3646,
+  "peg_first": "20110628",
+  "peg_last": "20261009",
+  "close_first": "20040101"
+ },
+ "h3:000932": {
+  "n": 5287,
+  "peg_n": 3646,
+  "peg_first": "20110628",
+  "peg_last": "20261009",
+  "close_first": "20040101"
+ },
+ "h3:000993": {
+  "n": 5287,
+  "peg_n": 3646,
+  "peg_first": "20110628",
+  "peg_last": "20261009",
+  "close_first": "20040101"
+ },
+ "h3:000009": {
+  "n": 5529,
+  "peg_n": 3646,
+  "peg_first": "20110628",
+  "peg_last": "20261009",
+  "close_first": "20040101"
+ },
+ "h3:000906": {
+  "n": 5287,
+  "peg_n": 3646,
+  "peg_first": "20110628",
+  "peg_last": "20261009",
+  "close_first": "20040101"
+ },
+ "h3:930652": {
+  "n": 5286,
+  "peg_n": 2768,
+  "peg_first": "20150520",
+  "peg_last": "20261009",
+  "close_first": "20040101"
+ },
+ "h3:931087": {
+  "n": 3468,
+  "peg_n": 1841,
+  "peg_first": "20190307",
+  "peg_last": "20261009",
+  "close_first": "20040101"
+ },
+ "h3:H11136": {
+  "n": 5029,
+  "peg_n": 3866,
+  "peg_first": "20110912",
+  "peg_last": "20261008",
+  "close_first": "20040101"
+ },
+ "h3:H30533": {
+  "n": 5027,
+  "peg_n": 3084,
+  "peg_first": "20141210",
+  "peg_last": "20261008",
+  "close_first": "20040101"
+ }
+}

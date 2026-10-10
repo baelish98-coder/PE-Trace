@@ -1,0 +1,121 @@
+{
+ "tx_usfq_usINX": {
+  "status": 200,
+  "len": 41,
+  "body": "{\"code\":-1,\"msg\":\"limit error\",\"data\":[]}"
+ },
+ "tx_usfq_usSPX": {
+  "status": 200,
+  "len": 41,
+  "body": "{\"code\":-1,\"msg\":\"limit error\",\"data\":[]}"
+ },
+ "tx_hkfq_hkHSI": {
+  "status": 200,
+  "len": 242260,
+  "body": "{\"code\":0,\"msg\":\"\",\"data\":{\"hkHSI\":{\"day\":[[\"2018-08-27\",\"28016.660\",\"28271.270\",\"28289.059\",\"27956.039\",\"95697399930.00\",{},\"0.00\",\"9569739.99\",\"0.000\",\"0.000\"],[\"2018-08-28\",\"28530.889\",\"28351.619\","
+ },
+ "tx_dayq_usINX": {
+  "status": 200,
+  "len": 41,
+  "body": "{\"code\":-1,\"msg\":\"param error\",\"data\":[]}"
+ },
+ "tx_usINX_dot": {
+  "status": 200,
+  "len": 153375,
+  "body": "{\"code\":0,\"msg\":\"\",\"data\":{\"us.INX\":{\"day\":[[\"2018-10-24\",\"2737.870\",\"2656.100\",\"2742.590\",\"2651.890\",\"2147332195.000\"],[\"2018-10-25\",\"2674.880\",\"2705.570\",\"2722.700\",\"2667.840\",\"2147419527.000\"],[\"20"
+ },
+ "tx_usINX_us": {
+  "status": 200,
+  "len": 1372,
+  "body": "{\"code\":0,\"msg\":\"\",\"data\":{\"usINX\":{\"day\":[],\"qt\":{\"usINX\":[\"200\",\"\\u6807\\u666e500\",\".INX\",\"7811.54\",\"7765.36\",\"7786.36\",\"2645750862\",\"0\",\"0\",\"7787.40\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"7833.92\",\"0"
+ },
+ "tx_usDJI_us": {
+  "status": 200,
+  "len": 1382,
+  "body": "{\"code\":0,\"msg\":\"\",\"data\":{\"usDJI\":{\"day\":[],\"qt\":{\"usDJI\":[\"200\",\"\\u9053\\u743c\\u65af\",\".DJI\",\"51654.95\",\"51231.64\",\"51258.95\",\"339477384\",\"0\",\"0\",\"51552.48\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"51770"
+ },
+ "ak_index_us_stock_sina_.INX": {
+  "shape": [
+   5732,
+   7
+  ],
+  "cols": [
+   "date",
+   "open",
+   "high",
+   "low",
+   "close",
+   "volume",
+   "amount"
+  ],
+  "first": "2004-01-02",
+  "last": "2026-10-09"
+ },
+ "ak_index_us_stock_sina_.DJI": {
+  "shape": [
+   5731,
+   7
+  ],
+  "cols": [
+   "date",
+   "open",
+   "high",
+   "low",
+   "close",
+   "volume",
+   "amount"
+  ],
+  "first": "2004-01-02",
+  "last": "2026-10-09"
+ },
+ "ak_index_us_stock_sina_.NDX": {
+  "shape": [
+   3180,
+   7
+  ],
+  "cols": [
+   "date",
+   "open",
+   "high",
+   "low",
+   "close",
+   "volume",
+   "amount"
+  ],
+  "first": "2014-02-18",
+  "last": "2026-10-09"
+ },
+ "ak_stock_hk_index_daily_sina_HSI": {
+  "shape": [
+   3234,
+   7
+  ],
+  "cols": [
+   "date",
+   "open",
+   "high",
+   "low",
+   "close",
+   "volume",
+   "amount"
+  ],
+  "first": "2013-08-20",
+  "last": "2026-10-09"
+ },
+ "ak_stock_hk_index_daily_em_HSI": {
+  "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ },
+ "ak_index_investing_global_美国": {
+  "error": "AttributeError: module 'akshare' has no attribute 'index_investing_global'"
+ },
+ "sina_usK_.INX": {
+  "status": 200,
+  "len": 625404,
+  "body": "/*<script>location.href='//sina.com';</script>*/\nvar a=([{\"d\":\"2004-01-02\",\"o\":\"1111.92\",\"h\":\"1118.85\",\"l\":\"1105.08\",\"c\":\"1108.48\",\"v\":\"1153200000\",\"a\":\"1281300000000\"},{\"d\":\"2004-01-05\",\"o\":\"1108.48\""
+ },
+ "sina_usK_$INX": {
+  "status": 200,
+  "len": 62,
+  "body": "/*<script>location.href='//sina.com';</script>*/\nvar a=(null);"
+ }
+}

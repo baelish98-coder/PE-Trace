@@ -1,0 +1,176 @@
+{
+ "name_table": [
+  {
+   "指数名称": "英国富时100指数",
+   "代码": "UKX"
+  },
+  {
+   "指数名称": "德国DAX 30种股价指数",
+   "代码": "DAX"
+  },
+  {
+   "指数名称": "俄罗斯MICEX指数",
+   "代码": "INDEXCF"
+  },
+  {
+   "指数名称": "法CAC40指数",
+   "代码": "CAC"
+  },
+  {
+   "指数名称": "瑞士股票指数",
+   "代码": "SWI20"
+  },
+  {
+   "指数名称": "富时意大利MIB指数",
+   "代码": "FTSEMIB"
+  },
+  {
+   "指数名称": "荷兰AEX综合指数",
+   "代码": "AEX"
+  },
+  {
+   "指数名称": "西班牙IBEX指数",
+   "代码": "IBEX"
+  },
+  {
+   "指数名称": "欧洲Stoxx50指数",
+   "代码": "SX5E"
+  },
+  {
+   "指数名称": "加拿大S&P/TSX综合指数",
+   "代码": "GSPTSE"
+  },
+  {
+   "指数名称": "墨西哥BOLSA指数",
+   "代码": "MXX"
+  },
+  {
+   "指数名称": "巴西BOVESPA股票指数",
+   "代码": "IBOV"
+  },
+  {
+   "指数名称": "中国台湾加权指数",
+   "代码": "TWJQ"
+  },
+  {
+   "指数名称": "日经225指数",
+   "代码": "NKY"
+  },
+  {
+   "指数名称": "首尔综合指数",
+   "代码": "KOSPI"
+  },
+  {
+   "指数名称": "印度尼西亚雅加达综合指数",
+   "代码": "JCI"
+  },
+  {
+   "指数名称": "印度孟买SENSEX指数",
+   "代码": "SENSEX"
+  },
+  {
+   "指数名称": "澳大利亚标准普尔200指数",
+   "代码": "AS51"
+  },
+  {
+   "指数名称": "新西兰NZSE 50指数",
+   "代码": "NZ250"
+  },
+  {
+   "指数名称": "埃及CASE 30指数",
+   "代码": "CASE"
+  }
+ ],
+ "g_UKX": {
+  "error": "KeyError: 'UKX'"
+ },
+ "g_DAX": {
+  "error": "KeyError: 'DAX'"
+ },
+ "g_INDEXCF": {
+  "error": "KeyError: 'INDEXCF'"
+ },
+ "g_CAC": {
+  "error": "KeyError: 'CAC'"
+ },
+ "g_SWI20": {
+  "error": "KeyError: 'SWI20'"
+ },
+ "g_FTSEMIB": {
+  "error": "KeyError: 'FTSEMIB'"
+ },
+ "g_AEX": {
+  "error": "KeyError: 'AEX'"
+ },
+ "g_IBEX": {
+  "error": "KeyError: 'IBEX'"
+ },
+ "g_SX5E": {
+  "error": "KeyError: 'SX5E'"
+ },
+ "g_GSPTSE": {
+  "error": "KeyError: 'GSPTSE'"
+ },
+ "g_MXX": {
+  "error": "KeyError: 'MXX'"
+ },
+ "g_IBOV": {
+  "error": "KeyError: 'IBOV'"
+ },
+ "g_TWJQ": {
+  "error": "KeyError: 'TWJQ'"
+ },
+ "g_NKY": {
+  "error": "KeyError: 'NKY'"
+ },
+ "g_KOSPI": {
+  "error": "KeyError: 'KOSPI'"
+ },
+ "g_JCI": {
+  "error": "KeyError: 'JCI'"
+ },
+ "g_SENSEX": {
+  "error": "KeyError: 'SENSEX'"
+ },
+ "g_AS51": {
+  "error": "KeyError: 'AS51'"
+ },
+ "g_NZ250": {
+  "error": "KeyError: 'NZ250'"
+ },
+ "g_CASE": {
+  "error": "KeyError: 'CASE'"
+ },
+ "em_try0": {
+  "error": "ConnectionError"
+ },
+ "em_try1": {
+  "error": "ConnectionError"
+ },
+ "em_try2": {
+  "error": "ConnectionError"
+ },
+ "sa_dax": {
+  "status": 404,
+  "len": 45893,
+  "body": "<!doctype html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n\t\t<!--12qhfyh--><!--[0--><link rel=\"pre"
+ },
+ "sa_dax_data": {
+  "status": 200,
+  "len": 60,
+  "body": "{\"type\":\"redirect\",\"location\":\"/symbol-lookup/?q=INDEX-DAX\"}"
+ },
+ "wsj_dax": {
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.wsj.com', port=443): Max retries exceeded with url: /market-"
+ },
+ "mw_dax": {
+  "status": 401,
+  "len": 775,
+  "body": "<html lang=\"en\"><head><title>marketwatch.com</title><style>#cmsg{animation: A 1.5s;}@keyframes A{0%{opacity:0;}99%{opacity:0;}100%{opacity:1;}}</style></head><body style=\"margin:0\""
+ },
+ "tx_de_dax_hk": {
+  "status": 200,
+  "len": 39,
+  "body": "{\"code\":1,\"msg\":\"bad params\",\"data\":[]}"
+ }
+}

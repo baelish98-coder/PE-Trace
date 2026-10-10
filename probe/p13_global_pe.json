@@ -1,0 +1,202 @@
+[
+ {
+  "label": "sa:SPY",
+  "url": "https://stockanalysis.com/etf/spy/",
+  "status": 200,
+  "len": 159768,
+  "ms": 1381,
+  "note": "ETF page, PE?",
+  "ctype": "text/html",
+  "sample": "<!doctype html> <html lang=\"en\"> \t<head> \t\t<meta charset=\"utf-8\" /> \t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /> \t\t<!--12qhfyh--><!--[0--><link rel=\"preconnect\" href=\"https://securepubads.g.doubleclick.net\"/> <link rel=\"preconnect\" "
+ },
+ {
+  "label": "sa:EWJ",
+  "url": "https://stockanalysis.com/etf/ewj/",
+  "status": 200,
+  "len": 161212,
+  "ms": 1039,
+  "note": "Japan ETF",
+  "ctype": "text/html",
+  "sample": "<!doctype html> <html lang=\"en\"> \t<head> \t\t<meta charset=\"utf-8\" /> \t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /> \t\t<!--12qhfyh--><!--[0--><link rel=\"preconnect\" href=\"https://securepubads.g.doubleclick.net\"/> <link rel=\"preconnect\" "
+ },
+ {
+  "label": "sa:EWU",
+  "url": "https://stockanalysis.com/etf/ewu/",
+  "status": 200,
+  "len": 160579,
+  "ms": 1277,
+  "note": "UK ETF",
+  "ctype": "text/html",
+  "sample": "<!doctype html> <html lang=\"en\"> \t<head> \t\t<meta charset=\"utf-8\" /> \t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /> \t\t<!--12qhfyh--><!--[0--><link rel=\"preconnect\" href=\"https://securepubads.g.doubleclick.net\"/> <link rel=\"preconnect\" "
+ },
+ {
+  "label": "sa:index-nasdaq100",
+  "url": "https://stockanalysis.com/list/nasdaq-100-stocks/",
+  "status": 200,
+  "len": 132685,
+  "ms": 977,
+  "note": "list page",
+  "ctype": "text/html",
+  "sample": "<!doctype html> <html lang=\"en\"> \t<head> \t\t<meta charset=\"utf-8\" /> \t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /> \t\t<!--12qhfyh--><!--[0--><link rel=\"preconnect\" href=\"https://securepubads.g.doubleclick.net\"/> <link rel=\"preconnect\" "
+ },
+ {
+  "label": "sc:valuation-page",
+  "url": "https://www.starcapital.de/en/research/stock-market-valuation/",
+  "status": 200,
+  "len": 165892,
+  "ms": 2249,
+  "note": "landing page, look for xlsx link",
+  "ctype": "text/html;charset=UTF-8",
+  "sample": "<!DOCTYPE html><html lang=\"de\"> <!-- This website is powered by Neos, the Open Source Content Application Platform licensed under the GNU/GPL. Neos is based on Flow, a powerful PHP application framework licensed under the MIT license.  More information and con"
+ },
+ {
+  "label": "sc:xlsx-guess",
+  "url": "https://www.starcapital.de/fileadmin/user_upload/files/research/Artikel/Capital_Market_Valuation_Overview.xlsx",
+  "status": 200,
+  "len": 165892,
+  "ms": 4914,
+  "note": "direct xlsx guess",
+  "ctype": "text/html;charset=UTF-8",
+  "sample": "<!DOCTYPE html><html lang=\"de\"> <!-- This website is powered by Neos, the Open Source Content Application Platform licensed under the GNU/GPL. Neos is based on Flow, a powerful PHP application framework licensed under the MIT license.  More information and con"
+ },
+ {
+  "label": "msci:perf-api",
+  "url": "https://app2.msci.com/products/service/index/indexmaster/getIndexPerformance?index_codes=990300&currency=USD&start_date=20200101&end_date=20201231&frequency=D",
+  "status": 404,
+  "len": 427,
+  "ms": 850,
+  "note": "MSCI index performance API"
+ },
+ {
+  "label": "msci:eod-page",
+  "url": "https://www.msci.com/end-of-day-data-search",
+  "status": 200,
+  "len": 72905,
+  "ms": 1388,
+  "note": "landing page",
+  "ctype": "text/html;charset=UTF-8",
+  "sample": "                                    \t \t\t \t\t\t<!DOCTYPE html>                                                               <html class=\"ltr\" dir=\"ltr\" lang=\"en-US\" itemscope itemtype=\"http://schema.org/WebSite\">  <head> \t<title>End of day index data search - MS"
+ },
+ {
+  "label": "ish:iwda",
+  "url": "https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund",
+  "status": 200,
+  "len": 3446410,
+  "ms": 2225,
+  "note": "IWDA page",
+  "ctype": "text/html; charset=utf-8",
+  "sample": "<!doctype html> <html lang=\"en-GB\">   <head>     <meta charset=\"UTF-8\" />     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />     <link rel=\"icon\" href=\"/favicon.ico\" type=\"image/x-icon\" sizes=\"any\" />     <title>iShares Core MSCI Worl"
+ },
+ {
+  "label": "ssga:spy",
+  "url": "https://www.ssga.com/us/en/intermediary/etfs/spdr-sp-500-etf-trust-spy",
+  "status": 200,
+  "len": 237130,
+  "ms": 989,
+  "note": "SPY page",
+  "ctype": "text/html;charset=utf-8",
+  "sample": " <!DOCTYPE HTML>               <html lang=\"en\" dir=\"ltr\">                           <head>                                                                 <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/>     <title>SPY: State Street® SPDR® "
+ },
+ {
+  "label": "slickcharts:sp500",
+  "url": "https://www.slickcharts.com/sp500",
+  "status": 200,
+  "len": 487610,
+  "ms": 1213,
+  "note": "current only",
+  "ctype": "text/html",
+  "sample": "<!doctype html> <html lang=\"en\"> <head> <meta charset=\"utf-8\" /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" /> <script defer src=\"/js/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5s"
+ },
+ {
+  "label": "wsj:index-pe",
+  "url": "https://www.wsj.com/market-data/stocks/peyields",
+  "err": "ConnectionError: HTTPSConnectionPool(host='www.wsj.com', port=443): Max retries exceeded with url: /market-data/stock",
+  "note": "WSJ PE table"
+ },
+ {
+  "label": "nasdaq:api-pe",
+  "url": "https://api.nasdaq.com/api/quote/SPY/etf-holdings?assetclass=etf",
+  "status": 404,
+  "len": 0,
+  "ms": 3532,
+  "note": "nasdaq api"
+ },
+ {
+  "label": "boerse:dax-pe",
+  "url": "https://www.boerse.de/boersenlexikon/Kurs-Gewinn-Verhaeltnis",
+  "status": 200,
+  "len": 160064,
+  "ms": 2157,
+  "note": "german site",
+  "ctype": "text/html; charset=UTF-8",
+  "sample": "<!DOCTYPE html> <html lang=\"de\">     <head>         <meta charset=\"utf-8\">         <title>Kurs-Gewinn-Verhältnis Definition und Erklärung im boerse.de Lexikon</title>         <meta name=\"description\" content=\"Kurs-Gewinn-Verh&auml;ltnis - boerse.de-Wirtschafts"
+ },
+ {
+  "label": "yahoo:chart-spy",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?range=1mo&interval=1d",
+  "status": 403,
+  "len": 3369,
+  "ms": 728,
+  "note": "yahoo (was 403)"
+ },
+ {
+  "label": "stooq:spx",
+  "url": "https://stooq.com/q/d/l/?s=^spx&i=d",
+  "status": 200,
+  "len": 796,
+  "ms": 1108,
+  "note": "stooq (was JS)",
+  "ctype": "text/html; charset=utf-8",
+  "sample": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>This site requires JavaScript to verify your browser. Please enable JavaScript and reload.</noscript><script nonce=\"MQRm8VxLarZZReBBWU0bOw\"> "
+ },
+ {
+  "label": "fred:csv",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500",
+  "err": "ReadTimeout: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)",
+  "note": "FRED (was timeout)"
+ },
+ {
+  "label": "vanguard:fundapi",
+  "url": "https://api.vanguard.com/rs/gre/gra/1.7.1/datasets/iraq-holdings-usd.json",
+  "err": "SSLError: HTTPSConnectionPool(host='api.vanguard.com', port=443): Max retries exceeded with url: /rs/gre/gra/1",
+  "note": "vanguard (unlikely)"
+ },
+ {
+  "label": "jpmorgan:guide",
+  "url": "https://am.jpmorgan.com/us/en/asset-management/adv/products/jpmorgan-ushigh-yield-fund",
+  "status": 404,
+  "len": 189518,
+  "ms": 7412,
+  "note": "(unlikely)"
+ },
+ {
+  "label": "purple:etf",
+  "url": "https://www.purplefishsolutions.com",
+  "err": "ConnectionError: HTTPSConnectionPool(host='www.purplefishsolutions.com', port=443): Max retries exceeded with url: / ",
+  "note": "(unlikely)"
+ },
+ {
+  "label": "currentmarketvaluation",
+  "url": "https://www.currentmarketvaluation.com/models/buffett-indicator.php",
+  "err": "ReadTimeout: HTTPSConnectionPool(host='www.currentmarketvaluation.com', port=443): Read timed out. (read timeout=",
+  "note": "has data pages"
+ },
+ {
+  "label": "worldperatio:index",
+  "url": "https://worldperatio.com/",
+  "status": 200,
+  "len": 200217,
+  "ms": 1115,
+  "note": "ETF valuation ranks",
+  "ctype": "text/html; charset=UTF-8",
+  "sample": "<!DOCTYPE html> <html lang=\"it-IT\"> <head>     <meta charset=\"UTF-8\">     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">     <link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">     <meta name='robots' content='index, follow, max-image-pre"
+ },
+ {
+  "label": "spglobal:index-factsheet",
+  "url": "https://www.spglobal.com/spdji/en/idsenhancedfactsheet/file/factsheetdownload?fileId=1&languageId=en",
+  "status": 403,
+  "len": 2011,
+  "ms": 197,
+  "note": "S&P DJI factsheet download"
+ }
+]

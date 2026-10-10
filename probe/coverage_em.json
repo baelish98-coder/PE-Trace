@@ -1,0 +1,170 @@
+{
+ "100.SPX": {
+  "name": "S&P 500",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "100.NDX": {
+  "name": "Nasdaq 100",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "100.DJI": {
+  "name": "Dow Jones",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "100.RUT": {
+  "name": "Russell 2000",
+  "status": "fail",
+  "err": "empty"
+ },
+ "100.GDAXI": {
+  "name": "DAX",
+  "n": 8956,
+  "start": "1991-07-03",
+  "end": "2026-10-09",
+  "status": "ok"
+ },
+ "100.UKX": {
+  "name": "FTSE 100",
+  "status": "fail",
+  "err": "empty"
+ },
+ "100.CAC": {
+  "name": "CAC 40",
+  "status": "fail",
+  "err": "empty"
+ },
+ "100.SX5E": {
+  "name": "Euro Stoxx 50",
+  "n": 10234,
+  "start": "1986-12-31",
+  "end": "2026-10-09",
+  "status": "ok"
+ },
+ "100.SMI": {
+  "name": "SMI",
+  "status": "fail",
+  "err": "empty"
+ },
+ "100.AEX": {
+  "name": "AEX",
+  "n": 9321,
+  "start": "1990-03-22",
+  "end": "2026-10-09",
+  "status": "ok"
+ },
+ "100.IBEX": {
+  "name": "IBEX 35",
+  "n": 10054,
+  "start": "1987-01-05",
+  "end": "2026-10-09",
+  "status": "ok"
+ },
+ "100.FTSEMIB": {
+  "name": "FTSE MIB",
+  "status": "fail",
+  "err": "empty"
+ },
+ "100.OMXS30": {
+  "name": "OMX Stockholm 30",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "100.N225": {
+  "name": "Nikkei 225",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "100.TOPX": {
+  "name": "TOPIX",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "100.KS11": {
+  "name": "KOSPI",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "100.AS51": {
+  "name": "ASX 200",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "100.TWII": {
+  "name": "TWSE",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "100.GSPTSE": {
+  "name": "S&P/TSX",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "100.HSI": {
+  "name": "Hang Seng",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "100.HSCEI": {
+  "name": "HSCEI",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "100.HSTECH": {
+  "name": "Hang Seng Tech",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "1.000300": {
+  "name": "CSI 300",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "1.000905": {
+  "name": "CSI 500",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "1.000016": {
+  "name": "SSE 50",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "1.000852": {
+  "name": "CSI 1000",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "1.000688": {
+  "name": "STAR 50",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "0.399006": {
+  "name": "ChiNext",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "0.399001": {
+  "name": "SZSE Component",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "1.000001": {
+  "name": "SSE Composite",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "1.000903": {
+  "name": "CSI 100",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ },
+ "0.399330": {
+  "name": "Shenzhen 100",
+  "status": "fail",
+  "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote"
+ }
+}

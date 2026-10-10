@@ -1,0 +1,119 @@
+{
+ "tx_sh000300": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh000300,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.13,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_sz399006": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz399006,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.13,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_usSPX": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=usSPX,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.11,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_usINX": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=usINX,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.12,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_usDJI": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=usDJI,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.1,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_usIXIC": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=usIXIC,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.12,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_usNDX": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=usNDX,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.12,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_hkHSI": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=hkHSI,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.11,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_hkHSCEI": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=hkHSCEI,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.12,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_deDAX": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=deDAX,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.11,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_ukFTSE": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=ukFTSE,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.11,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_jpNI225": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=jpNI225,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.14,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_frCAC": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=frCAC,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.1,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "tx_sh000001": {
+  "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh000001,day,,,8000,qfq",
+  "status": 200,
+  "len": 40,
+  "sec": 0.12,
+  "parse_err": "AttributeError: 'list' object has no attribute 'items'"
+ },
+ "sina_quote_sh000300": {
+  "url": "https://hq.sinajs.cn/list=sh000300,sz399006,sh000001,int_hangseng,int_dji,int_nasdaq,int_sp500",
+  "status": 200,
+  "len": 779,
+  "sec": 0.13,
+  "head": "var hq_str_sh000300=\"沪深300,4297.2513,4310.2765,4317.2549,4330.7431,4239.7425,0,0,199187416,496179130802,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2026-10-09,15:35:36,00,\";\nvar hq_str_sz399006=\"创业板指,3021.330,3036.657,3043.3"
+ },
+ "sina_his_sh000300": {
+  "url": "https://finance.sina.com.cn/realstock/company/sh000300/hisdata/klc_kl.js",
+  "status": 200,
+  "len": 100782,
+  "sec": 0.21,
+  "head": "var KLC_KL_sh000300=\"HX/DC/AZn/GnZBFAAAAAAAAAAAAn7dfEAAAAAAAHmtFAAAAAAAnsbG7AAAAAAAAAHoGCAAAAAAAn8pU4AAAAAAAAAHEG1AAAAAAAAAHnb7AAAAAAAAAHUxDAAAAAAAAAH/2zAAAAAAAAAHXW/AAAAAAAAAHXB2AAAAAAAAAHoVAAAAAAAAAAHI3RAAAAAAAAAHdkBAA"
+ },
+ "em_retry": {
+  "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.000300&fields1=f1,f2,f3,f4,f5&fields2=f51,f52,f53,f54,f55,f56,f57,f58&klt=101&fqt=1&beg=0&end=20500101",
+  "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+  "sec": 0.16
+ }
+}

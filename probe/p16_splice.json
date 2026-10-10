@@ -1,0 +1,72 @@
+{
+ "SH000300": {
+  "name": "沪深300",
+  "n_overlap": 121,
+  "ratio_mean": -0.0424,
+  "ratio_min": -0.0954,
+  "ratio_max": 0.0336,
+  "dj_first": "2016-10-10",
+  "lg_first": "2005-04-29",
+  "lg_n": 259
+ },
+ "SH000016": {
+  "name": "上证50",
+  "n_overlap": 121,
+  "ratio_mean": -0.0104,
+  "ratio_min": -0.0787,
+  "ratio_max": 0.0464,
+  "dj_first": "2016-10-10",
+  "lg_first": "2005-01-31",
+  "lg_n": 262
+ },
+ "SH000905": {
+  "name": "中证500",
+  "n_overlap": 121,
+  "ratio_mean": -0.1729,
+  "ratio_min": -0.2935,
+  "ratio_max": -0.0265,
+  "dj_first": "2016-10-10",
+  "lg_first": "2007-01-31",
+  "lg_n": 238
+ },
+ "SH000852": {
+  "name": "中证1000",
+  "n_overlap": 121,
+  "ratio_mean": -0.2785,
+  "ratio_min": -0.5079,
+  "ratio_max": -0.077,
+  "dj_first": "2016-10-10",
+  "lg_first": "2014-10-31",
+  "lg_n": 145
+ },
+ "SH000010": {
+  "name": "上证180",
+  "n_overlap": 121,
+  "ratio_mean": -0.0281,
+  "ratio_min": -0.0918,
+  "ratio_max": 0.0436,
+  "dj_first": "2016-10-10",
+  "lg_first": "2005-01-31",
+  "lg_n": 262
+ },
+ "SH000903": {
+  "name": "中证100",
+  "n_overlap": 121,
+  "ratio_mean": -0.0266,
+  "ratio_min": -0.0982,
+  "ratio_max": 0.0513,
+  "dj_first": "2016-10-10",
+  "lg_first": "2006-05-31",
+  "lg_n": 246
+ },
+ "SZ399330": {
+  "name": "深证100",
+  "n_overlap": 121,
+  "ratio_mean": -0.0856,
+  "ratio_min": -0.2106,
+  "ratio_max": 0.0081,
+  "dj_first": "2016-10-10",
+  "lg_first": "2009-09-30",
+  "lg_n": 206
+ }
+}
