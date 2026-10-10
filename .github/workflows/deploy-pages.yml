@@ -1,0 +1,45 @@
+name: Deploy PE-Trace to GitHub Pages
+
+# 本工作流只做一件事：把已构建好的静态站点 web/ 原样发布到 GitHub Pages。
+# 数据由本机定时重建后提交（上游 danjuan / csindex / sina 等在中国大陆才可达，
+# 不能放到 GitHub Actions 的美国 runner 上去抓取）。
+# 触发条件因此是「push 到 main」，而不是定时任务。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload web/ as the site artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: web
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
