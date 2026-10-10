@@ -7,6 +7,12 @@ logs/
 # EdgeOne 部署元数据
 .edgeone/
 
+# 凭据（GitHub PAT 等）绝不入库
+.secrets/
+*.token
+.env
+.env.*
+
 # 探针产物与调研抓取件（体积大，不属于运行所需）
 probe/hosting-docs/
 
