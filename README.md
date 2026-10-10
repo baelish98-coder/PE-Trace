@@ -54,6 +54,53 @@ C:\Users\Administrator\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python
 本机定时重建（tools/update.py） → 只发布 web/ 目录 → 公网静态托管
 ```
 
+### 当前线上地址
+
+已部署两个入口，内容完全相同（同一份 `web/` 产物）：
+
+| 入口 | 地址 | 大陆直连 | 说明 |
+|---|---|---|---|
+| **GitHub Pages** | https://baelish98-coder.github.io/PE-Trace/ | ✅ 直连可用 | **推荐日常访问**，免备案、可长期 |
+| **Vercel** | https://pe-trace.vercel.app/ | ⚠️ 需代理 | 本机 DNS 被污染，见下 |
+
+仓库：https://github.com/baelish98-coder/PE-Trace
+
+**为什么 Vercel 本机打不开**：`pe-trace.vercel.app` 在本机解析到 `210.209.84.142`（污染的
+结果），直连返回 `000`；而经 `http://127.0.0.1:7897` 代理解析正常、返回 `200`。**同一台
+机器上 `curl -x <proxy>` 能通、直连不通**，说明是本地 DNS/传输层被干扰，不是 Vercel 故障
+——其他网络（尤其是海外）访问正常。若要让大陆访问者免代理直连 Vercel，需在 Vercel 项目里
+绑定一个**未被污染的自定义域**。
+
+> Vercel 项目的 **Deployment Protection 默认开启**（`ssoProtection.deploymentType =
+> "all_except_custom_domains"`），会导致所有访客被弹 Vercel 登录墙、`curl` 拿到的是登录页
+> 而不是站点。公开数据看板必须关掉：
+> ```powershell
+> cd web
+> & vercel link --yes --project pe-trace
+> & vercel project protection disable --sso     # 关闭后 ssoProtection 变为 null
+> ```
+> 关闭后用**不带任何 token** 的 `curl` 验证：`curl -s -x http://127.0.0.1:7897 -o NUL -w "%{http_code}" https://pe-trace.vercel.app/` 应返回 `200`。
+
+### 部署方式
+
+```powershell
+# A) GitHub Pages（push 即自动发布，见 .github/workflows/deploy-pages.yml）
+git add -A; git commit -m "..."; git push origin main
+#    仅当改动命中 web/** 或工作流文件时触发，避免纯文档提交白跑一次
+
+# B) Vercel（手动部署；web/ 目录已 vercel link 到项目 pe-trace）
+cd web
+& vercel deploy --prod --yes
+```
+
+> 两个平台的触发方式刻意不同：**GitHub Pages 走 push 触发**，因为数据是在本机重建后
+> 提交的，Actions 只负责搬运 `web/`；**Vercel 走手动 CLI**，因为 `vercel git connect`
+> 需要 GitHub Login Connection（本账号尚未建立，报 `You need to add a Login Connection
+> to your GitHub account first. (400)`）。
+>
+> 若只想发布数据更新，用 `tools/update.py`（下面「自动周期性更新」一节）在重建成功后
+> 自动提交并推送，Pages 会自动跟随。
+
 ### 选哪家：中国大陆直连实测
 
 下面的数字是 2026-10-10 在本机（上海移动出口，**无代理**）用 `curl` 实测的。关键指标是
@@ -65,10 +112,10 @@ C:\Users\Administrator\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python
 
 | 托管 | 同体积资源 5 次实测 | 459 KB 关键路径 | 结论 |
 |---|---|---|---|
-| **腾讯 EdgeOne Makers** | 336 KB 用 **0.39–0.48 s**（@brotli，**700–867 KB/s**） | **≈ 0.6 s** | ✅ **推荐** |
+| **腾讯 EdgeOne Makers** | 336 KB 用 **0.39–0.48 s**（@brotli，**700–867 KB/s**） | **≈ 0.6 s** | ✅ 最快，但需备案+自定义域才能长期用 |
+| **GitHub Pages**（185.199.x） | 491 KB 用 **6.9–15.0 s**（@gzip，**33–71 KB/s**） | **≈ 6–15 s** | ✅ **已上线**，免备案、可长期 |
+| Vercel（`*.vercel.app`） | 20 s 超时（000），**仅本机不可达** | 数秒（他网） | ⚠️ **已上线**，本机需代理才能打开 |
 | Netlify（`*.netlify.app`） | TTFB 1.2–2.3 s | 数秒 | 可用，但 2026 改 credit 制后每日部署会击穿额度 |
-| **GitHub Pages**（185.199.x） | 491 KB 用 **6.9–15.0 s**（@gzip，**33–71 KB/s**） | **≈ 6–15 s** | ⚠️ 能连但被限速 |
-| Vercel（`*.vercel.app`） | **20 s 超时（000）** | — | ❌ 默认域不可达（DNS 污染） |
 | Cloudflare Pages（`*.pages.dev`） | 4 个测试站中 **3 个**返回 HTTP 522 | — | ❌ 免费档用不到大陆节点 |
 | Gitee Pages | 帮助中心已无 Pages 词条，`gitee.io` 超时 | — | ❌ 已停服 |
 
