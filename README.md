@@ -278,9 +278,17 @@ setx EDGEONE_API_TOKEN "你的token"     # 设完要重开终端
 2. **只工作日**：周末跳过（市场休市），`tools.update` 的智能跳过仍是第二道防线；
 3. **分片睡眠**：长睡眠切成 5 分钟一片，每片写心跳（`logs/scheduler.heartbeat.json`）并检查停止文件
    `logs/scheduler.stop`——出现即退出；
-4. **坏一轮不死**：意外异常记日志后继续循环，只有停止文件或致命导入错误才结束进程。
+4. **坏一轮不死**：意外异常记日志后继续循环，只有停止文件或致命导入错误才结束进程；
+5. **单实例**：`logs/scheduler.pid` 记录持有者，启动时若该 pid 仍存活就直接退出 0。
+   Startup 启动器**每次登录都会触发**，没有这道闸，登录几次就会叠几个守护进程，
+   每个都在 18:30 醒来抢 `web/data` 和 git 索引。
+   （探活不能用 `os.kill(pid, 0)`——在 Windows 上 CPython 把非控制台信号映射到
+   `TerminateProcess`，"检查"会把被查的进程杀掉；实现用 `OpenProcess` + `GetExitCodeProcess`。）
 
 退出码：`0` 正常｜`1` 致命｜`2` Startup 注册失败。
+
+> **`--once` 是诊断模式**：它不申请单实例锁、也不写心跳与 pid 文件，
+> 只跑一轮然后退出——否则它会把常驻守护进程的心跳覆盖成自己那个几秒后就死掉的 pid。
 
 > **`pythonw.exe` 陷阱（已修）**：`pythonw` 下 `sys.stdout` 与 `sys.stderr` **都是 `None`**。
 > 原有的 `sys.stdout.reconfigure(...)` 会在启动瞬间抛 `AttributeError`，而因为 stderr 也是 `None`，
@@ -519,6 +527,7 @@ tools/
 | `logs/petrace.log` | 全部运行日志（`--quiet` 也写，文件 handler 始终有效） |
 | `logs/update.lock` | 刷新锁，防重叠运行 |
 | `logs/scheduler.heartbeat.json` | 调度器心跳：`pid` / `next_run` / `runs` / `last_rc` / `as_of` |
+| `logs/scheduler.pid` | 单实例锁：持有调度槽位的 pid（进程退出时删除） |
 | `logs/scheduler.stop` | 出现该文件即让调度器在下一次分片睡眠后退出 |
 | `.secrets/gh_token.txt` | GitHub PAT（**已 gitignore，绝不入库**） |
 
