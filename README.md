@@ -60,16 +60,39 @@ C:\Users\Administrator\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python
 
 | 入口 | 地址 | 大陆直连 | 说明 |
 |---|---|---|---|
-| **GitHub Pages** | https://baelish98-coder.github.io/PE-Trace/ | ✅ 直连可用 | **推荐日常访问**，免备案、可长期 |
-| **Vercel** | https://pe-trace.vercel.app/ | ⚠️ 需代理 | 本机 DNS 被污染，见下 |
+| **GitHub Pages** | https://baelish98-coder.github.io/PE-Trace/ | ✅ 直连可用 | **推荐日常访问**，免备案、可长期、无需代理 |
+| **Vercel** | https://pe-trace.vercel.app/ | ⚠️ 需代理 | 本机被 Steam++ 按 SNI 拦截，见下 |
 
 仓库：https://github.com/baelish98-coder/PE-Trace
 
-**为什么 Vercel 本机打不开**：`pe-trace.vercel.app` 在本机解析到 `210.209.84.142`（污染的
-结果），直连返回 `000`；而经 `http://127.0.0.1:7897` 代理解析正常、返回 `200`。**同一台
-机器上 `curl -x <proxy>` 能通、直连不通**，说明是本地 DNS/传输层被干扰，不是 Vercel 故障
-——其他网络（尤其是海外）访问正常。若要让大陆访问者免代理直连 Vercel，需在 Vercel 项目里
-绑定一个**未被污染的自定义域**。
+**为什么 Vercel 在本机打不开（根因已定位）**：不是 Vercel 故障，也不是单纯 DNS 污染，
+而是**本机有一个按 SNI 名字白名单放行的传输层拦截**。证据链：
+
+- 同一 IP、同一端口，只换 SNI：打 `76.76.21.21:443` 时 `nextjs.org` → **200**，
+  `pe-trace.vercel.app` / `example.com` / `www.baidu.com` → **000**（连 `baidu.com` 都被拒，
+  说明不是「封 Vercel」而是「只放行少数名字」）；
+- `nextjs.org` 本身就跑在 Vercel 上，响应头带 `Server: Vercel` + `X-Vercel-Pop: NRT12-P2`，
+  证明 Vercel 服务本身可达；
+- 拦截者：`Steam++.Accelerator.exe` 监听 `0.0.0.0:443` 与 `0.0.0.0:80`，
+  并把 `github.com` 等 47 个域名写进 hosts 指向 `127.0.0.1`；
+- **真正的开关是 Clash Verge**：`verge.yaml` 里 `enable_auto_launch: false`，即它默认**不会自启**。
+  它一旦没跑，7897 端口就是死的，而系统代理（WinINET）仍指向 `127.0.0.1:7897`
+  → 所有 `*.vercel.app` 只能退化到直连 → 撞上上面那层 SNI 白名单 → 000。
+
+**修复与自愈**：Clash Verge 起来后（`Start-Process 'C:\Program Files\Clash Verge\clash-verge.exe'`，
+约 2s 监听 7897），经代理访问 `pe-trace.vercel.app` 立即恢复 `200`。为了不再依赖手动启动，
+`tools/autoupdate.py --ensure-proxy`（已由常驻调度器 `tools/scheduler.py` 带 `--ensure-proxy` 调用）
+会在 7897 不通时自动拉起 Clash Verge。**验证方式**：
+
+```powershell
+# 代理活着时应为 200
+curl.exe -s -o NUL -w "code=%{http_code}`n" --proxy http://127.0.0.1:7897 https://pe-trace.vercel.app/
+# GH Pages 无需代理也应 200
+curl.exe -s -o NUL -w "code=%{http_code}`n" https://baelish98-coder.github.io/PE-Trace/
+```
+
+若要让大陆访问者**免代理**直连 Vercel，唯一可靠办法是在 Vercel 项目里绑定一个未被上述
+拦截/污染影响的自定义域。
 
 > Vercel 项目的 **Deployment Protection 默认开启**（`ssoProtection.deploymentType =
 > "all_except_custom_domains"`），会导致所有访客被弹 Vercel 登录墙、`curl` 拿到的是登录页
@@ -98,7 +121,7 @@ cd web
 > 需要 GitHub Login Connection（本账号尚未建立，报 `You need to add a Login Connection
 > to your GitHub account first. (400)`）。
 >
-> 若只想发布数据更新，用 `tools/update.py`（下面「自动周期性更新」一节）在重建成功后
+> 若只想发布数据更新，用 `tools/autoupdate.py`（下面「自动周期性更新」一节）在重建成功后
 > 自动提交并推送，Pages 会自动跟随。
 
 ### 选哪家：中国大陆直连实测
@@ -224,15 +247,75 @@ setx EDGEONE_API_TOKEN "你的token"     # 设完要重开终端
 4. **真实的非零退出码**：`0` 成功（**含「无新数据」**）｜`1` build 失败｜`2` 锁被持有｜`3` 意外异常。
    这样计划任务可以据此报警，而「今天没新数据」不会被误报为故障。
 
-Windows 计划任务示例（每交易日 18:30 跑一次）：
+### 为什么不用 Windows 计划任务
+
+**本机用不了 `schtasks`。** 当前账号是 UAC 过滤令牌（`whoami /groups` 里 `BUILTIN\Administrators`
+标注为 *"Group used for deny only"*、完整性级别 Medium），两条路径都实测被拒：
+
+- `schtasks /create ... /sc once` → `ERROR: Access is denied.`（连用户级任务也拒；
+  曾经注册过的 `PE-Trace-Refresh` 查询结果为 `ERROR: The system cannot find the file specified.`）
+- `Register-ScheduledTask -Principal ... -RunLevel Limited` → `CimException: 拒绝访问。`
+
+同时 `C:\Windows\System32\drivers\etc\hosts` 也不可写——所以任何需要提权或改 hosts 的方案都不成立。
+**能写的是**：当前用户的 Startup 文件夹与 `HKCU\...\Run` 键。
+
+### 方案：Startup 启动器 + 常驻调度器
+
+`tools/scheduler.py` 是一个长驻循环，装在 Startup 里（**不使用计划任务**）：
 
 ```powershell
-schtasks /create /tn "PE-Trace update" /sc daily /st 18:30 ^
-  /tr "C:\Users\Administrator\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe -m tools.update --quiet" ^
-  /rl LIMITED
+& $py -m tools.scheduler --install-startup --ensure-proxy   # 装启动器（写 .vbs 到 Startup）
+& $py -m tools.scheduler --once                            # 只跑一轮，用于测试
+& $py -m tools.scheduler --uninstall-startup               # 卸载
 ```
 
-（用 `--quiet` 减少日志；工作目录需为项目根，或在 `/tr` 里显式 `cd`。）
+启动器是 `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\PE-Trace Scheduler.vbs`，
+用 `pythonw.exe`（无控制台窗口）以隐藏方式跑 `-m tools.scheduler --quiet --ensure-proxy`。
+调度器每交易日 **18:30（Asia/Shanghai）** 触发一次 `tools/autoupdate.py`，它自身解决四件事：
+
+1. **补跑（catch-up）**：机器在计划时刻关机/休眠时，若 `manifest.as_of` 落后于「最近一个可能已收盘的交易日」，
+   启动后立即补跑，而不是白等一天；
+2. **只工作日**：周末跳过（市场休市），`tools.update` 的智能跳过仍是第二道防线；
+3. **分片睡眠**：长睡眠切成 5 分钟一片，每片写心跳（`logs/scheduler.heartbeat.json`）并检查停止文件
+   `logs/scheduler.stop`——出现即退出；
+4. **坏一轮不死**：意外异常记日志后继续循环，只有停止文件或致命导入错误才结束进程。
+
+退出码：`0` 正常｜`1` 致命｜`2` Startup 注册失败。
+
+> **`pythonw.exe` 陷阱（已修）**：`pythonw` 下 `sys.stdout` 与 `sys.stderr` **都是 `None`**。
+> 原有的 `sys.stdout.reconfigure(...)` 会在启动瞬间抛 `AttributeError`，而因为 stderr 也是 `None`，
+> 进程**静默退出（exit 1）且不留任何信息**——Startup 每次登录都会这样死。现在入口处与
+> `petrace.core.setup_logging` 都做了 `None` 判断：日志只写 `logs/petrace.log`（文件 handler 始终有效），
+> 控制台 handler 在无 stdout 时跳过。
+
+### 发布：`tools/autoupdate.py`
+
+调度器调用的不是 `tools.update`，而是 `tools/autoupdate.py`——它在刷新之后**自动把新数据 push 到 GitHub**，
+从而触发 Pages 工作流：
+
+- 刷新后若 `manifest.freshness.advanced == false`（没有新数据），执行 `git checkout -- web/data` 回滚，
+  保持工作树干净、**不产生空提交**；
+- 有新数据时 `git add web/data` → `commit` → `push origin main`；
+- `--force-publish` 可在无新数据时也强制发布；`--no-publish` 只刷新不发布；
+- `--ensure-proxy` 会在 7897 端口不通时拉起 Clash Verge（见下节），保证 Vercel 可达。
+
+退出码：`0` 正常｜`1` 刷新失败｜`2` 发布失败｜`3` 意外异常。
+
+> **两个 git 传输怪癖（代码里已绕开）**
+> 1. 仓库级 `http.proxy = http://127.0.0.1:7897`。代理活着时 git 反而报
+>    `schannel: failed to receive handshake, SSL/TLS connection failed`；**加 `-c http.proxy=` 清空代理才成功**。
+>    `autoupdate._git()` 的命令头固定是 `[git, "-c", "http.proxy="]`。
+> 2. 本机解析 `github.com` 指向 `127.0.0.1`（Steam++ 的 hosts 劫持）。凭据走
+>    `.secrets/gh_token.txt`（**已 gitignore**）+ `-c http.extraheader="Authorization: Basic <b64>"`，
+>    不依赖 `gh` CLI，也不依赖任何常驻凭据助手。
+
+### 手动跑一遍
+
+```powershell
+& $py -m tools.autoupdate --quiet              # 刷新 + 有新数据才发布
+& $py -m tools.autoupdate --force-publish      # 强制发布
+& $py -m tools.update                          # 只刷新，不发布
+```
 
 ### 页面如何告诉你「更新了没有」
 
@@ -423,9 +506,21 @@ tools/
   seed_csindex_snapshots.py         从中证响应缓存回填快照层
   warm_legulegu.py                  乐咕乐股恢复后预热其缓存
   update.py                         无人值守刷新入口（TTL / 智能跳过 / 锁 / 退出码）
+  autoupdate.py                     刷新 + 有新数据时 git push（触发 Pages 工作流），含代理自愈
+  scheduler.py                      常驻调度器：每交易日 18:30 触发 autoupdate，装入 Startup
   serve.py                          静态服务（带 Cache-Control，避免浏览器用旧前端）
   deploy.py                         发布 web/ 到 EdgeOne Makers（匿名 / API Token 两种模式）
 ```
+
+生成物与运行状态（均不入库，见 `.gitignore`）：
+
+| 路径 | 用途 |
+|---|---|
+| `logs/petrace.log` | 全部运行日志（`--quiet` 也写，文件 handler 始终有效） |
+| `logs/update.lock` | 刷新锁，防重叠运行 |
+| `logs/scheduler.heartbeat.json` | 调度器心跳：`pid` / `next_run` / `runs` / `last_rc` / `as_of` |
+| `logs/scheduler.stop` | 出现该文件即让调度器在下一次分片睡眠后退出 |
+| `.secrets/gh_token.txt` | GitHub PAT（**已 gitignore，绝不入库**） |
 
 ## 页面的三个视图
 

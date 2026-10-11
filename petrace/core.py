@@ -62,9 +62,13 @@ def setup_logging(verbose: bool = False) -> logging.Logger:
         return logger
     logger.setLevel(logging.DEBUG if verbose else logging.INFO)
     fmt = logging.Formatter("%(asctime)s %(levelname)-5s %(message)s", "%H:%M:%S")
-    sh = logging.StreamHandler(sys.stdout)
-    sh.setFormatter(fmt)
-    logger.addHandler(sh)
+    # Under pythonw.exe sys.stdout is None; a StreamHandler bound to it would
+    # fail on every emit. The file handler below is what the resident scheduler
+    # relies on, so just skip the console handler in that case.
+    if sys.stdout is not None:
+        sh = logging.StreamHandler(sys.stdout)
+        sh.setFormatter(fmt)
+        logger.addHandler(sh)
     fh = logging.FileHandler(LOG_DIR / "petrace.log", encoding="utf-8")
     fh.setFormatter(fmt)
     logger.addHandler(fh)
