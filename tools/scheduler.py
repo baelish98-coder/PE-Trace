@@ -164,7 +164,8 @@ def _sleep_until(target: datetime, log: logging.Logger,
         time.sleep(chunk)
 
 
-def run_once(log: logging.Logger, args, heartbeat: dict) -> int:
+def run_once(log: logging.Logger, args, heartbeat: dict,
+             persist: bool = True) -> int:
     log.info("-" * 60)
     log.info("cycle start (as_of guard: latest possible close %s)",
              _latest_possible_close(_now_cn()))
@@ -188,7 +189,10 @@ def run_once(log: logging.Logger, args, heartbeat: dict) -> int:
     man = read_json(ROOT / "web" / "data" / "manifest.json") or {}
     heartbeat["as_of"] = man.get("as_of")
     heartbeat["runs"] = int(heartbeat.get("runs", 0)) + 1
-    _write_heartbeat(heartbeat)
+    # ``--once`` is a diagnostic: it must not clobber the resident daemon's
+    # heartbeat with a pid that dies seconds later.
+    if persist:
+        _write_heartbeat(heartbeat)
     return rc
 
 
@@ -270,12 +274,18 @@ def main(argv=None) -> int:
 
     # Claim the singleton slot BEFORE writing the heartbeat: a second instance
     # must not overwrite the running daemon's heartbeat with its own pid.
-    if not args.once:
-        if not _acquire_singleton(log):
-            return 0
-        # Best-effort tidy-up. A hard kill skips this, which is fine: the next
-        # start finds a dead pid and simply takes the slot over.
-        atexit.register(lambda: PID_FILE.unlink(missing_ok=True))
+    if args.once:
+        # Diagnostic run: keep the resident daemon's heartbeat/pid files intact.
+        log.info("=" * 60)
+        log.info("scheduler one-shot (pid %d)", os.getpid())
+        run_once(log, args, {}, persist=False)
+        return 0
+
+    if not _acquire_singleton(log):
+        return 0
+    # Best-effort tidy-up. A hard kill skips this, which is fine: the next
+    # start finds a dead pid and simply takes the slot over.
+    atexit.register(lambda: PID_FILE.unlink(missing_ok=True))
 
     heartbeat = read_json(HEARTBEAT, {}) or {}
     heartbeat["pid"] = os.getpid()
@@ -287,10 +297,6 @@ def main(argv=None) -> int:
     log.info("=" * 60)
     log.info("scheduler up (pid %d); daily at %02d:%02d Asia/Shanghai, weekdays",
              os.getpid(), hh, mm)
-
-    if args.once:
-        run_once(log, args, heartbeat)
-        return 0
 
     # Catch-up: a laptop that was shut at the scheduled minute must not skip a
     # whole day, so run immediately when the snapshot is behind.
