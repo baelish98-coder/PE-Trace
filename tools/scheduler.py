@@ -39,6 +39,7 @@ Exit codes: 0 ok | 1 fatal | 2 startup registration failed
 from __future__ import annotations
 
 import argparse
+import atexit
 import json
 import logging
 import os
@@ -56,6 +57,7 @@ from tools.update import _latest_possible_close  # noqa: E402
 
 CN_TZ = timezone(timedelta(hours=8))
 HEARTBEAT = LOG_DIR / "scheduler.heartbeat.json"
+PID_FILE = LOG_DIR / "scheduler.pid"
 STOP_FILE = LOG_DIR / "scheduler.stop"
 STARTUP_NAME = "PE-Trace Scheduler.vbs"
 DEFAULT_HOUR, DEFAULT_MINUTE = 18, 30
@@ -65,6 +67,63 @@ RUN_TIMEOUT_LOG = "run finished"
 
 def _now_cn() -> datetime:
     return datetime.now(CN_TZ)
+
+
+def _pid_alive(pid: int) -> bool:
+    """True if a live process still owns ``pid``.
+
+    ``os.kill(pid, 0)`` is NOT a valid liveness probe on Windows: CPython maps
+    a non-console signal to ``TerminateProcess``, so "checking" would kill the
+    very process being inspected. ``OpenProcess`` +
+    ``GetExitCodeProcess`` is the read-only equivalent and needs no elevation
+    for a same-user process.
+    """
+    if os.name != "nt":
+        try:
+            os.kill(pid, 0)
+        except OSError:
+            return False
+        return True
+    import ctypes
+    from ctypes import wintypes
+
+    PROCESS_QUERY_LIMITED_INFORMATION = 0x1000
+    STILL_ACTIVE = 259
+    k32 = ctypes.WinDLL("kernel32", use_last_error=True)
+    k32.OpenProcess.restype = wintypes.HANDLE
+    handle = k32.OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, False, int(pid))
+    if not handle:
+        return False
+    try:
+        code = wintypes.DWORD()
+        if not k32.GetExitCodeProcess(handle, ctypes.byref(code)):
+            return False
+        return code.value == STILL_ACTIVE
+    finally:
+        k32.CloseHandle(handle)
+
+
+def _acquire_singleton(log: logging.Logger) -> bool:
+    """False when another scheduler already holds the slot.
+
+    The Startup launcher fires on every logon, so without this guard a machine
+    that is logged into several times would accumulate one daemon per logon,
+    each waking at 18:30 and racing on web/data and the git index.
+    """
+    prev = read_json(PID_FILE, {}) or {}
+    pid = prev.get("pid")
+    if isinstance(pid, int) and pid != os.getpid() and _pid_alive(pid):
+        log.info("another scheduler is already running (pid %d); exiting", pid)
+        return False
+    try:
+        PID_FILE.write_text(
+            json.dumps({"pid": os.getpid(),
+                        "started_at": _now_cn().isoformat(timespec="seconds")},
+                       ensure_ascii=False, indent=1),
+            encoding="utf-8")
+    except OSError:
+        pass
+    return True
 
 
 def next_run(now: datetime, hour: int, minute: int) -> datetime:
@@ -208,6 +267,15 @@ def main(argv=None) -> int:
     except (ValueError, AssertionError):
         log.error("bad --at value %r (want HH:MM)", args.at)
         return 1
+
+    # Claim the singleton slot BEFORE writing the heartbeat: a second instance
+    # must not overwrite the running daemon's heartbeat with its own pid.
+    if not args.once:
+        if not _acquire_singleton(log):
+            return 0
+        # Best-effort tidy-up. A hard kill skips this, which is fine: the next
+        # start finds a dead pid and simply takes the slot over.
+        atexit.register(lambda: PID_FILE.unlink(missing_ok=True))
 
     heartbeat = read_json(HEARTBEAT, {}) or {}
     heartbeat["pid"] = os.getpid()
