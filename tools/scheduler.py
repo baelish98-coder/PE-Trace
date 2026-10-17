@@ -174,6 +174,8 @@ def run_once(log: logging.Logger, args, heartbeat: dict,
         argv.append("--force")
     if args.ensure_proxy:
         argv.append("--ensure-proxy")
+    if getattr(args, "no_vercel", False):
+        argv.append("--no-vercel")
     if args.quiet:
         argv.append("--quiet")
     t0 = time.time()
@@ -250,6 +252,8 @@ def main(argv=None) -> int:
                     help="passed through: ignore the 'nothing new' skip")
     ap.add_argument("--ensure-proxy", action="store_true",
                     help="start Clash Verge if 7897 is down (keeps Vercel reachable)")
+    ap.add_argument("--no-vercel", action="store_true",
+                    help="passed through: publish to GitHub Pages only")
     ap.add_argument("--once", action="store_true",
                     help="run a single cycle now and exit")
     ap.add_argument("--install-startup", action="store_true")

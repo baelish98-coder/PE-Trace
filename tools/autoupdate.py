@@ -48,13 +48,15 @@ from pathlib import Path
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from petrace.core import DATA_DIR, ROOT, ensure_dirs, read_json, setup_logging  # noqa: E402
+from petrace.core import (DATA_DIR, ROOT, WEB_DIR, ensure_dirs, read_json,  # noqa: E402
+                          setup_logging)
 from tools import update as update_mod  # noqa: E402
 
 GIT_BRANCH = "main"
 TOKEN_FILE = ROOT / ".secrets" / "gh_token.txt"
 CLASH_EXE = Path(r"C:\Program Files\Clash Verge\clash-verge.exe")
 PROXY_PORT = 7897
+PROXY_URL = f"http://127.0.0.1:{PROXY_PORT}"
 DATA_PATHSPEC = "web/data"
 
 
@@ -100,30 +102,107 @@ def ensure_proxy(log, wait_s: int = 60) -> bool:
 
 
 def _git(args: list[str], log, timeout: int = 180) -> tuple[int, str]:
-    """Run git with the dead-proxy config bypassed and one-shot auth."""
-    cmd = [shutil.which("git") or "git", "-c", "http.proxy="]
+    """Run git, choosing the proxy route that actually works right now.
+
+    Neither route is universally correct on this machine, so the choice is made
+    per call rather than baked into the repo config:
+
+    * **Proxy up** (7897 listening) -> use it. `github.com` resolves to a real
+      IP but the direct TCP connect just times out from here, so a bypassed
+      proxy fails after ~21 s.
+    * **Proxy down** -> bypass it. The repo-level `http.proxy` then points at a
+      dead port and git fails immediately with "Failed to connect ... over
+      proxy". A bypassed proxy used to work because Steam++'s hosts hijack sent
+      the traffic to a local accelerator; once Steam++ exits, that path is gone
+      too, but there is no third option so the direct attempt is still better
+      than a guaranteed connection refusal.
+    """
+    git = shutil.which("git") or "git"
+    via_proxy = _port_open(PROXY_PORT)
+    cmd = [git, "-c", f"http.proxy={PROXY_URL if via_proxy else ''}"]
     if TOKEN_FILE.exists():
         tok = TOKEN_FILE.read_text(encoding="utf-8").strip()
         if tok:
             b64 = base64.b64encode(f"x-access-token:{tok}".encode()).decode()
             cmd += ["-c", f"http.extraheader=Authorization: Basic {b64}"]
     cmd += args
-    log.info("$ git %s", " ".join(a for a in args if "Authorization" not in a))
+    log.info("$ git %s   (proxy=%s)", " ".join(args),
+             "on" if via_proxy else "off")
     p = subprocess.run(cmd, cwd=str(ROOT), capture_output=True, text=True,
                        timeout=timeout, encoding="utf-8", errors="replace")
     out = ((p.stdout or "") + (p.stderr or "")).strip()
     return p.returncode, out
 
 
-def publish(log, force: bool = False) -> int:
-    """Commit and push web/data if it really changed. 0 ok, 2 failed."""
+def _vercel_cli() -> str | None:
+    for name in ("vercel.cmd", "vercel"):
+        p = shutil.which(name)
+        if p:
+            return p
+    appdata = os.environ.get("APPDATA")
+    if appdata:
+        cand = Path(appdata) / "npm" / "vercel.cmd"
+        if cand.exists():
+            return str(cand)
+    return None
+
+
+def deploy_vercel(log, timeout: int = 900) -> int:
+    """Deploy web/ to the linked Vercel project. 0 ok, 0 skipped, 5 failed.
+
+    Vercel is NOT wired to this GitHub repo: `vercel git connect` refuses with
+    "You need to add a Login Connection to your GitHub account first", so a git
+    push only ever redeploys GitHub Pages. Without this step pe-trace.vercel.app
+    silently keeps serving whatever was published by the last manual
+    `vercel deploy`, which is exactly how it drifted six days behind.
+    """
+    linked = WEB_DIR / ".vercel" / "project.json"
+    if not linked.exists():
+        log.info("vercel: %s is not linked; skipping (see: cd web && vercel link)",
+                 linked)
+        return 0
+    cli = _vercel_cli()
+    if cli is None:
+        log.warning("vercel: CLI not found; skipping (npm i -g vercel)")
+        return 0
+
+    cmd = [cli, "deploy", "--prod", "--yes"]
+    log.info("$ vercel %s   (cwd=%s)", " ".join(cmd[1:]), WEB_DIR)
+    # The CLI needs the proxy for its API calls; the repo already has it set.
+    env = dict(os.environ)
+    env.setdefault("HTTP_PROXY", PROXY_URL)
+    env.setdefault("HTTPS_PROXY", PROXY_URL)
+    try:
+        p = subprocess.run(cmd, cwd=str(WEB_DIR), capture_output=True, text=True,
+                           timeout=timeout, encoding="utf-8", errors="replace",
+                           env=env)
+    except subprocess.TimeoutExpired:
+        log.error("vercel: deploy timed out after %ds", timeout)
+        return 5
+    out = ((p.stdout or "") + (p.stderr or "")).strip()
+    if p.returncode != 0:
+        log.error("vercel: deploy failed (rc=%d):\n%s", p.returncode, out[-2000:])
+        return 5
+    for line in out.splitlines():
+        if "vercel.app" in line or "Aliased" in line or "Production" in line:
+            log.info("vercel: %s", line.strip())
+    return 0
+
+
+def publish(log, force: bool = False) -> tuple[int, bool]:
+    """Commit and push web/data if it really changed.
+
+    Returns ``(rc, pushed)``. ``pushed`` is False when the tree was already
+    clean, which lets the caller skip a redundant Vercel deploy - the content
+    on both hosts only changes when something was actually pushed.
+    """
     rc, out = _git(["status", "--porcelain", DATA_PATHSPEC], log)
     if rc != 0:
         log.error("publish: git status failed:\n%s", out)
-        return 2
+        return 2, False
     if not out.strip():
         log.info("publish: web/data is unchanged; nothing to push")
-        return 0
+        return 0, False
     log.info("publish: changed files:\n%s", out)
 
     for step in (["add", DATA_PATHSPEC],
@@ -132,12 +211,12 @@ def publish(log, force: bool = False) -> int:
         rc, out = _git(step, log)
         if rc != 0:
             log.error("publish: git %s failed:\n%s", step[0], out)
-            return 2
+            return 2, False
         if out:
             log.info("publish: %s", out.splitlines()[-1] if out else "")
     log.info("publish: pushed to origin/%s - the Pages workflow will redeploy",
              GIT_BRANCH)
-    return 0
+    return 0, True
 
 
 def main(argv=None) -> int:
@@ -151,6 +230,8 @@ def main(argv=None) -> int:
                     help="commit even when freshness.advanced is false")
     ap.add_argument("--no-publish", action="store_true",
                     help="refresh only; leave the working tree dirty")
+    ap.add_argument("--no-vercel", action="store_true",
+                    help="skip the Vercel deploy (GitHub Pages only)")
     ap.add_argument("--ensure-proxy", action="store_true",
                     help="start Clash Verge if 7897 is not listening")
     ap.add_argument("--quiet", action="store_true")
@@ -195,7 +276,30 @@ def main(argv=None) -> int:
             log.warning("could not revert %s:\n%s", DATA_PATHSPEC, out)
         return 0
 
-    return publish(log, force=args.force_publish)
+    rc, pushed = publish(log, force=args.force_publish)
+    if rc != 0:
+        return rc
+    if not pushed:
+        log.info("autoupdate: nothing published, so Vercel is already current")
+        return 0
+
+    # Vercel is a separate deployment from the git remote: connecting the repo
+    # is blocked ("add a Login Connection to your GitHub account first"), so a
+    # push only refreshes GitHub Pages. Deploy it explicitly on every run that
+    # actually published, otherwise pe-trace.vercel.app froze at the last
+    # manual deploy and still showed 2026-10-09 a week later.
+    if args.no_vercel:
+        log.info("--no-vercel: skipping the Vercel deploy")
+        return 0
+    vrc = deploy_vercel(log)
+    if vrc != 0:
+        # GitHub Pages already got the update, so this is a partial success:
+        # report it distinctly instead of pretending the whole run failed.
+        log.error("autoupdate: published to GitHub Pages, but the Vercel "
+                  "deploy failed (rc=%d)", vrc)
+        return vrc
+    log.info("autoupdate: GitHub Pages + Vercel both updated")
+    return 0
 
 
 if __name__ == "__main__":
