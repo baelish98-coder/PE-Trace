@@ -298,24 +298,36 @@ setx EDGEONE_API_TOKEN "你的token"     # 设完要重开终端
 
 ### 发布：`tools/autoupdate.py`
 
-调度器调用的不是 `tools.update`，而是 `tools/autoupdate.py`——它在刷新之后**自动把新数据 push 到 GitHub**，
-从而触发 Pages 工作流：
+调度器调用的不是 `tools.update`，而是 `tools/autoupdate.py`——它在刷新之后**自动发布到两个站点**：
 
 - 刷新后若 `manifest.freshness.advanced == false`（没有新数据），执行 `git checkout -- web/data` 回滚，
   保持工作树干净、**不产生空提交**；
-- 有新数据时 `git add web/data` → `commit` → `push origin main`；
+- 有新数据时 `git add web/data` → `commit` → `push origin main` → **GitHub Pages 工作流自动重新部署**；
+- 仅当本次**确实推送了**（`publish()` 返回 `pushed=True`）才继续 `vercel deploy --prod`，
+  否则打印「nothing published, so Vercel is already current」跳过——避免无变更时白跑一次部署；
 - `--force-publish` 可在无新数据时也强制发布；`--no-publish` 只刷新不发布；
-- `--ensure-proxy` 会在 7897 端口不通时拉起 Clash Verge（见下节），保证 Vercel 可达。
+- `--no-vercel` 只发 GitHub Pages；`--ensure-proxy` 在 7897 不通时拉起 Clash Verge。
 
-退出码：`0` 正常｜`1` 刷新失败｜`2` 发布失败｜`3` 意外异常。
+退出码：`0` 正常｜`1` 刷新失败｜`2` 发布失败｜`5` 已发 Pages 但 Vercel 部署失败｜`3` 意外异常。
 
-> **两个 git 传输怪癖（代码里已绕开）**
-> 1. 仓库级 `http.proxy = http://127.0.0.1:7897`。代理活着时 git 反而报
->    `schannel: failed to receive handshake, SSL/TLS connection failed`；**加 `-c http.proxy=` 清空代理才成功**。
->    `autoupdate._git()` 的命令头固定是 `[git, "-c", "http.proxy="]`。
-> 2. 本机解析 `github.com` 指向 `127.0.0.1`（Steam++ 的 hosts 劫持）。凭据走
->    `.secrets/gh_token.txt`（**已 gitignore**）+ `-c http.extraheader="Authorization: Basic <b64>"`，
->    不依赖 `gh` CLI，也不依赖任何常驻凭据助手。
+> **Vercel 必须单独部署（这是它曾经停更 6 天的原因）**
+> `vercel git connect` 被拒：`You need to add a Login Connection to your GitHub account first. (400)`。
+> 所以 **git push 只会重部署 GitHub Pages，Vercel 与仓库没有任何关联**。
+> 只 push 的话，`pe-trace.vercel.app` 会一直停留在上次手动 `vercel deploy` 的内容
+> （实测：本地与 Pages 已到 `as_of 2026-10-16`，Vercel 还停在 `2026-10-09`）。
+> 现在 `autoupdate.py` 在每次真正发布后调用 `deploy_vercel()`（`cwd=web/`、注入 `HTTP(S)_PROXY`），
+> 并区分「整体失败」与「Pages 成功但 Vercel 失败」。
+
+> **git 走哪条路由是动态决定的**
+> 这台机器上两条路都不是恒为真，所以 `_git()` 每次先用 `_port_open(7897)` 探测再决定：
+> - **代理活着 → 走代理**。`github.com` 能解析到真实 IP 但直连 TCP 直接超时
+>   （实测 `Failed to connect to github.com:443 after 21106 ms`），清空代理必失败。
+> - **代理已死 → 绕过代理**。此时仓库级 `http.proxy` 指向死端口，
+>   不绕过会立刻 `Failed to connect ... over proxy`；而绕过代理此前能成功，
+>   是因为 Steam++ 的 hosts 劫持把流量引到了本地加速器（Steam++ 一退出这条路也就没了）。
+>
+> 凭据走 `.secrets/gh_token.txt`（**已 gitignore**）+ `-c http.extraheader="Authorization: Basic <b64>"`，
+> 不依赖 `gh` CLI，也不依赖任何常驻凭据助手。
 
 ### 手动跑一遍
 
