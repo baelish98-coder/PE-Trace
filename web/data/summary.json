@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T20:29:35+08:00",
+ "generated_at": "2026-10-24T00:26:14+08:00",
  "partial": false,
  "rows": [
   {
@@ -13,53 +13,53 @@
    "note": "沪深300价值风格",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 8.79,
-   "current_price": 5116.32,
+   "last": "2026-10-23",
+   "current_pe": 8.56,
+   "current_price": 4986.25,
    "price_start": 2890.91,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5293,
+   "price_n": 5297,
    "primary_window": "5年",
-   "primary_pct": 82.92079207920791,
+   "primary_pct": 74.13366336633663,
    "primary_band": {
-    "label": "高估",
-    "color": "#d64545",
-    "lo": 80,
-    "hi": 100.0001
+    "label": "偏高",
+    "color": "#e07b39",
+    "lo": 60,
+    "hi": 80
    },
    "windows": {
     "1年": {
-     "pct": 38.84297520661157,
+     "pct": 17.695473251028808,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 71.48760330578511,
+     "pct": 56.93681318681318,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 82.92079207920791,
+     "pct": 74.13366336633663,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 64.45039110745162,
+     "pct": 56.481481481481474,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 57.872398685651696,
+     "pct": 50.834245076586434,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -82,52 +82,52 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-19",
-   "last": "2026-10-19",
-   "current_pe": 3.252,
-   "current_price": 5584.69,
+   "first": "2016-10-24",
+   "last": "2026-10-23",
+   "current_pe": 8.809,
+   "current_price": 5471.846,
    "price_start": 4324.257,
    "price_source": "sina:cn",
    "price_note": null,
-   "price_n": 2377,
+   "price_n": 2381,
    "primary_window": "5年",
-   "primary_pct": 0.19455252918287938,
+   "primary_pct": 26.550387596899228,
    "primary_band": {
-    "label": "低估",
-    "color": "#1f9d55",
-    "lo": 0,
-    "hi": 20
+    "label": "偏低",
+    "color": "#7cb342",
+    "lo": 20,
+    "hi": 40
    },
    "windows": {
     "1年": {
      "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 0.3205128205128205,
+     "pct": 28.343949044585987,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 0.19455252918287938,
+     "pct": 26.550387596899228,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 0.09689922480620156,
+     "pct": 22.189922480620154,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 0.09689922480620156,
+     "pct": 22.189922480620154,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -146,53 +146,53 @@
    "note": "MSCI中国指数（价格以 MCHI ETF 代理）",
    "series_label": "蛋卷(周频)",
    "source": "danjuan:pe_history",
-   "n": 464,
+   "n": 465,
    "freq": "周",
    "first": "2017-10-23",
-   "last": "2026-10-19",
-   "current_pe": 13.248,
-   "current_price": 51.2,
+   "last": "2026-10-23",
+   "current_pe": 13.0,
+   "current_price": 49.02,
    "price_start": 64.89,
    "price_source": "sina:us",
    "price_note": "ETF代理：MCHI（iShares MSCI中国ETF）",
-   "price_n": 2693,
+   "price_n": 2697,
    "primary_window": "5年",
-   "primary_pct": 62.06225680933852,
+   "primary_pct": 58.333333333333336,
    "primary_band": {
-    "label": "偏高",
-    "color": "#e07b39",
-    "lo": 60,
-    "hi": 80
+    "label": "中性",
+    "color": "#c9a227",
+    "lo": 40,
+    "hi": 60
    },
    "windows": {
     "1年": {
      "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 52.243589743589745,
+     "pct": 47.452229299363054,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 62.06225680933852,
+     "pct": 58.333333333333336,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 59.15948275862068,
+     "pct": 54.73118279569893,
      "sufficient": true,
-     "n": 464,
+     "n": 465,
      "start": "2017-10-23"
     },
     "全历史": {
-     "pct": 59.15948275862068,
+     "pct": 54.73118279569893,
      "sufficient": true,
-     "n": 464,
+     "n": 465,
      "start": "2017-10-23"
     }
    },
@@ -212,18 +212,18 @@
    "note": "沪市大盘",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 11.5,
-   "current_price": 9174.392,
+   "last": "2026-10-23",
+   "current_pe": 11.32,
+   "current_price": 9094.247,
    "price_start": 6413.479,
    "price_source": "sina:cn",
    "price_note": null,
    "price_n": 6000,
    "primary_window": "5年",
-   "primary_pct": 66.996699669967,
+   "primary_pct": 61.05610561056105,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -232,33 +232,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 4.338842975206612,
+     "pct": 0.6172839506172839,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 56.33608815426997,
+     "pct": 47.39010989010989,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 66.996699669967,
+     "pct": 61.05610561056105,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 46.994648003293534,
+     "pct": 42.242798353909464,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 55.35323110624315,
+     "pct": 51.586433260393875,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -280,18 +280,18 @@
    "note": "沪市中小盘",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 20.87,
-   "current_price": 6187.46,
+   "last": "2026-10-23",
+   "current_pe": 20.7,
+   "current_price": 6149.0,
    "price_start": 4047.81,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5535,
+   "price_n": 5539,
    "primary_window": "5年",
-   "primary_pct": 77.43399339933993,
+   "primary_pct": 76.85643564356435,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -300,33 +300,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 1.0330578512396695,
+     "pct": 1.02880658436214,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 62.32782369146006,
+     "pct": 61.469780219780226,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 77.43399339933993,
+     "pct": 76.85643564356435,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 67.68217373404694,
+     "pct": 67.18106995884774,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 56.024096385542165,
+     "pct": 54.73194748358862,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -347,18 +347,18 @@
    "note": "沪市超大盘蓝筹",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 11.15,
-   "current_price": 2774.3,
+   "last": "2026-10-23",
+   "current_pe": 11.0,
+   "current_price": 2757.68,
    "price_start": 1993.72,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5535,
+   "price_n": 5539,
    "primary_window": "5年",
-   "primary_pct": 71.45214521452145,
+   "primary_pct": 68.8118811881188,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -367,33 +367,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 10.743801652892563,
+     "pct": 4.938271604938271,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 64.80716253443526,
+     "pct": 61.81318681318682,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 71.45214521452145,
+     "pct": 68.8118811881188,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 65.19143680526966,
+     "pct": 62.119341563786016,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 71.63198247535597,
+     "pct": 69.44748358862144,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -415,18 +415,18 @@
    "note": "沪市高股息",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 9.42,
-   "current_price": 3363.93,
+   "last": "2026-10-23",
+   "current_pe": 9.15,
+   "current_price": 3209.4,
    "price_start": 2174.15,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5293,
+   "price_n": 5297,
    "primary_window": "5年",
-   "primary_pct": 99.95874587458746,
+   "primary_pct": 99.21617161716172,
    "primary_band": {
     "label": "高估",
     "color": "#d64545",
@@ -435,33 +435,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 99.79338842975206,
+     "pct": 96.09053497942386,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 99.93112947658402,
+     "pct": 98.69505494505495,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 99.95874587458746,
+     "pct": 99.21617161716172,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 99.01193906957596,
+     "pct": 96.91358024691358,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 91.59364731653888,
+     "pct": 86.78884026258206,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -483,18 +483,18 @@
    "note": "大盘蓝筹",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 15.39,
-   "current_price": 4006.16,
+   "last": "2026-10-23",
+   "current_pe": 15.14,
+   "current_price": 3934.03,
    "price_start": 2814.957,
    "price_source": "sina:cn",
    "price_note": null,
-   "price_n": 5774,
+   "price_n": 5778,
    "primary_window": "5年",
-   "primary_pct": 77.8052805280528,
+   "primary_pct": 77.26897689768977,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -503,33 +503,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 0.8264462809917356,
+     "pct": 1.02880658436214,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 62.94765840220386,
+     "pct": 62.15659340659341,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 77.8052805280528,
+     "pct": 77.26897689768977,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 87.31988472622479,
+     "pct": 86.64609053497942,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 91.10076670317633,
+     "pct": 90.54978118161927,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -551,18 +551,18 @@
    "note": "A股小盘代表",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3472,
+   "n": 3476,
    "freq": "日",
    "first": "2012-06-29",
-   "last": "2026-10-19",
-   "current_pe": 27.13,
-   "current_price": 6698.3,
+   "last": "2026-10-23",
+   "current_pe": 27.18,
+   "current_price": 6734.55,
    "price_start": 3610.25,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5292,
+   "price_n": 5296,
    "primary_window": "5年",
-   "primary_pct": 68.27557755775577,
+   "primary_pct": 68.6881188118812,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -571,33 +571,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 0.2066115702479339,
+     "pct": 1.8518518518518516,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 56.12947658402204,
+     "pct": 56.387362637362635,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 68.27557755775577,
+     "pct": 68.6881188118812,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 53.9934129271305,
+     "pct": 54.19753086419753,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 53.41301843317973,
+     "pct": 53.50978135788262,
      "sufficient": true,
-     "n": 3472,
+     "n": 3476,
      "start": "2012-06-29"
     }
    },
@@ -619,18 +619,18 @@
    "note": "A股中盘代表",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 23.27,
-   "current_price": 6800.66,
+   "last": "2026-10-23",
+   "current_pe": 23.21,
+   "current_price": 6814.44,
    "price_start": 4574.48,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5293,
+   "price_n": 5297,
    "primary_window": "5年",
-   "primary_pct": 75.61881188118812,
+   "primary_pct": 75.24752475247524,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -639,33 +639,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 1.0330578512396695,
+     "pct": 1.440329218106996,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 59.29752066115702,
+     "pct": 58.791208791208796,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 75.61881188118812,
+     "pct": 75.24752475247524,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 63.379991766158916,
+     "pct": 63.004115226337454,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 45.35870755750274,
+     "pct": 44.85776805251641,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -687,18 +687,18 @@
    "note": "大中盘综合",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 14.32,
-   "current_price": 4621.12,
+   "last": "2026-10-23",
+   "current_pe": 14.12,
+   "current_price": 4567.26,
    "price_start": 3305.73,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5293,
+   "price_n": 5297,
    "primary_window": "5年",
-   "primary_pct": 67.53300330033002,
+   "primary_pct": 62.37623762376238,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -707,33 +707,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 1.0330578512396695,
+     "pct": 0.6172839506172839,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 57.71349862258953,
+     "pct": 49.93131868131868,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 67.53300330033002,
+     "pct": 62.37623762376238,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 50.24701523260601,
+     "pct": 45.267489711934154,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 54.65498357064622,
+     "pct": 50.38293216630198,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -754,18 +754,18 @@
    "note": "电子行业",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 2774,
+   "n": 2778,
    "freq": "日",
    "first": "2015-05-20",
-   "last": "2026-10-19",
-   "current_pe": 35.46,
-   "current_price": 9968.33,
+   "last": "2026-10-23",
+   "current_pe": 35.99,
+   "current_price": 10101.12,
    "price_start": 7819.69,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5292,
+   "price_n": 5296,
    "primary_window": "5年",
-   "primary_pct": 63.86138613861386,
+   "primary_pct": 66.46039603960396,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -774,33 +774,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 0.2066115702479339,
+     "pct": 2.263374485596708,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 44.62809917355372,
+     "pct": 46.90934065934066,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 63.86138613861386,
+     "pct": 66.46039603960396,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 50.823384108686696,
+     "pct": 53.68312757201647,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 44.82696467195385,
+     "pct": 47.53419726421886,
      "sufficient": true,
-     "n": 2774,
+     "n": 2778,
      "start": "2015-05-20"
     }
    },
@@ -821,18 +821,18 @@
    "note": "A股高股息代表",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 9.04,
-   "current_price": 5623.37,
+   "last": "2026-10-23",
+   "current_pe": 8.79,
+   "current_price": 5398.82,
    "price_start": 3028.39,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5293,
+   "price_n": 5297,
    "primary_window": "5年",
-   "primary_pct": 99.95874587458746,
+   "primary_pct": 97.35973597359737,
    "primary_band": {
     "label": "高估",
     "color": "#d64545",
@@ -841,33 +841,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 99.79338842975206,
+     "pct": 86.83127572016461,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 99.93112947658402,
+     "pct": 95.6043956043956,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 99.95874587458746,
+     "pct": 97.35973597359737,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 82.2972416632359,
+     "pct": 78.37448559670783,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 70.74205914567361,
+     "pct": 65.07111597374178,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -888,18 +888,18 @@
    "note": "主要消费行业",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 20.29,
-   "current_price": 12467.08,
+   "last": "2026-10-23",
+   "current_pe": 20.23,
+   "current_price": 12425.26,
    "price_start": 6440.3,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5293,
+   "price_n": 5297,
    "primary_window": "5年",
-   "primary_pct": 31.31188118811881,
+   "primary_pct": 30.775577557755774,
    "primary_band": {
     "label": "偏低",
     "color": "#7cb342",
@@ -908,33 +908,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 87.39669421487604,
+     "pct": 85.18518518518519,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 52.27272727272727,
+     "pct": 51.23626373626373,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 31.31188118811881,
+     "pct": 30.775577557755774,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 15.623713462330176,
+     "pct": 15.34979423868313,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 22.96002190580504,
+     "pct": 22.592997811816193,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -955,18 +955,18 @@
    "note": "信息技术行业",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 37.4,
-   "current_price": 8403.02,
+   "last": "2026-10-23",
+   "current_pe": 38.08,
+   "current_price": 8546.59,
    "price_start": 2955.24,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5293,
+   "price_n": 5297,
    "primary_window": "5年",
-   "primary_pct": 49.834983498349835,
+   "primary_pct": 53.506600660066006,
    "primary_band": {
     "label": "中性",
     "color": "#c9a227",
@@ -975,33 +975,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 0.2066115702479339,
+     "pct": 2.263374485596708,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 32.988980716253444,
+     "pct": 35.50824175824176,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 49.834983498349835,
+     "pct": 53.506600660066006,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 36.41416220666941,
+     "pct": 39.609053497942384,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 32.70810514786419,
+     "pct": 34.9835886214442,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -1022,18 +1022,18 @@
    "note": "医药行业",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 23.06,
-   "current_price": 8248.19,
+   "last": "2026-10-23",
+   "current_pe": 23.21,
+   "current_price": 8313.79,
    "price_start": 5618.05,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5293,
+   "price_n": 5297,
    "primary_window": "5年",
-   "primary_pct": 14.521452145214523,
+   "primary_pct": 17.07920792079208,
    "primary_band": {
     "label": "低估",
     "color": "#1f9d55",
@@ -1042,33 +1042,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 11.776859504132231,
+     "pct": 16.872427983539097,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 21.96969696969697,
+     "pct": 24.587912087912088,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 14.521452145214523,
+     "pct": 17.07920792079208,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 7.369287772745986,
+     "pct": 8.806584362139917,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 5.093099671412924,
+     "pct": 6.044857768052517,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -1092,15 +1092,15 @@
    "n": 205,
    "freq": "月",
    "first": "2009-10-30",
-   "last": "2026-10-19",
-   "current_pe": 25.24,
-   "current_price": 2825.988,
+   "last": "2026-10-23",
+   "current_pe": 24.46,
+   "current_price": 2727.711,
    "price_start": 1369.058,
    "price_source": "sina:cn",
    "price_note": null,
-   "price_n": 2998,
+   "price_n": 3002,
    "primary_window": "5年",
-   "primary_pct": 17.21311475409836,
+   "primary_pct": 14.754098360655737,
    "primary_band": {
     "label": "低估",
     "color": "#1f9d55",
@@ -1115,25 +1115,25 @@
      "start": "2025-10-31"
     },
     "3年": {
-     "pct": 28.37837837837838,
+     "pct": 24.324324324324326,
      "sufficient": true,
      "n": 37,
      "start": "2023-10-31"
     },
     "5年": {
-     "pct": 17.21311475409836,
+     "pct": 14.754098360655737,
      "sufficient": true,
      "n": 61,
      "start": "2021-10-29"
     },
     "10年": {
-     "pct": 9.50413223140496,
+     "pct": 8.264462809917356,
      "sufficient": true,
      "n": 121,
      "start": "2016-10-31"
     },
     "全历史": {
-     "pct": 5.609756097560976,
+     "pct": 4.878048780487805,
      "sufficient": true,
      "n": 205,
      "start": "2009-10-30"
@@ -1157,16 +1157,16 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-19",
-   "last": "2026-10-19",
-   "current_pe": 31.621,
-   "current_price": 2746.291,
-   "price_start": 2184.911,
+   "first": "2016-10-24",
+   "last": "2026-10-23",
+   "current_pe": 31.361,
+   "current_price": 2684.097,
+   "price_start": 2200.804,
    "price_source": "sina:cn",
    "price_note": null,
-   "price_n": 3976,
+   "price_n": 3980,
    "primary_window": "5年",
-   "primary_pct": 27.82101167315175,
+   "primary_pct": 27.71317829457364,
    "primary_band": {
     "label": "偏低",
     "color": "#7cb342",
@@ -1178,31 +1178,31 @@
      "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 40.06410256410257,
+     "pct": 39.80891719745223,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 27.82101167315175,
+     "pct": 27.71317829457364,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
      "pct": 17.344961240310077,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     },
     "全历史": {
      "pct": 17.344961240310077,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -1223,16 +1223,16 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-19",
-   "last": "2026-10-19",
-   "current_pe": 18.992,
-   "current_price": 6210.709,
-   "price_start": 4714.021,
+   "first": "2016-10-24",
+   "last": "2026-10-23",
+   "current_pe": 18.743,
+   "current_price": 6172.037,
+   "price_start": 4763.438,
    "price_source": "sina:cn",
    "price_note": null,
-   "price_n": 5268,
+   "price_n": 5272,
    "primary_window": "5年",
-   "primary_pct": 72.95719844357976,
+   "primary_pct": 70.73643410852713,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -1244,31 +1244,31 @@
      "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 55.44871794871795,
+     "pct": 51.910828025477706,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 72.95719844357976,
+     "pct": 70.73643410852713,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 65.60077519379846,
+     "pct": 62.5,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 65.60077519379846,
+     "pct": 62.5,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -1287,18 +1287,18 @@
    "note": "基本面加权大盘",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3652,
+   "n": 3656,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 9.61,
-   "current_price": 4346.61,
+   "last": "2026-10-23",
+   "current_pe": 9.38,
+   "current_price": 4244.02,
    "price_start": 2342.44,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5293,
+   "price_n": 5297,
    "primary_window": "5年",
-   "primary_pct": 78.79537953795379,
+   "primary_pct": 73.01980198019803,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -1307,33 +1307,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 19.62809917355372,
+     "pct": 8.847736625514404,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 64.60055096418733,
+     "pct": 55.082417582417584,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 78.79537953795379,
+     "pct": 73.01980198019803,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 54.096335940716344,
+     "pct": 48.06584362139918,
      "sufficient": true,
-     "n": 2429,
-     "start": "2016-10-19"
+     "n": 2430,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 59.96714129244249,
+     "pct": 53.514770240700216,
      "sufficient": true,
-     "n": 3652,
+     "n": 3656,
      "start": "2011-06-28"
     }
    },
@@ -1356,16 +1356,16 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-19",
-   "last": "2026-10-19",
-   "current_pe": 10.417,
-   "current_price": 7685.667,
-   "price_start": 5029.683,
+   "first": "2016-10-24",
+   "last": "2026-10-23",
+   "current_pe": 10.232,
+   "current_price": 7646.099,
+   "price_start": 5094.592,
    "price_source": "sina:cn",
    "price_note": null,
-   "price_n": 3489,
+   "price_n": 3493,
    "primary_window": "5年",
-   "primary_pct": 99.41634241245137,
+   "primary_pct": 95.54263565891473,
    "primary_band": {
     "label": "高估",
     "color": "#d64545",
@@ -1374,34 +1374,34 @@
    },
    "windows": {
     "1年": {
-     "pct": 99.03846153846155,
+     "pct": 89.42307692307693,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 99.03846153846155,
+     "pct": 92.67515923566879,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 99.41634241245137,
+     "pct": 95.54263565891473,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 85.94961240310077,
+     "pct": 82.26744186046511,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 85.94961240310077,
+     "pct": 82.26744186046511,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -1420,53 +1420,53 @@
    "note": "A股核心大盘宽基",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3651,
+   "n": 3655,
    "freq": "日",
    "first": "2011-06-28",
-   "last": "2026-10-19",
-   "current_pe": 12.96,
-   "current_price": 4174.535,
+   "last": "2026-10-23",
+   "current_pe": 12.74,
+   "current_price": 4105.329,
    "price_start": 3041.734,
    "price_source": "sina:cn",
    "price_note": null,
    "price_n": 6000,
    "primary_window": "5年",
-   "primary_pct": 63.53135313531353,
+   "primary_pct": 55.98184818481848,
    "primary_band": {
-    "label": "偏高",
-    "color": "#e07b39",
-    "lo": 60,
-    "hi": 80
+    "label": "中性",
+    "color": "#c9a227",
+    "lo": 40,
+    "hi": 60
    },
    "windows": {
     "1年": {
-     "pct": 1.0330578512396695,
+     "pct": 0.6172839506172839,
      "sufficient": true,
-     "n": 242,
-     "start": "2025-10-20"
+     "n": 243,
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 55.371900826446286,
+     "pct": 45.9478021978022,
      "sufficient": true,
-     "n": 726,
-     "start": "2023-10-19"
+     "n": 728,
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 63.53135313531353,
+     "pct": 55.98184818481848,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-19"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 44.048599670510704,
+     "pct": 37.628653766982296,
      "sufficient": true,
-     "n": 2428,
-     "start": "2016-10-19"
+     "n": 2429,
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 53.410024650780606,
+     "pct": 48.64569083447333,
      "sufficient": true,
-     "n": 3651,
+     "n": 3655,
      "start": "2011-06-28"
     }
    },
@@ -1490,52 +1490,52 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-19",
-   "last": "2026-10-19",
-   "current_pe": 22.651,
-   "current_price": 5072.196,
-   "price_start": 3795.49,
+   "first": "2016-10-24",
+   "last": "2026-10-23",
+   "current_pe": 22.179,
+   "current_price": 4936.168,
+   "price_start": 3830.42,
    "price_source": "sina:cn",
    "price_note": null,
-   "price_n": 5034,
+   "price_n": 5038,
    "primary_window": "5年",
-   "primary_pct": 45.719844357976655,
+   "primary_pct": 39.34108527131783,
    "primary_band": {
-    "label": "中性",
-    "color": "#c9a227",
-    "lo": 40,
-    "hi": 60
+    "label": "偏低",
+    "color": "#7cb342",
+    "lo": 20,
+    "hi": 40
    },
    "windows": {
     "1年": {
      "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 55.44871794871795,
+     "pct": 45.54140127388535,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 45.719844357976655,
+     "pct": 39.34108527131783,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 46.60852713178294,
+     "pct": 39.825581395348834,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 46.60852713178294,
+     "pct": 39.825581395348834,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -1557,16 +1557,16 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-19",
-   "last": "2026-10-19",
-   "current_pe": 26.445,
-   "current_price": 11817.423,
-   "price_start": 10757.919,
+   "first": "2016-10-24",
+   "last": "2026-10-23",
+   "current_pe": 26.087,
+   "current_price": 11673.826,
+   "price_start": 10842.643,
    "price_source": "sina:cn",
    "price_note": null,
    "price_n": 6000,
    "primary_window": "5年",
-   "primary_pct": 58.17120622568094,
+   "primary_pct": 52.51937984496124,
    "primary_band": {
     "label": "中性",
     "color": "#c9a227",
@@ -1578,31 +1578,31 @@
      "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 54.807692307692314,
+     "pct": 51.910828025477706,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 58.17120622568094,
+     "pct": 52.51937984496124,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 50.48449612403101,
+     "pct": 46.99612403100775,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 50.48449612403101,
+     "pct": 46.99612403100775,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -1623,52 +1623,52 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-19",
-   "last": "2026-10-19",
-   "current_pe": 15.996,
-   "current_price": 7560.175,
-   "price_start": 6193.699,
+   "first": "2016-10-24",
+   "last": "2026-10-23",
+   "current_pe": 15.358,
+   "current_price": 7424.796,
+   "price_start": 6265.373,
    "price_source": "sina:cn",
    "price_note": null,
-   "price_n": 5034,
+   "price_n": 5038,
    "primary_window": "5年",
-   "primary_pct": 57.78210116731517,
+   "primary_pct": 39.72868217054263,
    "primary_band": {
-    "label": "中性",
-    "color": "#c9a227",
-    "lo": 40,
-    "hi": 60
+    "label": "偏低",
+    "color": "#7cb342",
+    "lo": 20,
+    "hi": 40
    },
    "windows": {
     "1年": {
-     "pct": 47.11538461538461,
+     "pct": 12.5,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 72.11538461538461,
+     "pct": 50.0,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 57.78210116731517,
+     "pct": 39.72868217054263,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 54.360465116279066,
+     "pct": 35.56201550387597,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 54.360465116279066,
+     "pct": 35.56201550387597,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -1688,18 +1688,18 @@
    "note": "科创板头部50家（PE自2020-07起）",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 1518,
+   "n": 1528,
    "freq": "日",
    "first": "2020-07-06",
-   "last": "2026-10-09",
-   "current_pe": 68.2,
-   "current_price": 1457.27,
+   "last": "2026-10-23",
+   "current_pe": 63.85,
+   "current_price": 1345.51,
    "price_start": 1538.4,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 1640,
+   "price_n": 1650,
    "primary_window": "5年",
-   "primary_pct": 78.67161716171617,
+   "primary_pct": 77.35148514851485,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -1708,33 +1708,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 2.263374485596708,
+     "pct": 2.674897119341564,
      "sufficient": true,
      "n": 243,
-     "start": "2025-10-09"
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 64.49175824175825,
+     "pct": 62.293956043956044,
      "sufficient": true,
      "n": 728,
-     "start": "2023-10-09"
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 78.67161716171617,
+     "pct": 77.35148514851485,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-11"
+     "start": "2021-10-25"
     },
     "10年": {
      "pct": null,
      "sufficient": false,
-     "n": 1518,
+     "n": 1528,
      "start": "2020-07-06"
     },
     "全历史": {
-     "pct": 65.15151515151516,
+     "pct": 63.416230366492144,
      "sufficient": true,
-     "n": 1518,
+     "n": 1528,
      "start": "2020-07-06"
     }
    },
@@ -1755,18 +1755,18 @@
    "note": "科技龙头50（PE自2019-03起）",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 1841,
+   "n": 1851,
    "freq": "日",
    "first": "2019-03-07",
-   "last": "2026-10-09",
-   "current_pe": 41.67,
-   "current_price": 6044.79,
+   "last": "2026-10-23",
+   "current_pe": 38.07,
+   "current_price": 5541.44,
    "price_start": 2887.07,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 3468,
+   "price_n": 3478,
    "primary_window": "5年",
-   "primary_pct": 76.44389438943895,
+   "primary_pct": 66.54290429042904,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -1775,33 +1775,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 0.205761316872428,
+     "pct": 0.6172839506172839,
      "sufficient": true,
      "n": 243,
-     "start": "2025-10-09"
+     "start": "2025-10-23"
     },
     "3年": {
-     "pct": 60.920329670329664,
+     "pct": 50.61813186813187,
      "sufficient": true,
      "n": 728,
-     "start": "2023-10-09"
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 76.44389438943895,
+     "pct": 66.54290429042904,
      "sufficient": true,
      "n": 1212,
-     "start": "2021-10-11"
+     "start": "2021-10-25"
     },
     "10年": {
      "pct": null,
      "sufficient": false,
-     "n": 1841,
+     "n": 1851,
      "start": "2019-03-07"
     },
     "全历史": {
-     "pct": 60.374796306355236,
+     "pct": 49.78390059427337,
      "sufficient": true,
-     "n": 1841,
+     "n": 1851,
      "start": "2019-03-07"
     }
    },
@@ -1822,18 +1822,18 @@
    "note": "中概互联网",
    "series_label": "中证官方(日频)",
    "source": "csindex:pe_ttm",
-   "n": 3866,
+   "n": 3876,
    "freq": "日",
    "first": "2011-09-12",
-   "last": "2026-10-08",
-   "current_pe": 19.22,
-   "current_price": 3549.88,
+   "last": "2026-10-22",
+   "current_pe": 18.09,
+   "current_price": 3384.12,
    "price_start": 2064.84,
    "price_source": "csindex",
    "price_note": null,
-   "price_n": 5029,
+   "price_n": 5039,
    "primary_window": "5年",
-   "primary_pct": 46.93016116653876,
+   "primary_pct": 41.74980813507291,
    "primary_band": {
     "label": "中性",
     "color": "#c9a227",
@@ -1842,33 +1842,33 @@
    },
    "windows": {
     "1年": {
-     "pct": 2.099236641221374,
+     "pct": 0.19083969465648853,
      "sufficient": true,
      "n": 262,
-     "start": "2025-10-08"
+     "start": "2025-10-22"
     },
     "3年": {
-     "pct": 31.058673469387756,
+     "pct": 23.214285714285715,
      "sufficient": true,
      "n": 784,
-     "start": "2023-10-09"
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 46.93016116653876,
+     "pct": 41.74980813507291,
      "sufficient": true,
      "n": 1303,
-     "start": "2021-10-08"
+     "start": "2021-10-22"
     },
     "10年": {
-     "pct": 23.456079785193708,
+     "pct": 20.866896816263907,
      "sufficient": true,
      "n": 2607,
-     "start": "2016-10-10"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 20.162959130884637,
+     "pct": 18.369453044375643,
      "sufficient": true,
-     "n": 3866,
+     "n": 3876,
      "start": "2011-09-12"
     }
    },
@@ -1891,52 +1891,52 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-17",
-   "last": "2026-10-16",
-   "current_pe": 9.353,
+   "first": "2016-10-24",
+   "last": "2026-10-22",
+   "current_pe": 8.916,
    "current_price": 8128.25,
-   "price_start": 9601.4,
+   "price_start": 9686.38,
    "price_source": "tencent",
    "price_note": null,
-   "price_n": 1736,
+   "price_n": 1737,
    "primary_window": "5年",
-   "primary_pct": 62.5968992248062,
+   "primary_pct": 52.51937984496124,
    "primary_band": {
-    "label": "偏高",
-    "color": "#e07b39",
-    "lo": 60,
-    "hi": 80
+    "label": "中性",
+    "color": "#c9a227",
+    "lo": 40,
+    "hi": 60
    },
    "windows": {
     "1年": {
-     "pct": 6.730769230769231,
+     "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 51.27388535031847,
+     "pct": 41.71974522292994,
      "sufficient": true,
      "n": 157,
-     "start": "2023-10-16"
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 62.5968992248062,
+     "pct": 52.51937984496124,
      "sufficient": true,
      "n": 258,
-     "start": "2021-10-18"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 64.05038759689923,
+     "pct": 53.58527131782945,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-17"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 64.05038759689923,
+     "pct": 53.58527131782945,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-17"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -1957,52 +1957,52 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-17",
-   "last": "2026-10-16",
-   "current_pe": 10.701,
+   "first": "2016-10-24",
+   "last": "2026-10-22",
+   "current_pe": 10.091,
    "current_price": 24186.83,
-   "price_start": 23233.311,
+   "price_start": 23374.4,
    "price_source": "tencent",
    "price_note": null,
-   "price_n": 1972,
+   "price_n": 1973,
    "primary_window": "5年",
-   "primary_pct": 68.7984496124031,
+   "primary_pct": 54.06976744186046,
    "primary_band": {
-    "label": "偏高",
-    "color": "#e07b39",
-    "lo": 60,
-    "hi": 80
+    "label": "中性",
+    "color": "#c9a227",
+    "lo": 40,
+    "hi": 60
    },
    "windows": {
     "1年": {
-     "pct": 2.8846153846153846,
+     "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 58.28025477707006,
+     "pct": 45.54140127388535,
      "sufficient": true,
      "n": 157,
-     "start": "2023-10-16"
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 68.7984496124031,
+     "pct": 54.06976744186046,
      "sufficient": true,
      "n": 258,
-     "start": "2021-10-18"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 54.166666666666664,
+     "pct": 39.43798449612403,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-17"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 54.166666666666664,
+     "pct": 39.43798449612403,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-17"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -2021,53 +2021,53 @@
    "note": "港股科技龙头（2020-07起）",
    "series_label": "蛋卷(周频)",
    "source": "danjuan:pe_history",
-   "n": 322,
+   "n": 323,
    "freq": "周",
    "first": "2020-07-27",
-   "last": "2026-10-19",
-   "current_pe": 22.011,
-   "current_price": 4108.24,
+   "last": "2026-10-23",
+   "current_pe": 20.625,
+   "current_price": 3871.66,
    "price_start": 6774.78,
    "price_source": "tencent",
    "price_note": null,
-   "price_n": 1533,
+   "price_n": 1537,
    "primary_window": "5年",
-   "primary_pct": 30.155642023346303,
+   "primary_pct": 12.984496124031008,
    "primary_band": {
-    "label": "偏低",
-    "color": "#7cb342",
-    "lo": 20,
-    "hi": 40
+    "label": "低估",
+    "color": "#1f9d55",
+    "lo": 0,
+    "hi": 20
    },
    "windows": {
     "1年": {
-     "pct": 25.961538461538463,
+     "pct": 2.8846153846153846,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 49.67948717948718,
+     "pct": 21.337579617834397,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 30.155642023346303,
+     "pct": 12.984496124031008,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 24.06832298136646,
+     "pct": 10.371517027863778,
      "sufficient": true,
-     "n": 322,
+     "n": 323,
      "start": "2020-07-27"
     },
     "全历史": {
-     "pct": 24.06832298136646,
+     "pct": 10.371517027863778,
      "sufficient": true,
-     "n": 322,
+     "n": 323,
      "start": "2020-07-27"
     }
    },
@@ -2089,16 +2089,16 @@
    "source": "danjuan:pe_history",
    "n": 515,
    "freq": "周",
-   "first": "2016-10-17",
-   "last": "2026-10-16",
-   "current_pe": 16.589,
+   "first": "2016-10-24",
+   "last": "2026-10-22",
+   "current_pe": 15.648,
    "current_price": null,
    "price_start": null,
    "price_source": null,
    "price_note": null,
    "price_n": 0,
    "primary_window": "5年",
-   "primary_pct": 73.06201550387597,
+   "primary_pct": 64.53488372093024,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -2110,31 +2110,31 @@
      "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 55.73248407643312,
+     "pct": 42.99363057324841,
      "sufficient": true,
      "n": 157,
-     "start": "2023-10-16"
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 73.06201550387597,
+     "pct": 64.53488372093024,
      "sufficient": true,
      "n": 258,
-     "start": "2021-10-18"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 73.10679611650485,
+     "pct": 65.14563106796116,
      "sufficient": true,
      "n": 515,
-     "start": "2016-10-17"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 73.10679611650485,
+     "pct": 65.14563106796116,
      "sufficient": true,
      "n": 515,
-     "start": "2016-10-17"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -2157,16 +2157,16 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-17",
-   "last": "2026-10-16",
-   "current_pe": 9.071,
-   "current_price": 1.418,
-   "price_start": 1.242,
+   "first": "2016-10-24",
+   "last": "2026-10-22",
+   "current_pe": 8.64,
+   "current_price": 1.345,
+   "price_start": 1.271,
    "price_source": "sina:cn",
    "price_note": "ETF代理：sz159920（华夏恒生ETF）",
-   "price_n": 3397,
+   "price_n": 3401,
    "primary_window": "5年",
-   "primary_pct": 58.720930232558146,
+   "primary_pct": 49.41860465116279,
    "primary_band": {
     "label": "中性",
     "color": "#c9a227",
@@ -2175,34 +2175,34 @@
    },
    "windows": {
     "1年": {
-     "pct": 6.730769230769231,
+     "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 48.72611464968153,
+     "pct": 44.26751592356688,
      "sufficient": true,
      "n": 157,
-     "start": "2023-10-16"
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 58.720930232558146,
+     "pct": 49.41860465116279,
      "sufficient": true,
      "n": 258,
-     "start": "2021-10-18"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 45.83333333333333,
+     "pct": 34.593023255813954,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-17"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 45.83333333333333,
+     "pct": 34.593023255813954,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-17"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -2221,53 +2221,53 @@
    "note": "港股新经济（2018-11起，暂无价格源）",
    "series_label": "蛋卷(周频)",
    "source": "danjuan:pe_history",
-   "n": 408,
+   "n": 409,
    "freq": "周",
    "first": "2018-11-21",
-   "last": "2026-10-16",
-   "current_pe": 23.286,
+   "last": "2026-10-22",
+   "current_pe": 20.746,
    "current_price": null,
    "price_start": null,
    "price_source": null,
    "price_note": null,
    "price_n": 0,
    "primary_window": "5年",
-   "primary_pct": 35.46511627906977,
+   "primary_pct": 7.55813953488372,
    "primary_band": {
-    "label": "偏低",
-    "color": "#7cb342",
-    "lo": 20,
-    "hi": 40
+    "label": "低估",
+    "color": "#1f9d55",
+    "lo": 0,
+    "hi": 20
    },
    "windows": {
     "1年": {
-     "pct": 31.73076923076923,
+     "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 46.17834394904459,
+     "pct": 11.146496815286625,
      "sufficient": true,
      "n": 157,
-     "start": "2023-10-16"
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 35.46511627906977,
+     "pct": 7.55813953488372,
      "sufficient": true,
      "n": 258,
-     "start": "2021-10-18"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 41.78921568627451,
+     "pct": 18.45965770171149,
      "sufficient": true,
-     "n": 408,
+     "n": 409,
      "start": "2018-11-21"
     },
     "全历史": {
-     "pct": 41.78921568627451,
+     "pct": 18.45965770171149,
      "sufficient": true,
-     "n": 408,
+     "n": 409,
      "start": "2018-11-21"
     }
    },
@@ -2291,16 +2291,16 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-17",
-   "last": "2026-10-16",
-   "current_pe": 24.792,
+   "first": "2016-10-24",
+   "last": "2026-10-22",
+   "current_pe": 24.645,
    "current_price": 7659.44,
-   "price_start": 2132.98,
+   "price_start": 2141.16,
    "price_source": "tencent",
    "price_note": null,
    "price_n": 2000,
    "primary_window": "5年",
-   "primary_pct": 37.01550387596899,
+   "primary_pct": 35.077519379844965,
    "primary_band": {
     "label": "偏低",
     "color": "#7cb342",
@@ -2312,31 +2312,31 @@
      "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 9.872611464968154,
+     "pct": 6.687898089171974,
      "sufficient": true,
      "n": 157,
-     "start": "2023-10-16"
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 37.01550387596899,
+     "pct": 35.077519379844965,
      "sufficient": true,
      "n": 258,
-     "start": "2021-10-18"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 52.03488372093024,
+     "pct": 49.9031007751938,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-17"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 52.03488372093024,
+     "pct": 49.9031007751938,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-17"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -2358,16 +2358,16 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-19",
-   "last": "2026-10-19",
-   "current_pe": 7.079,
-   "current_price": 63.07,
-   "price_start": 102.02,
+   "first": "2016-10-24",
+   "last": "2026-10-23",
+   "current_pe": 6.848,
+   "current_price": 64.13,
+   "price_start": 101.67,
    "price_source": "sina:us",
    "price_note": "ETF代理：SPYV（SPDR 标普500价值ETF）",
-   "price_n": 5481,
+   "price_n": 5485,
    "primary_window": "5年",
-   "primary_pct": 79.1828793774319,
+   "primary_pct": 74.6124031007752,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -2376,34 +2376,34 @@
    },
    "windows": {
     "1年": {
-     "pct": 20.192307692307693,
+     "pct": 6.730769230769231,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 65.7051282051282,
+     "pct": 58.28025477707006,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 79.1828793774319,
+     "pct": 74.6124031007752,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 68.31395348837209,
+     "pct": 63.662790697674424,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 68.31395348837209,
+     "pct": 63.662790697674424,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -2424,16 +2424,16 @@
    "source": "danjuan:pe_history",
    "n": 515,
    "freq": "周",
-   "first": "2016-10-19",
-   "last": "2026-10-19",
-   "current_pe": 10.585,
-   "current_price": 57.15,
-   "price_start": 52.54,
+   "first": "2016-10-24",
+   "last": "2026-10-23",
+   "current_pe": 10.422,
+   "current_price": 58.94,
+   "price_start": 52.44,
    "price_source": "sina:us",
    "price_note": "ETF代理：NOBL（ProShares 标普红利贵族ETF）",
-   "price_n": 2901,
+   "price_n": 2905,
    "primary_window": "5年",
-   "primary_pct": 99.80544747081711,
+   "primary_pct": 99.03100775193798,
    "primary_band": {
     "label": "高估",
     "color": "#d64545",
@@ -2442,34 +2442,34 @@
    },
    "windows": {
     "1年": {
-     "pct": 99.03846153846155,
+     "pct": 95.1923076923077,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 99.67948717948718,
+     "pct": 98.40764331210191,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 99.80544747081711,
+     "pct": 99.03100775193798,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 99.70873786407766,
+     "pct": 99.12621359223301,
      "sufficient": true,
      "n": 515,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 99.70873786407766,
+     "pct": 99.12621359223301,
      "sufficient": true,
      "n": 515,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -2490,16 +2490,16 @@
    "source": "danjuan:pe_history",
    "n": 516,
    "freq": "周",
-   "first": "2016-10-19",
-   "last": "2026-10-19",
+   "first": "2016-10-24",
+   "last": "2026-10-23",
    "current_pe": 15.642,
-   "current_price": 83.96,
-   "price_start": 24.72,
+   "current_price": 83.84,
+   "price_start": 24.83,
    "price_source": "sina:us",
    "price_note": "ETF代理：SPHQ（Invesco 标普500质量ETF）",
-   "price_n": 4088,
+   "price_n": 4092,
    "primary_window": "5年",
-   "primary_pct": 55.447470817120625,
+   "primary_pct": 55.42635658914728,
    "primary_band": {
     "label": "中性",
     "color": "#c9a227",
@@ -2511,31 +2511,31 @@
      "pct": 50.0,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 70.83333333333334,
+     "pct": 70.70063694267516,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 55.447470817120625,
+     "pct": 55.42635658914728,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 48.934108527131784,
+     "pct": 49.031007751937985,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 48.934108527131784,
+     "pct": 49.031007751937985,
      "sufficient": true,
      "n": 516,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -2556,52 +2556,52 @@
    "source": "danjuan:pe_history",
    "n": 514,
    "freq": "周",
-   "first": "2016-10-17",
-   "last": "2026-10-16",
-   "current_pe": 29.391,
+   "first": "2016-10-24",
+   "last": "2026-10-22",
+   "current_pe": 28.742,
    "current_price": 29187.55,
-   "price_start": 4808.48,
+   "price_start": 4851.86,
    "price_source": "tencent",
    "price_note": null,
-   "price_n": 1396,
+   "price_n": 1397,
    "primary_window": "5年",
-   "primary_pct": 20.038910505836576,
+   "primary_pct": 17.704280155642024,
    "primary_band": {
-    "label": "偏低",
-    "color": "#7cb342",
-    "lo": 20,
-    "hi": 40
+    "label": "低估",
+    "color": "#1f9d55",
+    "lo": 0,
+    "hi": 20
    },
    "windows": {
     "1年": {
      "pct": 0.9615384615384616,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
      "pct": 0.9554140127388535,
      "sufficient": true,
      "n": 157,
-     "start": "2023-10-16"
+     "start": "2023-10-23"
     },
     "5年": {
-     "pct": 20.038910505836576,
+     "pct": 17.704280155642024,
      "sufficient": true,
      "n": 257,
-     "start": "2021-10-18"
+     "start": "2021-10-25"
     },
     "10年": {
-     "pct": 39.980544747081716,
+     "pct": 36.284046692607,
      "sufficient": true,
      "n": 514,
-     "start": "2016-10-17"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 39.980544747081716,
+     "pct": 36.284046692607,
      "sufficient": true,
      "n": 514,
-     "start": "2016-10-17"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -2620,16 +2620,16 @@
    "note": "美国蓝筹30家（无PE源）",
    "series_label": "仅指数点位（无PE源）",
    "source": "price:sina:us",
-   "n": 5736,
+   "n": 5740,
    "freq": "日",
    "first": "2004-01-02",
-   "last": "2026-10-16",
+   "last": "2026-10-22",
    "current_pe": null,
-   "current_price": 52002.41,
+   "current_price": 52867.98,
    "price_start": 10409.85,
    "price_source": "sina:us",
    "price_note": null,
-   "price_n": 5736,
+   "price_n": 5740,
    "primary_window": null,
    "primary_pct": null,
    "primary_band": null,
@@ -2654,16 +2654,16 @@
    "source": "danjuan:pe_history",
    "n": 515,
    "freq": "周",
-   "first": "2016-10-19",
-   "last": "2026-10-19",
-   "current_pe": 17.087,
-   "current_price": 25622.61,
-   "price_start": 14313.3,
+   "first": "2016-10-24",
+   "last": "2026-10-23",
+   "current_pe": 16.942,
+   "current_price": 25371.75,
+   "price_start": 14379.93,
    "price_source": "sina:gi",
    "price_note": null,
    "price_n": 1000,
    "primary_window": "5年",
-   "primary_pct": 64.78599221789884,
+   "primary_pct": 64.14728682170544,
    "primary_band": {
     "label": "偏高",
     "color": "#e07b39",
@@ -2675,31 +2675,31 @@
      "pct": 4.807692307692308,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 43.91025641025641,
+     "pct": 42.99363057324841,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 64.78599221789884,
+     "pct": 64.14728682170544,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 48.44660194174757,
+     "pct": 48.05825242718447,
      "sufficient": true,
      "n": 515,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     },
     "全历史": {
-     "pct": 48.44660194174757,
+     "pct": 48.05825242718447,
      "sufficient": true,
      "n": 515,
-     "start": "2016-10-19"
+     "start": "2016-10-24"
     }
    },
    "series_ids": [
@@ -2720,11 +2720,11 @@
    "source": "price:sina:gi",
    "n": 1000,
    "freq": "日",
-   "first": "2022-11-09",
-   "last": "2026-10-16",
+   "first": "2022-11-15",
+   "last": "2026-10-22",
    "current_pe": null,
-   "current_price": 49857.18,
-   "price_start": 23780.07,
+   "current_price": 48383.66,
+   "price_start": 24699.75,
    "price_source": "sina:gi",
    "price_note": null,
    "price_n": 1000,
@@ -2752,11 +2752,11 @@
    "source": "price:sina:gi",
    "n": 1000,
    "freq": "日",
-   "first": "2022-11-23",
-   "last": "2026-10-16",
+   "first": "2022-11-29",
+   "last": "2026-10-22",
    "current_pe": null,
-   "current_price": 6204.24,
-   "price_start": 3946.44,
+   "current_price": 6087.02,
+   "price_start": 3934.44,
    "price_source": "sina:gi",
    "price_note": null,
    "price_n": 1000,
@@ -2784,11 +2784,11 @@
    "source": "price:sina:gi",
    "n": 1000,
    "freq": "日",
-   "first": "2022-11-17",
-   "last": "2026-10-16",
+   "first": "2022-11-24",
+   "last": "2026-10-23",
    "current_pe": null,
-   "current_price": 7956.7,
-   "price_start": 6576.12,
+   "current_price": 7738.05,
+   "price_start": 6707.32,
    "price_source": "sina:gi",
    "price_note": null,
    "price_n": 1000,
@@ -2816,11 +2816,11 @@
    "source": "price:sina:gi",
    "n": 1000,
    "freq": "日",
-   "first": "2022-11-02",
-   "last": "2026-10-16",
+   "first": "2022-11-09",
+   "last": "2026-10-23",
    "current_pe": null,
-   "current_price": 10881.9,
-   "price_start": 7144.14,
+   "current_price": 10661.1,
+   "price_start": 7296.25,
    "price_source": "sina:gi",
    "price_note": null,
    "price_n": 1000,
@@ -2848,11 +2848,11 @@
    "source": "price:sina:gi",
    "n": 1000,
    "freq": "日",
-   "first": "2022-11-17",
-   "last": "2026-10-16",
+   "first": "2022-11-24",
+   "last": "2026-10-23",
    "current_pe": null,
-   "current_price": 1142.87,
-   "price_start": 708.38,
+   "current_price": 1131.64,
+   "price_start": 722.74,
    "price_source": "sina:gi",
    "price_note": null,
    "price_n": 1000,
@@ -2880,11 +2880,11 @@
    "source": "price:sina:gi",
    "n": 1000,
    "freq": "日",
-   "first": "2022-11-25",
-   "last": "2026-10-16",
+   "first": "2022-12-02",
+   "last": "2026-10-23",
    "current_pe": null,
-   "current_price": 19326.31,
-   "price_start": 8416.6,
+   "current_price": 18832.79,
+   "price_start": 8382.6,
    "price_source": "sina:gi",
    "price_note": null,
    "price_n": 1000,
@@ -2910,18 +2910,18 @@
    "note": "印度市场代表（价格以 INDA ETF 代理）",
    "series_label": "蛋卷(周频)",
    "source": "danjuan:pe_history",
-   "n": 549,
+   "n": 550,
    "freq": "周",
-   "first": "2016-10-19",
-   "last": "2026-10-19",
-   "current_pe": 34.216,
-   "current_price": 47.66,
-   "price_start": 29.56,
+   "first": "2016-10-23",
+   "last": "2026-10-23",
+   "current_pe": 33.48,
+   "current_price": 47.36,
+   "price_start": 29.5,
    "price_source": "sina:us",
    "price_note": "ETF代理：INDA（iShares MSCI印度ETF，跟踪同一指数）",
-   "price_n": 3695,
+   "price_n": 3699,
    "primary_window": "5年",
-   "primary_pct": 44.55252918287938,
+   "primary_pct": 42.44186046511628,
    "primary_band": {
     "label": "中性",
     "color": "#c9a227",
@@ -2930,34 +2930,34 @@
    },
    "windows": {
     "1年": {
-     "pct": 12.5,
+     "pct": 6.730769230769231,
      "sufficient": true,
      "n": 52,
-     "start": "2025-10-20"
+     "start": "2025-10-27"
     },
     "3年": {
-     "pct": 9.294871794871796,
+     "pct": 6.687898089171974,
      "sufficient": true,
-     "n": 156,
+     "n": 157,
      "start": "2023-10-23"
     },
     "5年": {
-     "pct": 44.55252918287938,
+     "pct": 42.44186046511628,
      "sufficient": true,
-     "n": 257,
+     "n": 258,
      "start": "2021-10-25"
     },
     "10年": {
-     "pct": 74.04371584699454,
+     "pct": 72.63636363636363,
      "sufficient": true,
-     "n": 549,
-     "start": "2016-10-19"
+     "n": 550,
+     "start": "2016-10-23"
     },
     "全历史": {
-     "pct": 74.04371584699454,
+     "pct": 72.63636363636363,
      "sufficient": true,
-     "n": 549,
-     "start": "2016-10-19"
+     "n": 550,
+     "start": "2016-10-23"
     }
    },
    "series_ids": [
@@ -2978,11 +2978,11 @@
    "source": "price:sina:gi",
    "n": 1000,
    "freq": "日",
-   "first": "2022-08-31",
-   "last": "2026-10-16",
+   "first": "2022-09-06",
+   "last": "2026-10-22",
    "current_pe": null,
-   "current_price": 47111.26,
-   "price_start": 15095.44,
+   "current_price": 46041.43,
+   "price_start": 14677.2,
    "price_source": "sina:gi",
    "price_note": null,
    "price_n": 1000,
@@ -3008,16 +3008,16 @@
    "note": "日本大盘225家（无PE源）",
    "series_label": "仅指数点位（无PE源）",
    "source": "price:sina:gi",
-   "n": 1000,
+   "n": 999,
    "freq": "日",
-   "first": "2022-10-04",
-   "last": "2026-10-19",
+   "first": "2022-10-11",
+   "last": "2026-10-22",
    "current_pe": null,
-   "current_price": 64916.7,
-   "price_start": 26992.211,
+   "current_price": 62907.84,
+   "price_start": 26401.25,
    "price_source": "sina:gi",
    "price_note": null,
-   "price_n": 1000,
+   "price_n": 999,
    "primary_window": null,
    "primary_pct": null,
    "primary_band": null,
@@ -3042,11 +3042,11 @@
    "source": "price:sina:gi",
    "n": 1000,
    "freq": "日",
-   "first": "2022-11-15",
-   "last": "2026-10-16",
+   "first": "2022-11-22",
+   "last": "2026-10-23",
    "current_pe": null,
-   "current_price": 8806.7,
-   "price_start": 7141.6,
+   "current_price": 8795.2,
+   "price_start": 7181.3,
    "price_source": "sina:gi",
    "price_note": null,
    "price_n": 1000,
@@ -3074,11 +3074,11 @@
    "source": "price:sina:gi",
    "n": 1000,
    "freq": "日",
-   "first": "2022-09-21",
-   "last": "2026-10-19",
+   "first": "2022-09-27",
+   "last": "2026-10-23",
    "current_pe": null,
-   "current_price": 5768.01,
-   "price_start": 2347.21,
+   "current_price": 5550.3,
+   "price_start": 2223.86,
    "price_source": "sina:gi",
    "price_note": null,
    "price_n": 1000,

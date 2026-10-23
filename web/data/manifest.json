@@ -1,24 +1,17 @@
 {
  "app": "PE-Trace",
  "version": "1.0.0",
- "generated_at": "2026-10-19T20:29:35+08:00",
- "elapsed_sec": 142.8,
- "as_of": "2026-10-19",
+ "generated_at": "2026-10-24T00:26:14+08:00",
+ "elapsed_sec": 95.4,
+ "as_of": "2026-10-23",
  "freshness": {
-  "previous_as_of": "2026-10-16",
-  "previous_generated_at": "2026-10-17T20:48:07+08:00",
+  "previous_as_of": "2026-10-19",
+  "previous_generated_at": "2026-10-19T20:29:35+08:00",
   "advanced": true,
   "note": "as_of 是各序列最新观测日；advanced=false 表示本次运行未取得更新的数据（非交易日、上游未更新，或抓取失败），不等于运行失败。",
   "cache_max_age_hours": 6.0,
-  "stale_responses": 6,
-  "stale_urls": [
-   "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=000688&startDate=20040101&endDate=20500101",
-   "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=000688&startDate=20040101&endDate=20500101",
-   "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=931087&startDate=20040101&endDate=20500101",
-   "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=931087&startDate=20040101&endDate=20500101",
-   "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=H11136&startDate=20040101&endDate=20500101",
-   "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=H11136&startDate=20040101&endDate=20500101"
-  ]
+  "stale_responses": 0,
+  "stale_urls": []
  },
  "counts": {
   "total": 52,
@@ -32,11 +25,11 @@
  "partial_note": null,
  "counts_note": "ok=有页面数据(含仅点位)；with_pe=有PE序列；with_price=有点位；no_pe=无公开PE源；price_only=仅点位无PE",
  "http": {
-  "hit": 16,
-  "miss": 132,
-  "error": 3,
+  "hit": 19,
+  "miss": 135,
+  "error": 0,
   "skipped": 0,
-  "stale": 6
+  "stale": 0
  },
  "regions": [
   "中国A股",
@@ -135,17 +128,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -163,8 +156,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     }
    ],
@@ -181,9 +174,9 @@
      "series_id": "danjuan",
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
-     "n": 464,
+     "n": 465,
      "first": "2017-10-23",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "周"
     }
    ],
@@ -201,17 +194,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     },
     {
@@ -220,7 +213,7 @@
      "source": "legulegu:rolling_pe",
      "n": 262,
      "first": "2005-01-31",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "月"
     }
    ],
@@ -237,9 +230,9 @@
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     },
     {
@@ -248,7 +241,7 @@
      "source": "legulegu:rolling_pe",
      "n": 192,
      "first": "2010-11-30",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "月"
     }
    ],
@@ -266,17 +259,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     },
     {
@@ -285,7 +278,7 @@
      "source": "legulegu:rolling_pe",
      "n": 262,
      "first": "2005-01-31",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "月"
     }
    ],
@@ -303,17 +296,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     },
     {
@@ -322,7 +315,7 @@
      "source": "legulegu:rolling_pe",
      "n": 262,
      "first": "2005-01-31",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "月"
     }
    ],
@@ -340,17 +333,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     },
     {
@@ -359,7 +352,7 @@
      "source": "legulegu:rolling_pe",
      "n": 246,
      "first": "2006-05-31",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "月"
     }
    ],
@@ -377,17 +370,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3472,
+     "n": 3476,
      "first": "2012-06-29",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     },
     {
@@ -396,7 +389,7 @@
      "source": "legulegu:rolling_pe",
      "n": 145,
      "first": "2014-10-31",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "月"
     }
    ],
@@ -414,17 +407,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     },
     {
@@ -433,7 +426,7 @@
      "source": "legulegu:rolling_pe",
      "n": 238,
      "first": "2007-01-31",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "月"
     }
    ],
@@ -450,9 +443,9 @@
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     },
     {
@@ -461,7 +454,7 @@
      "source": "legulegu:rolling_pe",
      "n": 238,
      "first": "2007-01-31",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "月"
     }
    ],
@@ -479,17 +472,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 515,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 2774,
+     "n": 2778,
      "first": "2015-05-20",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -507,17 +500,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -535,17 +528,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -563,17 +556,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -591,17 +584,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -620,7 +613,7 @@
      "source": "legulegu:rolling_pe",
      "n": 205,
      "first": "2009-10-30",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "月"
     }
    ],
@@ -638,8 +631,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     }
    ],
@@ -657,8 +650,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     }
    ],
@@ -676,17 +669,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3652,
+     "n": 3656,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -704,8 +697,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     }
    ],
@@ -723,17 +716,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3651,
+     "n": 3655,
      "first": "2011-06-28",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "日"
     },
     {
@@ -742,7 +735,7 @@
      "source": "legulegu:rolling_pe",
      "n": 259,
      "first": "2005-04-29",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "月"
     }
    ],
@@ -760,8 +753,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
@@ -770,7 +763,7 @@
      "source": "legulegu:rolling_pe",
      "n": 206,
      "first": "2009-09-30",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "月"
     }
    ],
@@ -788,8 +781,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     }
    ],
@@ -807,8 +800,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
@@ -817,7 +810,7 @@
      "source": "legulegu:rolling_pe",
      "n": 262,
      "first": "2005-01-31",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "月"
     }
    ],
@@ -834,18 +827,18 @@
      "series_id": "danjuan",
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
-     "n": 351,
+     "n": 352,
      "first": "2019-12-31",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 1518,
+     "n": 1528,
      "first": "2020-07-06",
-     "last": "2026-10-09",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -862,18 +855,18 @@
      "series_id": "danjuan",
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
-     "n": 393,
+     "n": 394,
      "first": "2019-03-20",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 1841,
+     "n": 1851,
      "first": "2019-03-07",
-     "last": "2026-10-09",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -891,17 +884,17 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-17",
-     "last": "2026-10-16",
+     "first": "2016-10-24",
+     "last": "2026-10-22",
      "freq": "周"
     },
     {
      "series_id": "csindex",
      "label": "中证官方(日频)",
      "source": "csindex:pe_ttm",
-     "n": 3866,
+     "n": 3876,
      "first": "2011-09-12",
-     "last": "2026-10-08",
+     "last": "2026-10-22",
      "freq": "日"
     }
    ],
@@ -919,8 +912,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-17",
-     "last": "2026-10-16",
+     "first": "2016-10-24",
+     "last": "2026-10-22",
      "freq": "周"
     }
    ],
@@ -938,8 +931,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-17",
-     "last": "2026-10-16",
+     "first": "2016-10-24",
+     "last": "2026-10-22",
      "freq": "周"
     }
    ],
@@ -956,9 +949,9 @@
      "series_id": "danjuan",
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
-     "n": 322,
+     "n": 323,
      "first": "2020-07-27",
-     "last": "2026-10-19",
+     "last": "2026-10-23",
      "freq": "周"
     }
    ],
@@ -976,8 +969,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 515,
-     "first": "2016-10-17",
-     "last": "2026-10-16",
+     "first": "2016-10-24",
+     "last": "2026-10-22",
      "freq": "周"
     }
    ],
@@ -997,8 +990,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-17",
-     "last": "2026-10-16",
+     "first": "2016-10-24",
+     "last": "2026-10-22",
      "freq": "周"
     }
    ],
@@ -1015,9 +1008,9 @@
      "series_id": "danjuan",
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
-     "n": 408,
+     "n": 409,
      "first": "2018-11-21",
-     "last": "2026-10-16",
+     "last": "2026-10-22",
      "freq": "周"
     }
    ],
@@ -1037,8 +1030,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-17",
-     "last": "2026-10-16",
+     "first": "2016-10-24",
+     "last": "2026-10-22",
      "freq": "周"
     },
     {
@@ -1047,7 +1040,7 @@
      "source": "multpl:pe",
      "n": 1871,
      "first": "1871-01-01",
-     "last": "2026-10-16",
+     "last": "2026-10-22",
      "freq": "月"
     }
    ],
@@ -1065,8 +1058,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     }
    ],
@@ -1084,8 +1077,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 515,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     }
    ],
@@ -1103,8 +1096,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 516,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     }
    ],
@@ -1122,8 +1115,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 514,
-     "first": "2016-10-17",
-     "last": "2026-10-16",
+     "first": "2016-10-24",
+     "last": "2026-10-22",
      "freq": "周"
     }
    ],
@@ -1140,9 +1133,9 @@
      "series_id": "price_only",
      "label": "仅指数点位（无PE源）",
      "source": "price:sina:us",
-     "n": 5736,
+     "n": 5740,
      "first": "2004-01-02",
-     "last": "2026-10-16",
+     "last": "2026-10-22",
      "freq": "日"
     }
    ],
@@ -1162,8 +1155,8 @@
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
      "n": 515,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "first": "2016-10-24",
+     "last": "2026-10-23",
      "freq": "周"
     }
    ],
@@ -1181,8 +1174,8 @@
      "label": "仅指数点位（无PE源）",
      "source": "price:sina:gi",
      "n": 1000,
-     "first": "2022-11-09",
-     "last": "2026-10-16",
+     "first": "2022-11-15",
+     "last": "2026-10-22",
      "freq": "日"
     }
    ],
@@ -1202,8 +1195,8 @@
      "label": "仅指数点位（无PE源）",
      "source": "price:sina:gi",
      "n": 1000,
-     "first": "2022-11-23",
-     "last": "2026-10-16",
+     "first": "2022-11-29",
+     "last": "2026-10-22",
      "freq": "日"
     }
    ],
@@ -1223,8 +1216,8 @@
      "label": "仅指数点位（无PE源）",
      "source": "price:sina:gi",
      "n": 1000,
-     "first": "2022-11-17",
-     "last": "2026-10-16",
+     "first": "2022-11-24",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -1244,8 +1237,8 @@
      "label": "仅指数点位（无PE源）",
      "source": "price:sina:gi",
      "n": 1000,
-     "first": "2022-11-02",
-     "last": "2026-10-16",
+     "first": "2022-11-09",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -1265,8 +1258,8 @@
      "label": "仅指数点位（无PE源）",
      "source": "price:sina:gi",
      "n": 1000,
-     "first": "2022-11-17",
-     "last": "2026-10-16",
+     "first": "2022-11-24",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -1286,8 +1279,8 @@
      "label": "仅指数点位（无PE源）",
      "source": "price:sina:gi",
      "n": 1000,
-     "first": "2022-11-25",
-     "last": "2026-10-16",
+     "first": "2022-12-02",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -1306,9 +1299,9 @@
      "series_id": "danjuan",
      "label": "蛋卷(周频)",
      "source": "danjuan:pe_history",
-     "n": 549,
-     "first": "2016-10-19",
-     "last": "2026-10-19",
+     "n": 550,
+     "first": "2016-10-23",
+     "last": "2026-10-23",
      "freq": "周"
     }
    ],
@@ -1326,8 +1319,8 @@
      "label": "仅指数点位（无PE源）",
      "source": "price:sina:gi",
      "n": 1000,
-     "first": "2022-08-31",
-     "last": "2026-10-16",
+     "first": "2022-09-06",
+     "last": "2026-10-22",
      "freq": "日"
     }
    ],
@@ -1346,9 +1339,9 @@
      "series_id": "price_only",
      "label": "仅指数点位（无PE源）",
      "source": "price:sina:gi",
-     "n": 1000,
-     "first": "2022-10-04",
-     "last": "2026-10-19",
+     "n": 999,
+     "first": "2022-10-11",
+     "last": "2026-10-22",
      "freq": "日"
     }
    ],
@@ -1368,8 +1361,8 @@
      "label": "仅指数点位（无PE源）",
      "source": "price:sina:gi",
      "n": 1000,
-     "first": "2022-11-15",
-     "last": "2026-10-16",
+     "first": "2022-11-22",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
@@ -1389,8 +1382,8 @@
      "label": "仅指数点位（无PE源）",
      "source": "price:sina:gi",
      "n": 1000,
-     "first": "2022-09-21",
-     "last": "2026-10-19",
+     "first": "2022-09-27",
+     "last": "2026-10-23",
      "freq": "日"
     }
    ],
